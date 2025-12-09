@@ -1,4 +1,4 @@
-# Schedule A — SDG28 Investment Mandate
+# Schedule A — Investment Mandate
 
 This Schedule defines the investment strategy, asset universe, allocation rules, and management principles that the Trustees must follow when administering the Trust’s investment portfolio (“the Portfolio”). The purpose of the Portfolio is to maintain a globally diversified, high‑quality, long‑term compounding engine that provides sustainable income to beneficiaries while preserving and growing capital across generations.
 
@@ -8,7 +8,7 @@ This Schedule defines the investment strategy, asset universe, allocation rules,
 
 The Portfolio shall consist of **26 global equity securities**, allocated across the following sleeves:
 
-# SDG26 Sleeve Structure 
+# Sleeve Structure 
 
 # Core (60%)
 
