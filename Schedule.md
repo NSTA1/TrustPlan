@@ -6,29 +6,30 @@ This Schedule defines the investment strategy, asset universe, allocation rules,
 
 ## 1. Portfolio Structure
 
-The Portfolio shall consist of **28 global equity securities**, allocated across the following sleeves:
+The Portfolio shall consist of **26 global equity securities**, allocated across the following sleeves:
 
-# SDG28 Sleeve Structure 
+# SDG26 Sleeve Structure 
 
 # Core (60%)
 
-## 1. US Dividend Achievers — 13%
-- Microsoft (4%)
+## 1. US Dividend Achievers — 17%
+- Microsoft (7%)
 - ADP (3%)
-- Accenture (3%)
+- Accenture (4%)
 - Stryker (3%)
 
-## 2. Global Compounders — 17%
+## 2. Global Compounders — 20%
 - ASML (4%)
 - Novo Nordisk (4%)
 - LVMH (3%)
 - EssilorLuxottica (3%)
 - RELX (3%)
+- L’Oréal (3%)
 
-## 3. Hyper‑Growth Dividend — 10%
+## 3. Hyper‑Growth Dividend — 14%
 - S&P Global (4%)
 - Broadcom (3%)
-- Mastercard (3%)
+- Mastercard (7%)
 
 ## 4. Dividend Initiators — 9%
 - Meta (3%)
@@ -45,11 +46,9 @@ The Portfolio shall consist of **28 global equity securities**, allocated across
 ## 7. UK Quality — 3%
 - London Stock Exchange (3%)
 
-## 8. Asia‑Pacific Tailwind — 21%
+## 8. Asia‑Pacific Tailwind — 13%
 - Prudential plc (5%)
-- Daikin (5%)
 - Hoya (5%)
-- Keyence (3%)
 - SMFG (3%)
 
 ---
@@ -57,48 +56,32 @@ The Portfolio shall consist of **28 global equity securities**, allocated across
 # Diversification Sleeves (40%)
 
 ## 9. Global Consumer Staples — 3%
-- Diageo (3%)
+- L’Oréal (3%)
 
 ## 10. Asia‑Pacific Financials — 3%
 - SMFG (3%)
 
-## 11. Global Insurance — 10%
-- AIA Group (5%)
+## 11. Global Insurance — 5%
 - Chubb (5%)
 
-## 12. Asia‑Pacific Industrials & Healthcare — 10%
-- Daikin (5%)
-- Hoya (5%)
-
-## 13. Global Healthcare — 5%
+## 12. Global Healthcare — 5%
 - Roche (5%)
 
-## 14. Global Industrials — 5%
-- Waste Management (5%)
----
-
-# Diversification Sleeves (40%)
-
-## 9. Global Consumer Staples — 3%
-- Diageo (3%)
-
-## 10. Emerging Markets Growth — 3%
-- HDFC Bank (3%)
-
-## 11. Global Insurance — 10%
-- AIA Group (5%)
-- Chubb (5%)
-
-## 12. Asia‑Pacific Industrials & Healthcare — 10%
-- Daikin (5%)
-- Hoya (5%)
-
-## 13. Global Healthcare — 5%
-- Roche (5%)
-
-## 14. Global Industrials — 5%
+## 13. Global Industrials — 5%
 - Waste Management (5%)
 
+## 14. Global Consumer Brands — 3%
+- LVMH (3%)
+
+## 15. Global Information Services — 6%
+- RELX (3%)
+- S&P Global (3%)
+
+## 16. Global Technology Platforms — 10%
+- Meta (3%)
+- Amazon (3%)
+- Alphabet (3%)
+- Microsoft (1%)  *(reflecting the 7% total in Core)*
 The Trustees must maintain exposure to each sleeve within ±3% of the target allocation unless otherwise required by corporate actions or market conditions.
 
 ---
@@ -109,22 +92,23 @@ The Portfolio shall consist of the following securities unless replaced under Se
 
 ## Portfolio Holdings and Allocations
 
-# SDG28 — Full Allocation Table
+# SDG28 — Updated Allocation Table (With L’Oréal)
 
 | Region | Company | Weight |
 |--------|---------|--------|
-| **US** | Microsoft | 4% |
+| **US** | Microsoft | 7% |
 | US | S&P Global | 4% |
 | US | Chubb | 5% |
 | US | Waste Management | 5% |
 | US | ADP | 3% |
-| US | Accenture | 3% |
+| US | Accenture | 4% |
 | US | Stryker | 3% |
 | US | Broadcom | 3% |
-| US | Mastercard | 3% |
+| US | Mastercard | 7% |
 | US | Meta | 3% |
 | US | Amazon | 3% |
 | US | Alphabet | 3% |
+
 | **Europe** | ASML | 4% |
 | Europe | Novo Nordisk | 4% |
 | Europe | Roche | 5% |
@@ -132,14 +116,14 @@ The Portfolio shall consist of the following securities unless replaced under Se
 | Europe | EssilorLuxottica | 3% |
 | Europe | RELX | 3% |
 | Europe | London Stock Exchange Group | 3% |
-| Europe | Diageo | 3% |
-| Canada | Royal Bank of Canada | 3% |
+| Europe | L’Oréal | 3% |
+
+| **Canada** | Royal Bank of Canada | 3% |
 | Canada | Toronto-Dominion Bank | 3% |
 | Canada | Canadian National Railway | 3% |
-| Asia | Prudential plc (Asia-focused) | 5% |
-| Asia | Daikin | 5% |
+
+| **Asia** | Prudential plc (Asia-focused) | 5% |
 | Asia | Hoya | 5% |
-| Asia | Keyence | 3% |
 | Asia | SMFG | 3% |
 
 **Total = 100%**
