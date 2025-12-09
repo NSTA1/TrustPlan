@@ -22,41 +22,30 @@ The Trustees must maintain exposure to each sleeve within ±3% of the target all
 
 ## 2. Approved Asset List (20 Securities)
 
-The Portfolio shall consist of the following securities unless replaced under Section 6:
+The Portfolio shall consist of the following securities unless replaced under Section 6 or the Dividend‑Growth Integrity Clause.
 
-### US Dividend Achievers (35%)
-- Microsoft (MSFT) — 7%
-- Texas Instruments (TXN) — 6%
-- Automatic Data Processing (ADP) — 5%
-- Home Depot (HD) — 5%
-- PepsiCo (PEP) — 4%
-
-### Global Compounders (25%)
-- ASML Holding (ASML) — 6%
-- Novo Nordisk (NVO) — 5%
-- LVMH (MC) — 5%
-- Nestlé (NESN) — 4%
-- RELX (REL) — 5%
-
-### Hyper‑Growth Dividend (10%)
-- Broadcom (AVGO) — 4%
-- S&P Global (SPGI) — 3%
-- Costco (COST) — 3%
-
-### Dividend Initiators (10%)
-- Meta Platforms (META) — 3%
-- Amazon (AMZN) — 3%
-- Alphabet (GOOGL) — 4%
-
-### Canadian Banks (10%)
-- Toronto‑Dominion Bank (TD) — 5%
-- Royal Bank of Canada (RY) — 5%
-
-### UK Quality (5%)
-- London Stock Exchange Group (LSEG) — 5%
-
-### Asia‑Pacific Structural Tailwind (5%)
-- Taiwan Semiconductor Manufacturing Company (TSMC) — 5%
+| Company         | Allocation | Sleeve                  | Region        |
+|-----------------|-----------:|--------------------------|---------------|
+| Microsoft (MSFT)        | 7%  | US Dividend Achievers     | USA           |
+| Texas Instruments (TXN) | 6%  | US Dividend Achievers     | USA           |
+| ADP                     | 5%  | US Dividend Achievers     | USA           |
+| Home Depot (HD)         | 5%  | US Dividend Achievers     | USA           |
+| PepsiCo (PEP)           | 4%  | US Dividend Achievers     | USA           |
+| ASML                    | 6%  | Global Compounders        | Netherlands   |
+| Novo Nordisk            | 6%  | Global Compounders        | Denmark       |
+| LVMH                    | 6%  | Global Compounders        | France        |
+| Nestlé                  | 4%  | Global Compounders        | Switzerland   |
+| RELX                    | 6%  | Global Compounders        | UK            |
+| Broadcom (AVGO)         | 5%  | Hyper‑Growth Dividend     | USA           |
+| S&P Global (SPGI)       | 5%  | Hyper‑Growth Dividend     | USA           |
+| Costco                  | 4%  | Hyper‑Growth Dividend     | USA           |
+| Meta                    | 3%  | Dividend Initiators       | USA           |
+| Amazon                  | 3%  | Dividend Initiators       | USA           |
+| Alphabet                | 5%  | Dividend Initiators       | USA           |
+| Toronto‑Dominion (TD)   | 5%  | Canadian Banks            | Canada        |
+| Royal Bank of Canada    | 5%  | Canadian Banks            | Canada        |
+| LSEG                    | 5%  | UK Quality                | UK            |
+| Keyence                 | 5%  | Asia‑Pacific Tailwind     | Japan         |
 
 ---
 
@@ -75,11 +64,12 @@ The Trustees must manage the Portfolio in accordance with the following principl
 
 4. **Low Turnover:**  
    The Portfolio shall be managed with minimal trading activity.  
-   Discretionary selling is prohibited except as permitted in Section 6.
+   Discretionary selling is prohibited except as permitted in Section 6 or the Dividend‑Growth Integrity Clause.
 
 ---
 
-## 4. Dividend Growth Requirements (Guidance, Not Hard Triggers)
+## 4. Dividend Growth Requirements  
+### (Guidance, with mandatory protections in the Dividend‑Growth Integrity Clause)
 
 The Trustees shall prioritise companies that demonstrate:
 
@@ -88,8 +78,8 @@ The Trustees shall prioritise companies that demonstrate:
 - A **sustainable payout ratio** consistent with reinvestment and future growth.
 
 **Note:**  
-These criteria are **guiding principles**, not mandatory sell triggers.  
-Temporary pauses or reductions in dividend growth shall not, by themselves, require disposal of an asset.
+These criteria are guiding principles.  
+Mandatory protections and sell triggers are defined exclusively in the **SDG20 Dividend‑Growth Integrity Clause**.
 
 ---
 
@@ -100,7 +90,7 @@ The Trustees shall:
 - Rebalance only to maintain sleeve allocations within ±3%  
 - Avoid discretionary rebalancing  
 - Avoid selling solely for short‑term performance reasons  
-- Maintain the 20‑asset structure unless replacement is required under Section 6
+- Maintain the 20‑asset structure unless replacement is required under Section 6 or the Dividend‑Growth Integrity Clause
 
 ---
 
@@ -127,7 +117,7 @@ The Trustees shall not:
 - Liquidate the Portfolio except as required by law  
 - Distribute capital to beneficiaries  
 - Replace assets for short‑term performance reasons  
-- Deviate from the SDG20 structure without cause under Section 6  
+- Deviate from the SDG20 structure without cause under Section 6 or the Dividend‑Growth Integrity Clause  
 - Follow beneficiary instructions regarding investment decisions
 
 ---
@@ -142,20 +132,19 @@ This Schedule is intended to preserve the integrity of the SDG20 investment stra
 ### (Trustee Replacement Protocol)
 
 ### 1. Purpose
-The purpose of this Clause is to preserve the structural integrity, long‑term compounding capacity, and dividend‑growth characteristics of the SDG20 Portfolio. The Trustees shall maintain a blended dividend‑growth rate (“Blended DG”) of not less than 9.5% per annum.
+To preserve the structural integrity and long‑term compounding capacity of the Portfolio by maintaining a blended dividend‑growth rate (“Blended DG”) of not less than 9.5% per annum.
 
 ### 2. Definitions
 
-2.1 “Dividend‑Growth Rate” (“DG”) means the compound annual growth rate of dividends per share over the preceding five (5) financial years.
+2.1 “Dividend‑Growth Rate” (“DG”) means the five‑year compound annual growth rate of dividends per share.
 
-2.2 “Blended DG” means the weighted average DG of all holdings in the Portfolio.
+2.2 “Blended DG” means the weighted average DG of all holdings.
 
 2.3 “Structural Failure” means the occurrence of two (2) or more criteria in Section 3.
 
 2.4 “Temporary Variance” means any short‑term fluctuation not meeting Structural Failure.
 
 ### 3. Structural Failure Criteria
-A holding shall be deemed to have suffered Structural Failure if two (2) or more of the following criteria are met:
 
 3.1 **DG Underperformance**  
 (a) Five‑year DG below six percent (6%); and  
