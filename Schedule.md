@@ -55,6 +55,29 @@ The Portfolio shall consist of **28 global equity securities**, allocated across
 ## 9. Global Consumer Staples — 3%
 - Diageo (3%)
 
+## 10. Asia‑Pacific Financials — 3%
+- SMFG (3%)
+
+## 11. Global Insurance — 10%
+- AIA Group (5%)
+- Chubb (5%)
+
+## 12. Asia‑Pacific Industrials & Healthcare — 10%
+- Daikin (5%)
+- Hoya (5%)
+
+## 13. Global Healthcare — 5%
+- Roche (5%)
+
+## 14. Global Industrials — 5%
+- Waste Management (5%)
+---
+
+# Diversification Sleeves (40%)
+
+## 9. Global Consumer Staples — 3%
+- Diageo (3%)
+
 ## 10. Emerging Markets Growth — 3%
 - HDFC Bank (3%)
 
@@ -103,11 +126,11 @@ The Portfolio shall consist of the following securities unless replaced under Se
 | Alphabet                    | 3%         | Dividend Initiators              | USA           |
 | Toronto‑Dominion (TD)       | 3%         | Canadian Banks                   | Canada        |
 | Royal Bank of Canada (RBC)  | 3%         | Canadian Banks                   | Canada        |
-| Canadian National (CNR)     | 3%         | Canadian Compounders             | Canada        |
+| Canadian National Railway   | 3%         | Canadian Compounders             | Canada        |
 | London Stock Exchange (LSEG)| 3%         | UK Quality                       | UK            |
 | Keyence                     | 3%         | Asia‑Pacific Tailwind            | Japan         |
 | Diageo (DGE)                | 3%         | Global Consumer Staples          | UK            |
-| **HDFC Bank**               | 3%         | Emerging Markets Growth          | India         |
+| **SMFG (Sumitomo Mitsui)**  | 3%         | Asia‑Pacific Financials          | Japan         |
 | AIA Group                   | 5%         | Global Insurance                 | Hong Kong     |
 | Chubb (CB)                  | 5%         | Global Insurance                 | USA           |
 | Daikin                      | 5%         | Asia‑Pacific Industrials         | Japan         |
