@@ -29,12 +29,12 @@ The Portfolio shall consist of the following securities unless replaced under Se
 |-----------------------|-----------:|-------------------------------|---------------|
 | Microsoft (MSFT)      | 7%         | US Dividend Achievers         | USA           |
 | ADP                   | 5%         | US Dividend Achievers         | USA           |
-| Home Depot (HD)       | 5%         | US Dividend Achievers         | USA           |
 | Accenture (ACN)       | 4%         | US Dividend Achievers         | USA           |
+| Stryker (SYK)         | 5%         | US Dividend Achievers         | USA           |
 | ASML                  | 6%         | Global Compounders            | Netherlands   |
 | Novo Nordisk          | 6%         | Global Compounders            | Denmark       |
 | LVMH                  | 6%         | Global Compounders            | France        |
-| Nestlé                | 4%         | Global Compounders            | Switzerland   |
+| L’Oréal (OR)          | 4%         | Global Compounders            | France        |
 | RELX                  | 6%         | Global Compounders            | UK            |
 | Broadcom (AVGO)       | 5%         | Hyper‑Growth Dividend         | USA           |
 | S&P Global (SPGI)     | 5%         | Hyper‑Growth Dividend         | USA           |
