@@ -8,11 +8,12 @@ This Schedule defines the investment strategy, asset universe, allocation rules,
 
 The Portfolio shall consist of **20 global equity securities**, allocated across the following sleeves:
 
-- **US Dividend Achievers — 35%**
-- **Global Compounders — 25%**
-- **Hyper‑Growth Dividend — 10%**
-- **Dividend Initiators — 10%**
+- **US Dividend Achievers — 21%**
+- **Global Compounders — 28%**
+- **Hyper‑Growth Dividend — 14%**
+- **Dividend Initiators — 11%**
 - **Canadian Banks — 10%**
+- **Canadian Compounders — 6%**
 - **UK Quality — 5%**
 - **Asia‑Pacific Structural Tailwind — 5%**
 
@@ -24,29 +25,28 @@ The Trustees must maintain exposure to each sleeve within ±3% of the target all
 
 The Portfolio shall consist of the following securities unless replaced under Section 6 or the Dividend‑Growth Integrity Clause.
 
-| Company         | Allocation | Sleeve                  | Region        |
-|-----------------|-----------:|--------------------------|---------------|
-| Microsoft (MSFT)        | 7%  | US Dividend Achievers     | USA           |
-| Texas Instruments (TXN) | 6%  | US Dividend Achievers     | USA           |
-| ADP                     | 5%  | US Dividend Achievers     | USA           |
-| Home Depot (HD)         | 5%  | US Dividend Achievers     | USA           |
-| PepsiCo (PEP)           | 4%  | US Dividend Achievers     | USA           |
-| ASML                    | 6%  | Global Compounders        | Netherlands   |
-| Novo Nordisk            | 6%  | Global Compounders        | Denmark       |
-| LVMH                    | 6%  | Global Compounders        | France        |
-| Nestlé                  | 4%  | Global Compounders        | Switzerland   |
-| RELX                    | 6%  | Global Compounders        | UK            |
-| Broadcom (AVGO)         | 5%  | Hyper‑Growth Dividend     | USA           |
-| S&P Global (SPGI)       | 5%  | Hyper‑Growth Dividend     | USA           |
-| Costco                  | 4%  | Hyper‑Growth Dividend     | USA           |
-| Meta                    | 3%  | Dividend Initiators       | USA           |
-| Amazon                  | 3%  | Dividend Initiators       | USA           |
-| Alphabet                | 5%  | Dividend Initiators       | USA           |
-| Toronto‑Dominion (TD)   | 5%  | Canadian Banks            | Canada        |
-| Royal Bank of Canada    | 5%  | Canadian Banks            | Canada        |
-| LSEG                    | 5%  | UK Quality                | UK            |
-| Keyence                 | 5%  | Asia‑Pacific Tailwind     | Japan         |
-
+| Company               | Allocation | Sleeve                       | Region        |
+|-----------------------|-----------:|-------------------------------|---------------|
+| Microsoft (MSFT)      | 7%         | US Dividend Achievers         | USA           |
+| ADP                   | 5%         | US Dividend Achievers         | USA           |
+| Home Depot (HD)       | 5%         | US Dividend Achievers         | USA           |
+| Accenture (ACN)       | 4%         | US Dividend Achievers         | USA           |
+| ASML                  | 6%         | Global Compounders            | Netherlands   |
+| Novo Nordisk          | 6%         | Global Compounders            | Denmark       |
+| LVMH                  | 6%         | Global Compounders            | France        |
+| Nestlé                | 4%         | Global Compounders            | Switzerland   |
+| RELX                  | 6%         | Global Compounders            | UK            |
+| Broadcom (AVGO)       | 5%         | Hyper‑Growth Dividend         | USA           |
+| S&P Global (SPGI)     | 5%         | Hyper‑Growth Dividend         | USA           |
+| Costco                | 4%         | Hyper‑Growth Dividend         | USA           |
+| Meta                  | 3%         | Dividend Initiators           | USA           |
+| Amazon                | 3%         | Dividend Initiators           | USA           |
+| Alphabet              | 5%         | Dividend Initiators           | USA           |
+| Toronto‑Dominion (TD) | 5%         | Canadian Banks                | Canada        |
+| Royal Bank of Canada  | 5%         | Canadian Banks                | Canada        |
+| Canadian National (CNR)| 6%        | Canadian Compounders          | Canada        |
+| LSEG                  | 5%         | UK Quality                    | UK            |
+| Keyence               | 5%         | Asia‑Pacific Tailwind         | Japan         |
 ---
 
 ## 3. Investment Philosophy (Binding Principles)
