@@ -1,4 +1,4 @@
-# Schedule A — SDG20 Investment Mandate
+# Schedule A — SDG28 Investment Mandate
 
 This Schedule defines the investment strategy, asset universe, allocation rules, and management principles that the Trustees must follow when administering the Trust’s investment portfolio (“the Portfolio”). The purpose of the Portfolio is to maintain a globally diversified, high‑quality, long‑term compounding engine that provides sustainable income to beneficiaries while preserving and growing capital across generations.
 
@@ -6,22 +6,73 @@ This Schedule defines the investment strategy, asset universe, allocation rules,
 
 ## 1. Portfolio Structure
 
-The Portfolio shall consist of **20 global equity securities**, allocated across the following sleeves:
+The Portfolio shall consist of **28 global equity securities**, allocated across the following sleeves:
 
-- **US Dividend Achievers — 21%**
-- **Global Compounders — 28%**
-- **Hyper‑Growth Dividend — 14%**
-- **Dividend Initiators — 11%**
-- **Canadian Banks — 10%**
-- **Canadian Compounders — 6%**
-- **UK Quality — 5%**
-- **Asia‑Pacific Structural Tailwind — 5%**
+# SDG28 Sleeve Structure (Revised)
+
+## 1. US Dividend Achievers — 13%
+- Microsoft (4%)
+- ADP (3%)
+- Accenture (3%)
+- Stryker (3%)
+
+## 2. Global Compounders — 17%
+- ASML (4%)
+- Novo Nordisk (4%)
+- LVMH (3%)
+- EssilorLuxottica (3%)
+- RELX (3%)
+
+## 3. Hyper‑Growth Dividend — 10%
+- S&P Global (4%)
+- Broadcom (3%)
+- Mastercard (3%)
+
+## 4. Dividend Initiators — 9%
+- Meta (3%)
+- Amazon (3%)
+- Alphabet (3%)
+
+## 5. Canadian Banks — 6%
+- TD (3%)
+- RBC (3%)
+
+## 6. Canadian Compounders — 3%
+- Canadian National Railway (3%)
+
+## 7. UK Quality — 3%
+- LSEG (3%)
+
+## 8. Asia‑Pacific Tailwind — 3%
+- Keyence (3%)
+
+---
+
+# Diversification Sleeves (40%)
+
+## 9. Global Consumer Staples — 6%
+- Diageo (3%)
+- Unilever (3%)
+
+## 10. Global Insurance — 10%
+- AIA Group (5%)
+- Chubb (5%)
+
+## 11. Asia‑Pacific Industrials & Healthcare — 10%
+- Daikin (5%)
+- Hoya (5%)
+
+## 12. Global Healthcare — 5%
+- Roche (5%)
+
+## 13. Global Industrials — 5%
+- Waste Management (5%)
 
 The Trustees must maintain exposure to each sleeve within ±3% of the target allocation unless otherwise required by corporate actions or market conditions.
 
 ---
 
-## 2. Approved Asset List (20 Securities)
+## 2. Approved Asset List (28 Securities)
 
 The Portfolio shall consist of the following securities unless replaced under Section 6 or the Dividend‑Growth Integrity Clause.
 
@@ -29,28 +80,36 @@ The Portfolio shall consist of the following securities unless replaced under Se
 
 ## Portfolio Holdings and Allocations
 
-| Company                   | Allocation | Sleeve                         | Region        |
-|---------------------------|-----------:|---------------------------------|---------------|
-| Microsoft (MSFT)          | 7%         | US Dividend Achievers           | USA           |
-| ADP                       | 5%         | US Dividend Achievers           | USA           |
-| Accenture (ACN)           | 4%         | US Dividend Achievers           | USA           |
-| Stryker (SYK)             | 5%         | US Dividend Achievers           | USA           |
-| ASML                      | 6%         | Global Compounders              | Netherlands   |
-| Novo Nordisk              | 6%         | Global Compounders              | Denmark       |
-| LVMH                      | 6%         | Global Compounders              | France        |
-| EssilorLuxottica (EL)     | 4%         | Global Compounders              | France        |
-| RELX                      | 6%         | Global Compounders              | UK            |
-| Broadcom (AVGO)           | 5%         | Hyper‑Growth Dividend           | USA           |
-| S&P Global (SPGI)         | 5%         | Hyper‑Growth Dividend           | USA           |
-| Mastercard (MA)           | 4%         | Hyper‑Growth Dividend           | USA           |
-| Meta                      | 3%         | Dividend Initiators             | USA           |
-| Amazon                    | 3%         | Dividend Initiators             | USA           |
-| Alphabet                  | 5%         | Dividend Initiators             | USA           |
-| Toronto‑Dominion (TD)     | 5%         | Canadian Banks                  | Canada        |
-| Royal Bank of Canada (RBC)| 5%         | Canadian Banks                  | Canada        |
-| Canadian National (CNR)   | 6%         | Canadian Compounders            | Canada        |
-| LSEG                      | 5%         | UK Quality                      | UK            |
-| Keyence                   | 5%         | Asia‑Pacific Tailwind           | Japan         |
+| Company                     | Allocation | Sleeve                          | Region        |
+|-----------------------------|-----------:|----------------------------------|---------------|
+| Microsoft (MSFT)            | 4%         | US Dividend Achievers            | USA           |
+| ADP                         | 3%         | US Dividend Achievers            | USA           |
+| Accenture (ACN)             | 3%         | US Dividend Achievers            | USA           |
+| Stryker (SYK)               | 3%         | US Dividend Achievers            | USA           |
+| ASML                        | 4%         | Global Compounders               | Netherlands   |
+| Novo Nordisk                | 4%         | Global Compounders               | Denmark       |
+| LVMH                        | 3%         | Global Compounders               | France        |
+| EssilorLuxottica (EL)       | 3%         | Global Compounders               | France        |
+| RELX                        | 3%         | Global Compounders               | UK            |
+| Broadcom (AVGO)             | 3%         | Hyper‑Growth Dividend            | USA           |
+| S&P Global (SPGI)           | 4%         | Hyper‑Growth Dividend            | USA           |
+| Mastercard (MA)             | 3%         | Hyper‑Growth Dividend            | USA           |
+| Meta                        | 3%         | Dividend Initiators              | USA           |
+| Amazon                      | 3%         | Dividend Initiators              | USA           |
+| Alphabet                    | 3%         | Dividend Initiators              | USA           |
+| Toronto‑Dominion (TD)       | 3%         | Canadian Banks                   | Canada        |
+| Royal Bank of Canada (RBC)  | 3%         | Canadian Banks                   | Canada        |
+| Canadian National (CNR)     | 3%         | Canadian Compounders             | Canada        |
+| London Stock Exchange (LSEG)| 3%         | UK Quality                       | UK            |
+| Keyence                     | 3%         | Asia‑Pacific Tailwind            | Japan         |
+| **Diageo (DGE)**            | 3%         | Global Consumer Staples          | UK            |
+| **Unilever (ULVR)**         | 3%         | Global Consumer Staples          | UK/EU         |
+| **AIA Group**               | 5%         | Global Insurance                 | Hong Kong     |
+| **Chubb (CB)**              | 5%         | Global Insurance                 | USA           |
+| **Daikin**                  | 5%         | Asia‑Pacific Industrials         | Japan         |
+| **Hoya**                    | 5%         | Asia‑Pacific Healthcare/Optics   | Japan         |
+| **Roche**                   | 5%         | Global Healthcare                | Switzerland   |
+| **Waste Management (WM)**   | 5%         | Global Industrials               | USA           |
 ---
 
 ## 3. Investment Philosophy (Binding Principles)
