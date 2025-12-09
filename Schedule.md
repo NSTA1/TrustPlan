@@ -100,13 +100,16 @@ An asset may be replaced only if:
 
 1. The company ceases to exist (e.g., acquisition, delisting),  
 2. The company becomes legally or practically impossible to hold,  
-3. The company undergoes structural deterioration that permanently violates the principles in Section 3.
+3. The company undergoes structural deterioration that permanently violates the principles in Section 3, or  
+4. Replacement is required under the SDG20 Dividend‑Growth Integrity Clause.
 
 Replacement assets must:
 
-- Fit the same sleeve,  
-- Meet the same quality criteria,  
-- Maintain the Portfolio’s long‑term compounding philosophy.
+- Fit the same sleeve classification as the asset being replaced,  
+- Meet the same quality criteria set out in this Schedule,  
+- **Fully comply with all requirements of the SDG20 Dividend‑Growth Integrity Clause**, including minimum dividend‑growth, ROIC, and competitive‑advantage standards,  
+- Maintain or improve the Portfolio’s long‑term compounding characteristics,  
+- Not reduce the Portfolio’s Blended Dividend‑Growth Rate below the minimum threshold defined in the SDG20 Dividend‑Growth Integrity Clause.
 
 ---
 
