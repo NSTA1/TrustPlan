@@ -8,7 +8,9 @@ This Schedule defines the investment strategy, asset universe, allocation rules,
 
 The Portfolio shall consist of **28 global equity securities**, allocated across the following sleeves:
 
-# SDG28 Sleeve Structure (Revised)
+# SDG28 Sleeve Structure 
+
+# Core (60%)
 
 ## 1. US Dividend Achievers — 13%
 - Microsoft (4%)
@@ -34,14 +36,14 @@ The Portfolio shall consist of **28 global equity securities**, allocated across
 - Alphabet (3%)
 
 ## 5. Canadian Banks — 6%
-- TD (3%)
-- RBC (3%)
+- Toronto‑Dominion (3%)
+- Royal Bank of Canada (3%)
 
 ## 6. Canadian Compounders — 3%
 - Canadian National Railway (3%)
 
 ## 7. UK Quality — 3%
-- LSEG (3%)
+- London Stock Exchange (3%)
 
 ## 8. Asia‑Pacific Tailwind — 3%
 - Keyence (3%)
@@ -50,22 +52,24 @@ The Portfolio shall consist of **28 global equity securities**, allocated across
 
 # Diversification Sleeves (40%)
 
-## 9. Global Consumer Staples — 6%
+## 9. Global Consumer Staples — 3%
 - Diageo (3%)
-- Unilever (3%)
 
-## 10. Global Insurance — 10%
+## 10. Emerging Markets Growth — 3%
+- HDFC Bank (3%)
+
+## 11. Global Insurance — 10%
 - AIA Group (5%)
 - Chubb (5%)
 
-## 11. Asia‑Pacific Industrials & Healthcare — 10%
+## 12. Asia‑Pacific Industrials & Healthcare — 10%
 - Daikin (5%)
 - Hoya (5%)
 
-## 12. Global Healthcare — 5%
+## 13. Global Healthcare — 5%
 - Roche (5%)
 
-## 13. Global Industrials — 5%
+## 14. Global Industrials — 5%
 - Waste Management (5%)
 
 The Trustees must maintain exposure to each sleeve within ±3% of the target allocation unless otherwise required by corporate actions or market conditions.
@@ -102,14 +106,14 @@ The Portfolio shall consist of the following securities unless replaced under Se
 | Canadian National (CNR)     | 3%         | Canadian Compounders             | Canada        |
 | London Stock Exchange (LSEG)| 3%         | UK Quality                       | UK            |
 | Keyence                     | 3%         | Asia‑Pacific Tailwind            | Japan         |
-| **Diageo (DGE)**            | 3%         | Global Consumer Staples          | UK            |
-| **Unilever (ULVR)**         | 3%         | Global Consumer Staples          | UK/EU         |
-| **AIA Group**               | 5%         | Global Insurance                 | Hong Kong     |
-| **Chubb (CB)**              | 5%         | Global Insurance                 | USA           |
-| **Daikin**                  | 5%         | Asia‑Pacific Industrials         | Japan         |
-| **Hoya**                    | 5%         | Asia‑Pacific Healthcare/Optics   | Japan         |
-| **Roche**                   | 5%         | Global Healthcare                | Switzerland   |
-| **Waste Management (WM)**   | 5%         | Global Industrials               | USA           |
+| Diageo (DGE)                | 3%         | Global Consumer Staples          | UK            |
+| **HDFC Bank**               | 3%         | Emerging Markets Growth          | India         |
+| AIA Group                   | 5%         | Global Insurance                 | Hong Kong     |
+| Chubb (CB)                  | 5%         | Global Insurance                 | USA           |
+| Daikin                      | 5%         | Asia‑Pacific Industrials         | Japan         |
+| Hoya                        | 5%         | Asia‑Pacific Healthcare/Optics   | Japan         |
+| Roche                       | 5%         | Global Healthcare                | Switzerland   |
+| Waste Management (WM)       | 5%         | Global Industrials               | USA           |
 ---
 
 ## 3. Investment Philosophy (Binding Principles)
