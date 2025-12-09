@@ -45,8 +45,12 @@ The Portfolio shall consist of **28 global equity securities**, allocated across
 ## 7. UK Quality — 3%
 - London Stock Exchange (3%)
 
-## 8. Asia‑Pacific Tailwind — 3%
+## 8. Asia‑Pacific Tailwind — 21%
+- Prudential plc (5%)
+- Daikin (5%)
+- Hoya (5%)
 - Keyence (3%)
+- SMFG (3%)
 
 ---
 
@@ -105,38 +109,40 @@ The Portfolio shall consist of the following securities unless replaced under Se
 
 ## Portfolio Holdings and Allocations
 
-## Portfolio Holdings and Allocations
+# SDG28 — Full Allocation Table
 
-| Company                     | Allocation | Sleeve                          | Region        |
-|-----------------------------|-----------:|----------------------------------|---------------|
-| Microsoft (MSFT)            | 4%         | US Dividend Achievers            | USA           |
-| ADP                         | 3%         | US Dividend Achievers            | USA           |
-| Accenture (ACN)             | 3%         | US Dividend Achievers            | USA           |
-| Stryker (SYK)               | 3%         | US Dividend Achievers            | USA           |
-| ASML                        | 4%         | Global Compounders               | Netherlands   |
-| Novo Nordisk                | 4%         | Global Compounders               | Denmark       |
-| LVMH                        | 3%         | Global Compounders               | France        |
-| EssilorLuxottica (EL)       | 3%         | Global Compounders               | France        |
-| RELX                        | 3%         | Global Compounders               | UK            |
-| Broadcom (AVGO)             | 3%         | Hyper‑Growth Dividend            | USA           |
-| S&P Global (SPGI)           | 4%         | Hyper‑Growth Dividend            | USA           |
-| Mastercard (MA)             | 3%         | Hyper‑Growth Dividend            | USA           |
-| Meta                        | 3%         | Dividend Initiators              | USA           |
-| Amazon                      | 3%         | Dividend Initiators              | USA           |
-| Alphabet                    | 3%         | Dividend Initiators              | USA           |
-| Toronto‑Dominion (TD)       | 3%         | Canadian Banks                   | Canada        |
-| Royal Bank of Canada (RBC)  | 3%         | Canadian Banks                   | Canada        |
-| Canadian National Railway   | 3%         | Canadian Compounders             | Canada        |
-| London Stock Exchange (LSEG)| 3%         | UK Quality                       | UK            |
-| Keyence                     | 3%         | Asia‑Pacific Tailwind            | Japan         |
-| Diageo (DGE)                | 3%         | Global Consumer Staples          | UK            |
-| **SMFG (Sumitomo Mitsui)**  | 3%         | Asia‑Pacific Financials          | Japan         |
-| AIA Group                   | 5%         | Global Insurance                 | Hong Kong     |
-| Chubb (CB)                  | 5%         | Global Insurance                 | USA           |
-| Daikin                      | 5%         | Asia‑Pacific Industrials         | Japan         |
-| Hoya                        | 5%         | Asia‑Pacific Healthcare/Optics   | Japan         |
-| Roche                       | 5%         | Global Healthcare                | Switzerland   |
-| Waste Management (WM)       | 5%         | Global Industrials               | USA           |
+| Region | Company | Weight |
+|--------|---------|--------|
+| **US** | Microsoft | 4% |
+| US | S&P Global | 4% |
+| US | Chubb | 5% |
+| US | Waste Management | 5% |
+| US | ADP | 3% |
+| US | Accenture | 3% |
+| US | Stryker | 3% |
+| US | Broadcom | 3% |
+| US | Mastercard | 3% |
+| US | Meta | 3% |
+| US | Amazon | 3% |
+| US | Alphabet | 3% |
+| **Europe** | ASML | 4% |
+| Europe | Novo Nordisk | 4% |
+| Europe | Roche | 5% |
+| Europe | LVMH | 3% |
+| Europe | EssilorLuxottica | 3% |
+| Europe | RELX | 3% |
+| Europe | London Stock Exchange Group | 3% |
+| Europe | Diageo | 3% |
+| Canada | Royal Bank of Canada | 3% |
+| Canada | Toronto-Dominion Bank | 3% |
+| Canada | Canadian National Railway | 3% |
+| Asia | Prudential plc (Asia-focused) | 5% |
+| Asia | Daikin | 5% |
+| Asia | Hoya | 5% |
+| Asia | Keyence | 3% |
+| Asia | SMFG | 3% |
+
+**Total = 100%**
 ---
 
 ## 3. Investment Philosophy (Binding Principles)
