@@ -86,13 +86,11 @@ The Trustees must maintain exposure to each sleeve within ±3% of the target all
 
 ---
 
-## 2. Approved Asset List (28 Securities)
+## 2. Approved Asset List
 
 The Portfolio shall consist of the following securities unless replaced under Section 6 or the Dividend‑Growth Integrity Clause.
 
 ## Portfolio Holdings and Allocations
-
-# SDG28 — Updated Allocation Table (With L’Oréal)
 
 | Region | Company | Weight |
 |--------|---------|--------|
