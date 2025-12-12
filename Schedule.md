@@ -13,7 +13,7 @@ The Portfolio shall consist of **global equity securities**, allocated according
 
 ## 2. Approved Asset List
 
-The Portfolio shall consist of the following securities unless replaced under Section 6 or the Dividend‑Growth Integrity Clause.
+The Portfolio shall consist of the assets laid out by the [SDG Design](sdg.md)  unless replaced under Section 6 or the Dividend‑Growth Integrity Clause.
 
 ## Portfolio Holdings and Asset Weight Allocations
 
