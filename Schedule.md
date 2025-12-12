@@ -46,10 +46,9 @@ Mandatory protections and sell triggers are defined exclusively in the **Dividen
 
 The Trustees shall:
 
-- Rebalance only to maintain sleeve allocations within ±3%  
-- Avoid discretionary rebalancing  
-- Avoid selling solely for short‑term performance reasons  
-- Maintain the 20‑asset structure unless replacement is required under Section 6 or the Dividend‑Growth Integrity Clause
+- Rebalance **only** once per year (January)
+- Never perform discretionary rebalancing 
+- Never sell assets unless: for annual rebalancing, replacement is required under Section 6 or the Dividend‑Growth Integrity Clause
 
 ---
 
