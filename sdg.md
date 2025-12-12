@@ -4,6 +4,9 @@
 - Current 5-year blended dividend growth: 11.7%
 - Holdings must be high ROIC equities with global exposure and established dividend track records (with the exception of a few 'dividend initiators': companies that are have ROIC but have recently started paying a dividend or are likely to in future [e.g. Amazon, Meta])
 
+# Perpetual
+To be managed by the Trustee of my choice upon my death as covered in my will and under the terms of [Schedule A](Schedule.md)
+
 # Asset Sleeves
 
 | Sleeve | Assets | Weight |
