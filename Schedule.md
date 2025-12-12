@@ -7,7 +7,7 @@ The purpose of the Portfolio is to maintain a globally diversified, high‑quali
 
 ## 1. Portfolio Structure
 
-The Portfolio shall consist of **global equity securities**, allocated across the following sleeves:
+The Portfolio shall consist of **global equity securities**, allocated according to the [SDG Design](sdg.md)
 
 ---
 
