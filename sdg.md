@@ -64,28 +64,30 @@
 
 # Asset 5-Year Average Dividend Growth
 
-Microsoft 10.20%
-S&P Global 9.90%
-Chubb 4.47%
-Waste Management 8.30%
-ADP 12.80%
-Accenture 12.00%
-Stryker 8.80%
-Broadcom 14.10%
-Mastercard 14.20%
-ASML 20.80%
-Novo Nordisk 19.10%
-Roche 2.60%
-LVMH 23.00%
-EssilorLuxottica 23.00%
-RELX 6.80%
-London Stock Exchange Group 14.50%
-L’Oréal 12.80%
-JP Morgan 11.88%
-Canadian National Railway 10.20%
-Prudential plc 8.66%
-Hoya 5.30%
-SMFG 13.60%
-Amazon 0%
-Meta 0%
-Alphabet 0%
+| Asset | 5 Year Dividend Growth |
+|-------|------------|
+|Microsoft|10.20%|
+|S&P Global|9.90%|
+|Chubb|4.47%|
+|Waste Management|8.30%|
+|ADP|12.80%|
+|Accenture|12.00%|
+|Stryker|8.80%|
+|Broadcom|14.10%|
+|Mastercard|14.20%|
+|ASML|20.80%|
+|Novo Nordisk|19.10%|
+|Roche|2.60%|
+|LVMH|23.00%|
+|EssilorLuxottica|23.00%|
+|RELX|6.80%|
+|London Stock Exchange Group|14.50%|
+|L’Oréal|12.80%|
+|JP Morgan|11.88%|
+|Canadian National Railway|10.20%|
+|Prudential plc|8.66%|
+|Hoya|5.30%|
+|SMFG|13.60%|
+|Amazon|0%|
+|Meta|0%|
+|Alphabet|0%|
