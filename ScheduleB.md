@@ -1,6 +1,6 @@
 # Schedule B  
 ## Family Investment Company (FIC) Structure, Purpose, and Operating Mandate  
-*(To be read together with Schedule A. In the event of ambiguity, Schedule A expresses the investment philosophy; Schedule B expresses the structural implementation.)*
+*(To be read together with [Schedule A](Schedule.md). In the event of ambiguity, Schedule A expresses the investment philosophy; Schedule B expresses the structural implementation.)*
 
 ---
 
