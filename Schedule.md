@@ -15,11 +15,10 @@ The Portfolio shall consist of **global equity securities**, allocated across th
 
 The Portfolio shall consist of the following securities unless replaced under Section 6 or the Dividend‑Growth Integrity Clause.
 
-## Portfolio Holdings and Allocations
-
-# SDG — Baseline Allocation Table
+## Portfolio Holdings and Asset Weight Allocations
 
 See [SDG.md](sdg.md)
+
 ---
 
 ## 3. Sleeve Structure
