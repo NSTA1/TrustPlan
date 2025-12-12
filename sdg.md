@@ -4,10 +4,6 @@
 - Current 5-year blended dividend growth: 11.7%
 - Holdings must be high ROIC equities with global exposure and established dividend track records (with the exception of a few 'dividend initiators': companies that are have ROIC but have recently started paying a dividend or are likely to in future [e.g. Amazon, Meta])
 
-# Modelling Instructions
-- Assume 2.5% average inflation for calculating real returns and/or income
-- Assume 8% average annual NAV growth
-
 # Asset Sleeves
 
 | Sleeve | Assets | Weight |
@@ -91,3 +87,14 @@
 |Amazon|0%|
 |Meta|0%|
 |Alphabet|0%|
+
+
+# Modelling Instructions
+- Assume 2.5% average inflation for calculating real returns and/or income
+- Assume 8% average annual NAV growth (20% volativity, 0.7% asset correlation)
+- Portfolio forward dividend yield at time of initial investment: 1.52%
+- Use divident growth table (below) with 5% standard deviation on growth
+- Assume zero dividend stocks never initiate unless stated otherwise
+- Always use real terms for final output, only show nominal if asked
+- Always assume the Investment Plan section is the baseline investment strategy unless stated otherwise
+- 
