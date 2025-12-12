@@ -6,82 +6,11 @@ This Schedule defines the investment strategy, asset universe, allocation rules,
 
 ## 1. Portfolio Structure
 
-The Portfolio shall consist of **26 global equity securities**, allocated across the following sleeves:
+The Portfolio shall consist of **global equity securities**, allocated across the following sleeves:
 
 # Sleeve Structure 
 
-# Core (60%)
 
-## 1. US Dividend Achievers — 17%
-- Microsoft (7%)
-- ADP (3%)
-- Accenture (4%)
-- Stryker (3%)
-
-## 2. Global Compounders — 20%
-- ASML (4%)
-- Novo Nordisk (4%)
-- LVMH (3%)
-- EssilorLuxottica (3%)
-- RELX (3%)
-- L’Oréal (3%)
-
-## 3. Hyper‑Growth Dividend — 14%
-- S&P Global (4%)
-- Broadcom (3%)
-- Mastercard (7%)
-
-## 4. Dividend Initiators — 9%
-- Meta (3%)
-- Amazon (3%)
-- Alphabet (3%)
-
-## 5. Canadian Banks — 6%
-- Toronto‑Dominion (3%)
-- Royal Bank of Canada (3%)
-
-## 6. Canadian Compounders — 3%
-- Canadian National Railway (3%)
-
-## 7. UK Quality — 3%
-- London Stock Exchange (3%)
-
-## 8. Asia‑Pacific Tailwind — 13%
-- Prudential plc (5%)
-- Hoya (5%)
-- SMFG (3%)
-
----
-
-# Diversification Sleeves (40%)
-
-## 9. Global Consumer Staples — 3%
-- L’Oréal (3%)
-
-## 10. Asia‑Pacific Financials — 3%
-- SMFG (3%)
-
-## 11. Global Insurance — 5%
-- Chubb (5%)
-
-## 12. Global Healthcare — 5%
-- Roche (5%)
-
-## 13. Global Industrials — 5%
-- Waste Management (5%)
-
-## 14. Global Consumer Brands — 3%
-- LVMH (3%)
-
-## 15. Global Information Services — 6%
-- RELX (3%)
-- S&P Global (3%)
-
-## 16. Global Technology Platforms — 10%
-- Meta (3%)
-- Amazon (3%)
-- Alphabet (3%)
-- Microsoft (1%)  *(reflecting the 7% total in Core)*
 The Trustees must maintain exposure to each sleeve within ±3% of the target allocation unless otherwise required by corporate actions or market conditions.
 
 ---
@@ -92,59 +21,48 @@ The Portfolio shall consist of the following securities unless replaced under Se
 
 ## Portfolio Holdings and Allocations
 
-| Region | Company | Weight |
-|--------|---------|--------|
-| **US** | Microsoft | 7% |
-| US | S&P Global | 4% |
-| US | Chubb | 5% |
-| US | Waste Management | 5% |
-| US | ADP | 3% |
-| US | Accenture | 4% |
-| US | Stryker | 3% |
-| US | Broadcom | 3% |
-| US | Mastercard | 7% |
-| US | Meta | 3% |
-| US | Amazon | 3% |
-| US | Alphabet | 3% |
+# SDG — Baseline Allocation Table
 
-| **Europe** | ASML | 4% |
-| Europe | Novo Nordisk | 4% |
-| Europe | Roche | 5% |
-| Europe | LVMH | 3% |
-| Europe | EssilorLuxottica | 3% |
-| Europe | RELX | 3% |
-| Europe | London Stock Exchange Group | 3% |
-| Europe | L’Oréal | 3% |
-
-| **Canada** | Royal Bank of Canada | 3% |
-| Canada | Toronto-Dominion Bank | 3% |
-| Canada | Canadian National Railway | 3% |
-
-| **Asia** | Prudential plc (Asia-focused) | 5% |
-| Asia | Hoya | 5% |
-| Asia | SMFG | 3% |
-
-**Total = 100%**
----
-
-## 3. Investment Philosophy (Binding Principles)
-
-The Trustees must manage the Portfolio in accordance with the following principles:
-
-1. **Capital Preservation:**  
-   The capital of the Portfolio shall not be distributed to beneficiaries.
-
-2. **Dividend Income Distribution:**  
-   All dividends received shall be distributed to the income beneficiaries in accordance with the SDG20 Income Distribution Clause.
-
-3. **Long‑Term Compounding:**  
-   The Portfolio shall prioritise companies with high return on invested capital (ROIC), durable competitive advantages, and long‑term earnings growth.
-
-4. **Low Turnover:**  
-   The Portfolio shall be managed with minimal trading activity.  
-   Discretionary selling is prohibited except as permitted in Section 6 or the Dividend‑Growth Integrity Clause.
+| Asset | Allocation |
+|-------|------------|
+| Microsoft | 7% |
+| S&P Global | 4% |
+| Chubb | 5% |
+| Waste Management | 5% |
+| ADP | 3% |
+| Accenture | 4% |
+| Stryker | 3% |
+| Broadcom | 3% |
+| Mastercard | 7% |
+| Meta | 3% |
+| Amazon | 3% |
+| Alphabet | 3% |
+| ASML | 4% |
+| Novo Nordisk | 4% |
+| Roche | 5% |
+| LVMH | 3% |
+| EssilorLuxottica | 3% |
+| RELX | 3% |
+| London Stock Exchange Group | 3% |
+| L’Oréal | 3% |
+| JP Morgan | 6% |
+| Canadian National Railway | 3% |
+| Prudential plc | 5% |
+| Hoya | 5% |
+| SMFG | 3% |
 
 ---
+
+## 3. Sleeve Structure
+
+| Sleeve | Assets | Weight |
+|--------|--------|--------|
+| US Quality / Moat | Microsoft, S&P Global, Chubb, Waste Management, ADP, Accenture, Stryker, Broadcom | 34% |
+| US Payments & Platforms | Mastercard, Meta, Amazon, Alphabet | 16% |
+| Global Semis & Biopharma | ASML, Novo Nordisk, Roche | 13% |
+| European Luxury & IP | LVMH, EssilorLuxottica, RELX, London Stock Exchange Group, L’Oréal | 15% |
+| Global Financials | JP Morgan, Prudential plc, SMFG | 14% |
+| Transport & Optics | Canadian National Railway, Hoya | 8% |
 
 ## 4. Dividend Growth Requirements  
 ### (Guidance, with mandatory protections in the Dividend‑Growth Integrity Clause)
