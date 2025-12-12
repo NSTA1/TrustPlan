@@ -1,6 +1,7 @@
 # Schedule A — Investment Mandate
 
-This Schedule defines the investment strategy, asset universe, allocation rules, and management principles that the Trustees must follow when administering the Trust’s investment portfolio (“the Portfolio”). The purpose of the Portfolio is to maintain a globally diversified, high‑quality, long‑term compounding engine that provides sustainable income to beneficiaries while preserving and growing capital across generations.
+This Schedule defines the investment strategy, asset universe, allocation rules, and management principles that the Trustees must follow when administering the Trust’s investment portfolio (“the Portfolio” - also referred to as "SDG").
+The purpose of the Portfolio is to maintain a globally diversified, high‑quality, long‑term compounding engine that provides sustainable income to beneficiaries while preserving and growing capital across generations.
 
 ---
 
@@ -18,46 +19,12 @@ The Portfolio shall consist of the following securities unless replaced under Se
 
 # SDG — Baseline Allocation Table
 
-| Asset | Allocation |
-|-------|------------|
-| Microsoft | 7% |
-| S&P Global | 4% |
-| Chubb | 5% |
-| Waste Management | 5% |
-| ADP | 3% |
-| Accenture | 4% |
-| Stryker | 3% |
-| Broadcom | 3% |
-| Mastercard | 7% |
-| Meta | 3% |
-| Amazon | 3% |
-| Alphabet | 3% |
-| ASML | 4% |
-| Novo Nordisk | 4% |
-| Roche | 5% |
-| LVMH | 3% |
-| EssilorLuxottica | 3% |
-| RELX | 3% |
-| London Stock Exchange Group | 3% |
-| L’Oréal | 3% |
-| JP Morgan | 6% |
-| Canadian National Railway | 3% |
-| Prudential plc | 5% |
-| Hoya | 5% |
-| SMFG | 3% |
-
+See [SDG.md](sdg.md)
 ---
 
 ## 3. Sleeve Structure
 
-| Sleeve | Assets | Weight |
-|--------|--------|--------|
-| US Quality / Moat | Microsoft, S&P Global, Chubb, Waste Management, ADP, Accenture, Stryker, Broadcom | 34% |
-| US Payments & Platforms | Mastercard, Meta, Amazon, Alphabet | 16% |
-| Global Semis & Biopharma | ASML, Novo Nordisk, Roche | 13% |
-| European Luxury & IP | LVMH, EssilorLuxottica, RELX, London Stock Exchange Group, L’Oréal | 15% |
-| Global Financials | JP Morgan, Prudential plc, SMFG | 14% |
-| Transport & Optics | Canadian National Railway, Hoya | 8% |
+See [SDG.md](sdg.md)
 
 The Trustees must maintain exposure to each sleeve within ±3% of the target allocation unless otherwise required by corporate actions or market conditions.
 
@@ -72,7 +39,7 @@ The Trustees shall prioritise companies that demonstrate:
 
 **Note:**  
 These criteria are guiding principles.  
-Mandatory protections and sell triggers are defined exclusively in the **SDG20 Dividend‑Growth Integrity Clause**.
+Mandatory protections and sell triggers are defined exclusively in the **Dividend‑Growth Integrity Clause**.
 
 ---
 
@@ -94,15 +61,15 @@ An asset may be replaced only if:
 1. The company ceases to exist (e.g., acquisition, delisting),  
 2. The company becomes legally or practically impossible to hold,  
 3. The company undergoes structural deterioration that permanently violates the principles in Section 3, or  
-4. Replacement is required under the SDG20 Dividend‑Growth Integrity Clause.
+4. Replacement is required under the SDG Dividend‑Growth Integrity Clause.
 
 Replacement assets must:
 
 - Fit the same sleeve classification as the asset being replaced,  
 - Meet the same quality criteria set out in this Schedule,  
-- **Fully comply with all requirements of the SDG20 Dividend‑Growth Integrity Clause**, including minimum dividend‑growth, ROIC, and competitive‑advantage standards,  
+- **Fully comply with all requirements of the Dividend‑Growth Integrity Clause**, including minimum dividend‑growth, ROIC, and competitive‑advantage standards,  
 - Maintain or improve the Portfolio’s long‑term compounding characteristics,  
-- Not reduce the Portfolio’s Blended Dividend‑Growth Rate below the minimum threshold defined in the SDG20 Dividend‑Growth Integrity Clause.
+- Not reduce the Portfolio’s Blended Dividend‑Growth Rate below the minimum threshold defined in the Dividend‑Growth Integrity Clause.
 
 ---
 
@@ -113,18 +80,18 @@ The Trustees shall not:
 - Liquidate the Portfolio except as required by law  
 - Distribute capital to beneficiaries  
 - Replace assets for short‑term performance reasons  
-- Deviate from the SDG20 structure without cause under Section 6 or the Dividend‑Growth Integrity Clause  
+- Deviate from the SDG structure without cause under Section 6 or the Dividend‑Growth Integrity Clause  
 - Follow beneficiary instructions regarding investment decisions
 
 ---
 
 ## 8. Purpose of the Schedule
 
-This Schedule is intended to preserve the integrity of the SDG20 investment strategy across generations, ensuring that beneficiaries receive sustainable income while the capital base continues to grow over time.
+This Schedule is intended to preserve the integrity of the SDG investment strategy across generations, ensuring that beneficiaries receive sustainable income while the capital base continues to grow over time.
 
 ---
 
-# SDG20 Dividend‑Growth Integrity Clause  
+# Dividend‑Growth Integrity Clause  
 ### (Trustee Replacement Protocol)
 
 ### 1. Purpose
@@ -198,7 +165,7 @@ Trustees shall avoid unnecessary turnover arising from short‑term volatility.
 
 ---
 
-# SDG20 Reinvestment Rule  
+# Reinvestment Rule  
 ### (Mandatory Income Reinvestment Requirement)
 
 ### 1. Purpose
@@ -216,7 +183,7 @@ To preserve long‑term compounding by ensuring that a fixed proportion of incom
 
 3.1 Trustees shall reinvest not less than forty percent (40%) of Distributable Income.
 
-3.2 Reinvestment shall be applied to existing SDG20 holdings or replacements.
+3.2 Reinvestment shall be applied to existing SDG holdings or replacements.
 
 3.3 The remaining sixty percent (60%) shall be distributed under the Income Distribution Clause.
 
@@ -239,7 +206,7 @@ This Rule prevails over general trustee discretion except where unlawful.
 
 ---
 
-# SDG20 Income Distribution Clause  
+# SDG Income Distribution Clause  
 ### (Lineage‑Based Distribution, Equal Shares, and Bloodline Succession)
 
 ### 1. Purpose
