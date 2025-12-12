@@ -8,11 +8,6 @@ This Schedule defines the investment strategy, asset universe, allocation rules,
 
 The Portfolio shall consist of **global equity securities**, allocated across the following sleeves:
 
-# Sleeve Structure 
-
-
-The Trustees must maintain exposure to each sleeve within ±3% of the target allocation unless otherwise required by corporate actions or market conditions.
-
 ---
 
 ## 2. Approved Asset List
@@ -63,6 +58,8 @@ The Portfolio shall consist of the following securities unless replaced under Se
 | European Luxury & IP | LVMH, EssilorLuxottica, RELX, London Stock Exchange Group, L’Oréal | 15% |
 | Global Financials | JP Morgan, Prudential plc, SMFG | 14% |
 | Transport & Optics | Canadian National Railway, Hoya | 8% |
+
+The Trustees must maintain exposure to each sleeve within ±3% of the target allocation unless otherwise required by corporate actions or market conditions.
 
 ## 4. Dividend Growth Requirements  
 ### (Guidance, with mandatory protections in the Dividend‑Growth Integrity Clause)
