@@ -52,7 +52,7 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 
 - £55,500 lump sum invested 9th December 2025
 - £2,300 contributed weekly until April 31st 2026
-- £1,666 contributed weekly from the beginning of May 2026 for the next 25 years
+- £1,666 contributed monthly from the beginning of May 2026 for the next 25 years
 - All dividends reinvested until the end of year 25
 - All contributions and dividends are invested in a self-balancing fashion to maintain the target asset allocations
 - Portfolio is re-balanced to target weights annually (each January)
