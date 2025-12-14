@@ -91,7 +91,35 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 | Hoya                         | 0.43%                  |
 | SMFG                         | 2.71%                  |
 
+# Withholding Tax 
 
+| Asset                        | Country | Withholding Tax | Forward Yield | Effective Yield After Withholding |
+|------------------------------|---------|------------------|---------------|-----------------------------------|
+| Microsoft                    | US      | 15%              | 0.75%         | 0.638%                            |
+| S&P Global                   | US      | 15%              | 0.78%         | 0.663%                            |
+| Chubb                        | US      | 15%              | 1.31%         | 1.114%                            |
+| Waste Management             | US      | 15%              | 1.44%         | 1.224%                            |
+| ADP                          | US      | 15%              | 2.01%         | 1.709%                            |
+| Accenture                    | US      | 15%              | 2.16%         | 1.836%                            |
+| Stryker                      | US      | 15%              | 0.92%         | 0.782%                            |
+| Broadcom                     | US      | 15%              | 0.57%         | 0.485%                            |
+| Mastercard                   | US      | 15%              | 0.52%         | 0.442%                            |
+| Meta                         | US      | 15%              | 0.32%         | 0.272%                            |
+| Amazon                       | US      | 15%              | 0.00%         | 0.000%                            |
+| Alphabet                     | US      | 15%              | 0.26%         | 0.221%                            |
+| ASML                         | NL      | 15%              | 1.00%         | 0.850%                            |
+| Novo Nordisk                 | DK      | 27%              | 1.64%         | 1.197%                            |
+| Coloplast                    | DK      | 27%              | 3.30%         | 2.409%                            |
+| LVMH                         | FR      | 25%              | 2.00%         | 1.500%                            |
+| EssilorLuxottica             | FR      | 25%              | 1.87%         | 1.403%                            |
+| RELX                         | UK      | 0%               | 2.08%         | 2.080%                            |
+| London Stock Exchange Group  | UK      | 0%               | 1.53%         | 1.530%                            |
+| L’Oréal                      | FR      | 25%              | 1.89%         | 1.418%                            |
+| JP Morgan                    | US      | 15%              | 1.90%         | 1.615%                            |
+| Canadian National Railway    | CA      | 25%              | 2.61%         | 1.958%                            |
+| Prudential plc               | UK      | 0%               | 1.65%         | 1.650%                            |
+| Hoya                         | JP      | 15%              | 0.43%         | 0.366%                            |
+| SMFG                         | JP      | 15%              | 2.71%         | 2.304%                            |
 
 # Asset 5-Year Average Dividend Growth
 
