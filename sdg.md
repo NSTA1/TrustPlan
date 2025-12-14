@@ -53,7 +53,7 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 - £1,666 contributed monthly from the beginning of May 2026 for the next 25 years
 - All dividends reinvested until the end of year 25
 - All contributions and dividends are invested in a self-balancing fashion to maintain the target asset allocations
-- Portfolio is re-balanced to target weights annually (each January)
+- Until the end of year 25 (while in an ISA wrapper), the portfolio is re-balanced to target weights annually (each January)
 
 # Withdrawals and Income
 - After the investment period ends (25 years from May 2026), 60% of dividends are taken as income and the remaining 40% of dividend income is reinvested in the same self-balancing manner as during the investment period.
