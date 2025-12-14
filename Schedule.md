@@ -15,7 +15,7 @@ If ambiguity arises, Schedule A governs *investment philosophy and asset selecti
 
 # 2. Core Investment Philosophy
 
-The SDG Portfolio (as defined in **sdg.md**) is designed to:
+The SDG Portfolio (as defined in [sdg.md](sdg.md)) is designed to:
 
 - Provide rising, inflation‑beating dividend income  
 - Compound capital over multiple generations  
