@@ -99,3 +99,17 @@ Current 5-year blended dividend growth: 12%
 - Assume zero dividend stocks never initiate unless stated otherwise
 - Always use real terms for final output, only show nominal if asked
 - Always assume the Investment Plan section is the baseline investment strategy unless stated otherwise
+
+# Generation Income Projection 
+
+Assuming I die at 80 (G0) and each generation dies at 80, having two children when aged approximately 35:
+
+t0 = 2026
+
+| Generation | Inherit at t | Real Annual Income | 60% Distributed | Descendants | Per-Capita Annual | Per-Capita Monthly |
+|-----------|--------------|---------------------|------------------|-------------|--------------------|---------------------|
+| G1        | 33           | £22,230             | £13,338          | 2           | £6,669             | £556                |
+| G2        | 68           | £379,600            | £227,760         | 4           | £56,940            | £4,745              |
+| G3        | 103          | £6,487,000          | £3,892,200       | 8           | £486,525           | £40,544             |
+| G4        | 138          | £111,020,000        | £66,612,000      | 16          | £4,163,250         | £346,937            |
+| G5        | 173          | £1,900,600,000      | £1,140,360,000   | 32          | £35,636,250        | £2,969,687          |
