@@ -134,6 +134,13 @@ Current 5-year blended dividend growth: 12%
 - Always use real terms for final output, only show nominal if asked
 - Always assume the Investment Plan section is the baseline investment strategy unless stated otherwise
 
+  | Horizon (Years) | Real DG Assumption | Rationale |
+|-----------------|--------------------|-----------|
+| 0–50            | 8–10%              | High‑DG era: portfolio tilted to mega‑cap compounders with low payout ratios; replacement most effective. |
+| 50–100          | 4–6%               | Opportunity set matures; trust larger; DG edge persists but competition and valuations compress future growth. |
+| 100–150         | 2–3%               | Portfolio increasingly resembles a broad, system‑scale quality equity pool; DG still above macro but narrowing. |
+| 150+            | 1–2%               | Convergence toward global real GDP growth; macro ceiling dominates; trust behaves like a large, mature endowment. |
+
 # Generation Income Projection 
 
 Assuming I die at 80 (G0) and each generation dies at 80, having two children when aged approximately 35:
