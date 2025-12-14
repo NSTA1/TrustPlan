@@ -278,4 +278,88 @@ The Trustees shall interpret this Schedule in a manner that maximises:
 
 ---
 
+# 10. Transition to a Successor Trust at the 125‑Year Limit
+
+## 10.1 Purpose of This Section
+This Section ensures that the statutory 125‑year limit on the duration of UK trusts shall not impede, interrupt, or diminish the perpetual operation of the Family Investment Company (FIC) or the Founder’s intent as expressed in Schedule A, Schedule B, and sdg.md.
+
+Its purpose is to mandate a mechanical, automatic, and unchallengeable transition of control from the expiring trust (“the Outgoing Trust”) to a newly constituted trust (“the Successor Trust”) so that governance, capital protection, and the SDG Portfolio continue without interruption.
+
+This Section shall be interpreted strictly and literally, without discretion.
+
+## 10.2 Mandatory Creation of the Successor Trust
+No later than twelve (12) months before the statutory expiry of the Outgoing Trust:
+
+- The Trustees shall constitute a new trust governed by the laws of England & Wales or Scotland (as applicable).
+- The new trust shall be named “The [Family Name] Successor Trust [Year]” or a substantially similar name.
+- The Successor Trust shall adopt, without modification:
+  - Schedule A (investment philosophy)
+  - Schedule B (structural rules)
+  - sdg.md (portfolio and replacement rules)
+  - All governance instructions, restrictions, and mandates of the Outgoing Trust
+
+The Successor Trust’s duration shall begin only upon receipt of the Voting Shares.
+
+## 10.3 Mandatory Transfer of Control of the FIC
+Exactly six (6) months before the statutory expiry of the Outgoing Trust:
+
+- The Trustees of the Outgoing Trust shall transfer 100% of the Voting Shares of the FIC to the Successor Trust.
+- This transfer shall occur automatically, without discretion, and shall not require beneficiary consent.
+- The transfer shall not constitute a distribution, appointment, advancement, or settlement for the benefit of any beneficiary.
+- The transfer shall be treated solely as a governance transition.
+
+Upon transfer:
+
+- The Successor Trust becomes the sole controller of the FIC.
+- The Outgoing Trust ceases to have any governance rights over the FIC.
+- The FIC continues uninterrupted, with no change to its Articles, mandate, or operations.
+
+## 10.4 Continuity of Governance and Mandate
+The Successor Trust shall:
+
+- Hold 100% of the Voting Shares of the FIC
+- Enforce the 60/40 Rule
+- Enforce the SDG Portfolio as defined in sdg.md
+- Enforce all replacement rules
+- Enforce all capital‑preservation rules
+- Maintain the Founder’s intent exactly as expressed in Schedule A and Schedule B
+
+No Trustee, beneficiary, director, or advisor shall have discretion to modify, dilute, or reinterpret these obligations.
+
+## 10.5 Prohibition on Alteration of Intent
+Neither the Outgoing Trust nor the Successor Trust may:
+
+- Alter the SDG Portfolio rules  
+- Alter the 60/40 Rule  
+- Alter the capital‑preservation mandate  
+- Alter the governance structure of the FIC  
+- Alter the Founder’s intent  
+
+The transition is administrative only, not substantive.
+
+## 10.6 Automatic Replication of Future Successor Trusts
+This Section shall apply in perpetuity.
+
+Every Successor Trust shall:
+
+- Create its own successor no later than 12 months before its expiry
+- Transfer the Voting Shares exactly 6 months before expiry
+- Replicate this Section in full
+- Maintain unbroken dynastic control of the FIC
+
+This ensures that the FIC remains a perpetual compounding engine, unaffected by statutory trust limits.
+
+## 10.7 Interpretation
+If any ambiguity arises in the application of this Section:
+
+- The interpretation that maximises continuity of control,
+- maximises capital preservation,
+- maximises adherence to Schedule A and sdg.md, and
+- minimises risk of governance drift
+
+shall prevail.
+
+No interpretation shall be permitted that weakens, delays, or complicates the transition to the Successor Trust.
+---
+
 *End of Schedule B*
