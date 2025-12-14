@@ -59,6 +59,40 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 - After the investment period ends (25 years from May 2026), 60% of dividends are taken as income and the remaining 40% of dividend income is reinvested in the same self-balancing manner as during the investment period.
 - No selling of assets is allowed unless explicitly forming part of a portfolio rebalancing activity
 
+#Forward Yield 
+
+(2026 yield)
+
+| Asset                        | Forward Dividend Yield |
+|------------------------------|-------------------------|
+| Microsoft                    | 0.75%                  |
+| S&P Global                   | 0.78%                  |
+| Chubb                        | 1.31%                  |
+| Waste Management             | 1.44%                  |
+| ADP                          | 2.01%                  |
+| Accenture                    | 2.16%                  |
+| Stryker                      | 0.92%                  |
+| Broadcom                     | 0.57%                  |
+| Mastercard                   | 0.52%                  |
+| Meta                         | 0.32%                  |
+| Amazon                       | 0.00%                  |
+| Alphabet                     | 0.26%                  |
+| ASML                         | 1.00%                  |
+| Novo Nordisk                 | 1.64%                  |
+| Coloplast                    | 3.30%                  |
+| LVMH                         | 2.00%                  |
+| EssilorLuxottica             | 1.87%                  |
+| RELX                         | 2.08%                  |
+| London Stock Exchange Group  | 1.53%                  |
+| L’Oréal                      | 1.89%                  |
+| JP Morgan                    | 1.90%                  |
+| Canadian National Railway    | 2.61%                  |
+| Prudential plc               | 1.65%                  |
+| Hoya                         | 0.43%                  |
+| SMFG                         | 2.71%                  |
+
+
+
 # Asset 5-Year Average Dividend Growth
 
 | Asset  | 5 Year Dividend Growth  |
