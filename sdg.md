@@ -1,7 +1,6 @@
 # SDG Design
 - A high dividend growth portfolio which is not focused on early-stage yield, but rather on long term compounding of dividends and dividend growth.
-- Current 5-year blended dividend growth: 11.7%
-- Holdings must be high ROIC equities with global exposure and established dividend track records (with the exception of a few 'dividend initiators': companies that are have ROIC but have recently started paying a dividend or are likely to in future [e.g. Amazon, Meta])
+- Holdings must be high ROIC equities with global exposure and established dividend track records (with the exception of a few 'dividend initiators': companies that have high ROIC but have recently started paying a dividend or are likely to in future [e.g. Amazon, Meta])
 
 # Perpetual
 
@@ -13,7 +12,7 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
  | ---- | ---- | ---- |
 | US Quality / Moat  | Microsoft, S&P Global, Chubb, Waste Management, ADP, Accenture, Stryker, Broadcom  | 34%  |
 | US Payments & Platforms  | Mastercard, Meta, Amazon, Alphabet  | 16%  |
-| **Global Semis & Healthcare**  | ASML, Novo Nordisk, Coloplast  | 13%  |
+| Global Semis & Healthcare  | ASML, Novo Nordisk, Coloplast  | 13%  |
 | European Luxury & IP  | LVMH, EssilorLuxottica, RELX, London Stock Exchange Group, L’Oréal  | 15%  |
 | Global Financials  | JP Morgan, Prudential plc, SMFG  | 14%  |
 | Transport & Optics  | Canadian National Railway, Hoya  | 8%  |
@@ -36,7 +35,7 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 | Alphabet  | 3%  |
 | ASML  | 4%  |
 | Novo Nordisk  | 4%  |
-| **Coloplast**  | 5%  |
+| Coloplast  | 5%  |
 | LVMH  | 3%  |
 | EssilorLuxottica  | 3%  |
 | RELX  | 3%  |
@@ -75,7 +74,7 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 | Mastercard  | 14.20%  |
 | ASML  | 20.80%  |
 | Novo Nordisk  | 19.10%  |
-| **Coloplast**  | **5.60%**  |
+| Coloplast  | 5.60%  |
 | LVMH  | 23.00%  |
 | EssilorLuxottica  | 23.00%  |
 | RELX  | 6.80%  |
@@ -90,11 +89,13 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 | Meta  | 0%  |
 | Alphabet  | 0%  |
 
+Current 5-year blended dividend growth: 12%
+
 # Modelling Instructions
 - Assume 2.5% average inflation for calculating real returns and/or income
 - Assume 8% average annual NAV growth (20% volativity, 0.7% asset correlation)
-- Portfolio forward dividend yield at time of initial investment: 1.52%
-- Use divident growth table (below) with 5% standard deviation on growth
+- Portfolio forward dividend yield at time of initial investment: 1.3%
+- Use dividend growth table with 5% standard deviation on growth
 - Assume zero dividend stocks never initiate unless stated otherwise
 - Always use real terms for final output, only show nominal if asked
 - Always assume the Investment Plan section is the baseline investment strategy unless stated otherwise
