@@ -134,12 +134,23 @@ Current 5-year blended dividend growth: 12%
 - Always use real terms for final output, only show nominal if asked
 - Always assume the Investment Plan section is the baseline investment strategy unless stated otherwise
 
-  | Horizon (Years) | Real DG Assumption | Rationale |
+Dividend growth:
+
+| Horizon (Years) | Real DG Assumption | Rationale |
 |-----------------|--------------------|-----------|
-| 0–50            | 8–10%              | High‑DG era: portfolio tilted to mega‑cap compounders with low payout ratios; replacement most effective. |
-| 50–100          | 4–6%               | Opportunity set matures; trust larger; DG edge persists but competition and valuations compress future growth. |
-| 100–150         | 2–3%               | Portfolio increasingly resembles a broad, system‑scale quality equity pool; DG still above macro but narrowing. |
-| 150+            | 1–2%               | Convergence toward global real GDP growth; macro ceiling dominates; trust behaves like a large, mature endowment. |
+| 0–50            | 8–10%             | High‑DG era: portfolio tilted to mega‑cap compounders with low payout ratios; replacement most effective. |
+| 50–100          | 4–6%              | Opportunity set matures; trust larger; DG edge persists but competition and valuations compress future growth. |
+| 100–150         | 2–3%              | Portfolio increasingly resembles a broad, system‑scale quality equity pool; DG still above macro but narrowing. |
+| 150+            | 1–2%              | Convergence toward global real GDP growth; macro ceiling dominates; trust behaves like a large, mature endowment. |
+
+Nav growth:
+
+| Horizon (Years) | Real NAV Growth Assumption | Rationale |
+|-----------------|-----------------------------|-----------|
+| 0–50            | 6–8%                        | High‑growth era: portfolio small relative to global markets; reinvestment and high‑DG bias amplify real NAV growth. |
+| 50–100          | 4–6%                        | Trust becomes mid‑scale; opportunity set narrows; valuations and market efficiency reduce excess returns. |
+| 100–150         | 3–4%                        | Portfolio increasingly resembles a global quality index; real returns converge toward long‑run equity norms. |
+| 150+            | 2–3%                        | Macro convergence: NAV growth aligns with global real GDP growth plus a modest equity premium. |
 
 # Generation Income Projection 
 
