@@ -47,7 +47,7 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 | Hoya  | 5%  |
 | SMFG  | 3%  |
 
-# Investment Plan
+# Contribution Plan
 - £55,500 lump sum invested 9th December 2025
 - After that lump sum, £2,300 contributed weekly until April 31st 2026
 - £1,666 contributed monthly from the beginning of May 2026 for the next 25 years
