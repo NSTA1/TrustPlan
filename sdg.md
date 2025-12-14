@@ -59,7 +59,7 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 - After the investment period ends (25 years from May 2026), 60% of dividends are taken as income and the remaining 40% of dividend income is reinvested in the same self-balancing manner as during the investment period.
 - No selling of assets is allowed unless explicitly forming part of a portfolio rebalancing activity
 
-#Forward Yield 
+# Forward Yield 
 
 (2026 yield)
 
