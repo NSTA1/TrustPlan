@@ -148,7 +148,7 @@ Nav growth:
 | 100–150         | 3–4%                        | Portfolio increasingly resembles a global quality index; real returns converge toward long‑run equity norms. |
 | 150+            | 2–3%                        | Macro convergence: NAV growth aligns with global real GDP growth plus a modest equity premium. |
 
-# Dividend Correlation 
+# Dividend Growth Correlation Matrix 
 
 | Asset | MSFT | SPGI | CB | WM | ADP | ACN | SYK | AVGO | MA | META | AMZN | GOOG | ASML | NVO | COLO | LVMH | EL | RELX | LSEG | L’Oréal | JPM | CNR | PRU | Hoya | SMFG |
 |------|------|------|-----|-----|------|------|------|-------|------|--------|---------|---------|--------|--------|---------|--------|------|--------|--------|-----------|------|------|------|------|-------|
