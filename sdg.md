@@ -59,39 +59,7 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 - After the investment period ends (25 years from May 2026), 60% of dividends are taken as income and the remaining 40% of dividend income is reinvested in the same self-balancing manner as during the investment period.
 - No selling of assets is allowed unless explicitly forming part of a portfolio rebalancing activity
 
-# Forward Yield 
-
-(2026 yield)
-
-| Asset                        | Forward Dividend Yield |
-|------------------------------|-------------------------|
-| Microsoft                    | 0.75%                  |
-| S&P Global                   | 0.78%                  |
-| Chubb                        | 1.31%                  |
-| Waste Management             | 1.44%                  |
-| ADP                          | 2.01%                  |
-| Accenture                    | 2.16%                  |
-| Stryker                      | 0.92%                  |
-| Broadcom                     | 0.57%                  |
-| Mastercard                   | 0.52%                  |
-| Meta                         | 0.32%                  |
-| Amazon                       | 0.00%                  |
-| Alphabet                     | 0.26%                  |
-| ASML                         | 1.00%                  |
-| Novo Nordisk                 | 1.64%                  |
-| Coloplast                    | 3.30%                  |
-| LVMH                         | 2.00%                  |
-| EssilorLuxottica             | 1.87%                  |
-| RELX                         | 2.08%                  |
-| London Stock Exchange Group  | 1.53%                  |
-| L’Oréal                      | 1.89%                  |
-| JP Morgan                    | 1.90%                  |
-| Canadian National Railway    | 2.61%                  |
-| Prudential plc               | 1.65%                  |
-| Hoya                         | 0.43%                  |
-| SMFG                         | 2.71%                  |
-
-# Withholding Tax 
+# Forward Yield (2026)
 
 | Asset                        | Country | Withholding Tax | Forward Yield | Effective Yield After Withholding |
 |------------------------------|---------|------------------|---------------|-----------------------------------|
@@ -123,7 +91,7 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 
 # Asset 5-Year Average Dividend Growth
 
-| Asset  | 5 Year Dividend Growth  |
+| Asset  | 5 Year Dividend Growth (Gross) |
  | ---- | ---- |
 | Microsoft  | 10.20%  |
 | S&P Global  | 9.90%  |
@@ -148,19 +116,19 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 | Hoya  | 5.30%  |
 | SMFG  | 13.60%  |
 | Amazon  | 0%  |
-| Meta  | 0%  |
-| Alphabet  | 0%  |
+| Meta  | 10% (estimate) |
+| Alphabet  | 10% (estimate) |
 
-Current 5-year blended dividend growth: 12%
+December 2026 trailing 5-year blended dividend growth: 12%
 
 # Modelling Instructions
 - Assume 2.5% average inflation for calculating real returns and/or income
 - Assume 8% average annual NAV growth (20% volativity, 0.7% asset correlation)
-- Portfolio forward dividend yield at time of initial investment: 1.3%
+- Use the **Forward Yield** section for dividend calculation
 - Use dividend growth table with 5% standard deviation on growth
 - Assume zero dividend stocks never initiate unless stated otherwise
 - Always use real terms for final output, only show nominal if asked
-- Always assume the Investment Plan section is the baseline investment strategy unless stated otherwise
+- Always assume the **Contribution Plan** section is the baseline investment strategy unless stated otherwise
 
 Dividend growth:
 
