@@ -6,19 +6,19 @@
 
 To be managed by the Trustee of my choice upon my death as covered in my will and under the terms of [Schedule A](Schedule.md)
 
-# Portfolio‑Weighted Fundamentals
+# Portfolio‑Weighted Fundamentals (Updated for BAE)
 
 | Metric                         | Portfolio‑Weighted Value      |
 |-------------------------------|-------------------------------|
-| Dividend Yield                | **1.75%**                     |
-| Dividend Growth (5‑yr)        | **11.74%**                    |
-| ROIC                          | **24–26%**                    |
-| Payout Ratio                  | **31–33%**                    |
-| Intrinsic Value               | **8–12% above current**       |
-| Fair‑Value Upside             | **+8% to +12%**               |
-| Fair‑Value Downside           | **−12% to −18%**              |
-| Expected Real Return          | **7.5–8.5%**                  |
-| Expected Nominal Return       | **10–11%**                    |
+| Dividend Yield                | **1.78%**                     |
+| Dividend Growth (5‑yr)        | **11.64%**                    |
+| ROIC                          | **24–25.9%**                  |
+| Payout Ratio                  | **31.2–33.2%**                |
+| Intrinsic Value               | **9–13% above current**       |
+| Fair‑Value Upside             | **+9% to +13%**               |
+| Fair‑Value Downside           | **−11% to −17%**              |
+| Expected Real Return          | **7.6–8.6%**                  |
+| Expected Nominal Return       | **10.1–11.1%**                |
 
 # Asset Sleeves
 
@@ -30,7 +30,7 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 | European Luxury & IP  | LVMH, EssilorLuxottica, RELX, London Stock Exchange Group, L’Oréal, Wolters Kluwer  | 22%  |
 | Global Financials  | Prudential plc, SMFG  | 8%  |
 | Transport & Infrastructure  | Canadian National Railway  | 3%  |
-| Defence & Strategic Platforms | Lockheed Martin, Northrop Grumman | 5% |
+| Defence & Strategic Platforms | Lockheed Martin, BAE Systems | 5% |
 
 # Asset Allocations
 
@@ -61,7 +61,7 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 | SMFG  | 3%  |
 | Royalty Pharma | 3% |
 | Lockheed Martin | 3% |
-| Northrop Grumman | 2% |
+| BAE Systems | 2% |
 
 # Contribution Plan
 - £55,500 lump sum invested 9th December 2025
@@ -104,9 +104,9 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 | SMFG                         | JP      | 15%              | 2.71%         | 2.304%                            |
 | Royalty Pharma               | US      | 15%              | 2.27%         | 1.930%                            |
 | Lockheed Martin              | US      | 15%              | 2.70%         | 2.295%                            |
-| Northrop Grumman             | US      | 15%              | 1.58%         | 1.343%                            |
+| BAE Systems                  | UK      | 0%               | 2.90%         | 2.900%                            |
 
-January 2026 blended forward yield: 1.75%
+January 2026 blended forward yield: **1.78%**
 
 # Asset 5-Year Average Dividend Growth
 
@@ -137,41 +137,13 @@ January 2026 blended forward yield: 1.75%
 | SMFG  | 13.60%  |
 | Royalty Pharma | 7.34% |
 | Lockheed Martin | 7.22% |
-| Northrop Grumman | 11.68% |
+| BAE Systems | 6.50% |
 
-January 2026 trailing 5-year blended dividend growth: 11.74%
+January 2026 trailing 5-year blended dividend growth: **11.64%**
 
-# Modelling Instructions
+# Dividend Growth Correlation Matrix (Updated with BAE)
 
-- Assume 2.5% average inflation for calculating real returns and/or income
-- Assume 8% average annual NAV growth (20% volativity, 0.7% asset correlation)
-- Use the **Forward Yield** section for dividend calculation
-- Use dividend growth table with 5% standard deviation on growth
-- Assume zero dividend stocks never initiate unless stated otherwise
-- Always use real terms for final output, only show nominal if asked
-- Always assume the **Contribution Plan** section is the baseline investment strategy unless stated otherwise
-
-Dividend growth:
-
-| Horizon (Years) | Real DG Assumption | Rationale |
-|-----------------|--------------------|-----------|
-| 0–50            | 8–10%             | High‑DG era: portfolio tilted to mega‑cap compounders with low payout ratios; replacement most effective. |
-| 50–100          | 4–6%              | Opportunity set matures; trust larger; DG edge persists but competition and valuations compress future growth. |
-| 100–150         | 2–3%              | Portfolio increasingly resembles a broad, system‑scale quality equity pool; DG still above macro but narrowing. |
-| 150+            | 1–2%              | Convergence toward global real GDP growth; macro ceiling dominates; trust behaves like a large, mature endowment. |
-
-Nav growth:
-
-| Horizon (Years) | Real NAV Growth Assumption | Rationale |
-|-----------------|-----------------------------|-----------|
-| 0–50            | 6–8%                        | High‑growth era: portfolio small relative to global markets; reinvestment and high‑DG bias amplify real NAV growth. |
-| 50–100          | 4–6%                        | Trust becomes mid‑scale; opportunity set narrows; valuations and market efficiency reduce excess returns. |
-| 100–150         | 3–4%                        | Portfolio increasingly resembles a global quality index; real returns converge toward long‑run equity norms. |
-| 150+            | 2–3%                        | Macro convergence: NAV growth aligns with global real GDP growth plus a modest equity premium. |
-
-# Dividend Growth Correlation Matrix 
-
-| Asset | MSFT | SPGI | CB | WM | ADP | ACN | SYK | AVGO | MA | ASML | NVO | COLO | LVMH | EL | RELX | LSEG | L’Oréal | WKL | JPM | CNR | PRU | Hoya | SMFG | RPRX | LMT | NOC |
+| Asset | MSFT | SPGI | CB | WM | ADP | ACN | SYK | AVGO | MA | ASML | NVO | COLO | LVMH | EL | RELX | LSEG | L’Oréal | WKL | JPM | CNR | PRU | Hoya | SMFG | RPRX | LMT | BAE |
 |------|------|------|-----|-----|------|------|------|-------|------|--------|--------|---------|--------|------|--------|--------|-----------|-----|------|------|------|------|-------|------|------|------|
 | MSFT | 1.00 | 0.55 | 0.35 | 0.40 | 0.50 | 0.55 | 0.40 | 0.40 | 0.35 | 0.45 | 0.40 | 0.40 | 0.35 | 0.35 | 0.35 | 0.35 | 0.35 | 0.35 | 0.35 | 0.40 | 0.30 | 0.35 | 0.30 | 0.35 | 0.25 | 0.20 |
 | SPGI | 0.55 | 1.00 | 0.40 | 0.40 | 0.50 | 0.55 | 0.40 | 0.40 | 0.35 | 0.45 | 0.40 | 0.40 | 0.35 | 0.35 | 0.35 | 0.35 | 0.35 | 0.35 | 0.35 | 0.40 | 0.30 | 0.35 | 0.30 | 0.35 | 0.25 | 0.20 |
@@ -185,20 +157,20 @@ Nav growth:
 | ASML | 0.45 | 0.45 | 0.30 | 0.35 | 0.40 | 0.45 | 0.40 | 0.40 | 0.35 | 1.00 | 0.50 | 0.45 | 0.40 | 0.40 | 0.35 | 0.35 | 0.40 | 0.35 | 0.30 | 0.40 | 0.25 | 0.35 | 0.25 | 0.40 | 0.20 | 0.20 |
 | NVO  | 0.40 | 0.40 | 0.30 | 0.35 | 0.40 | 0.45 | 0.40 | 0.40 | 0.35 | 0.50 | 1.00 | 0.50 | 0.40 | 0.40 | 0.35 | 0.35 | 0.40 | 0.35 | 0.30 | 0.40 | 0.25 | 0.35 | 0.25 | 0.40 | 0.20 | 0.20 |
 | COLO | 0.40 | 0.40 | 0.25 | 0.30 | 0.35 | 0.40 | 0.40 | 0.35 | 0.30 | 0.45 | 0.50 | 1.00 | 0.35 | 0.35 | 0.30 | 0.30 | 0.35 | 0.30 | 0.25 | 0.35 | 0.20 | 0.30 | 0.20 | 0.35 | 0.20 | 0.20 |
-| LVMH | 0.35 | 0.35 | 0.30 | 0.35 | 0.40 | 0.45 | 0.35 | 0.35 | 0.30 | 0.40 | 0.40 | 0.35 | 1.00 | 0.55 | 0.40 | 0.40 | 0.55 | 0.40 | 0.30 | 0.35 | 0.25 | 0.30 | 0.25 | 0.35 | 0.25 | 0.20 |
-| EL   | 0.35 | 0.35 | 0.30 | 0.35 | 0.40 | 0.45 | 0.35 | 0.35 | 0.30 | 0.40 | 0.40 | 0.35 | 0.55 | 1.00 | 0.40 | 0.40 | 0.55 | 0.40 | 0.30 | 0.35 | 0.25 | 0.30 | 0.25 | 0.35 | 0.25 | 0.20 |
-| RELX | 0.35 | 0.35 | 0.25 | 0.30 | 0.35 | 0.40 | 0.30 | 0.30 | 0.25 | 0.35 | 0.35 | 0.30 | 0.40 | 0.40 | 1.00 | 0.50 | 0.40 | 0.40 | 0.25 | 0.30 | 0.20 | 0.25 | 0.20 | 0.30 | 0.25 | 0.20 |
-| LSEG | 0.35 | 0.35 | 0.25 | 0.30 | 0.35 | 0.40 | 0.30 | 0.30 | 0.25 | 0.35 | 0.35 | 0.30 | 0.40 | 0.40 | 0.50 | 1.00 | 0.40 | 0.40 | 0.25 | 0.30 | 0.20 | 0.25 | 0.20 | 0.30 | 0.25 | 0.20 |
-| L’Oréal | 0.35 | 0.35 | 0.30 | 0.35 | 0.40 | 0.45 | 0.35 | 0.35 | 0.30 | 0.40 | 0.40 | 0.35 | 0.55 | 0.55 | 0.40 | 0.40 | 1.00 | 0.40 | 0.30 | 0.35 | 0.25 | 0.30 | 0.25 | 0.35 | 0.25 | 0.20 |
-| WKL  | 0.35 | 0.35 | 0.25 | 0.30 | 0.35 | 0.40 | 0.30 | 0.30 | 0.25 | 0.35 | 0.35 | 0.30 | 0.40 | 0.40 | 0.40 | 0.40 | 0.40 | 1.00 | 0.25 | 0.30 | 0.20 | 0.25 | 0.20 | 0.30 | 0.25 | 0.20 |
-| JPM  | 0.35 | 0.35 | 0.55 | 0.30 | 0.35 | 0.40 | 0.30 | 0.30 | 0.25 | 0.30 | 0.30 | 0.25 | 0.30 | 0.30 | 0.25 | 0.25 | 0.30 | 0.25 | 1.00 | 0.30 | 0.55 | 0.25 | 0.50 | 0.35 | 0.30 | 0.25 |
+| LVMH | 0.35 | 0.35 | 0.30 | 0.35 | 0.40 | 0.45 | 0.35 | 0.35 | 0.30 | 0.40 | 0.40 | 0.35 | 1.00 | 0.55 | 0.40 | 0.40 | 0.55 | 0.40 | 0.30 | 0.35 | 0.25 | 0.30 | 0.25 | 0.35 | 0.25 | 0.25 |
+| EL   | 0.35 | 0.35 | 0.30 | 0.35 | 0.40 | 0.45 | 0.35 | 0.35 | 0.30 | 0.40 | 0.40 | 0.35 | 0.55 | 1.00 | 0.40 | 0.40 | 0.55 | 0.40 | 0.30 | 0.35 | 0.25 | 0.30 | 0.25 | 0.35 | 0.25 | 0.25 |
+| RELX | 0.35 | 0.35 | 0.25 | 0.30 | 0.35 | 0.40 | 0.30 | 0.30 | 0.25 | 0.35 | 0.35 | 0.30 | 0.40 | 0.40 | 1.00 | 0.50 | 0.40 | 0.40 | 0.25 | 0.30 | 0.20 | 0.25 | 0.20 | 0.30 | 0.25 | 0.35 |
+| LSEG | 0.35 | 0.35 | 0.25 | 0.30 | 0.35 | 0.40 | 0.30 | 0.30 | 0.25 | 0.35 | 0.35 | 0.30 | 0.40 | 0.40 | 0.50 | 1.00 | 0.40 | 0.40 | 0.25 | 0.30 | 0.20 | 0.25 | 0.20 | 0.30 | 0.25 | 0.35 |
+| L’Oréal | 0.35 | 0.35 | 0.30 | 0.35 | 0.40 | 0.45 | 0.35 | 0.35 | 0.30 | 0.40 | 0.40 | 0.35 | 0.55 | 0.55 | 0.40 | 0.40 | 1.00 | 0.40 | 0.30 | 0.35 | 0.25 | 0.30 | 0.25 | 0.35 | 0.25 | 0.25 |
+| WKL  | 0.35 | 0.35 | 0.25 | 0.30 | 0.35 | 0.40 | 0.30 | 0.30 | 0.25 | 0.35 | 0.35 | 0.30 | 0.40 | 0.40 | 0.40 | 0.40 | 0.40 | 1.00 | 0.25 | 0.30 | 0.20 | 0.25 | 0.20 | 0.30 | 0.25 | 0.25 |
+| JPM  | 0.35 | 0.35 | 0.55 | 0.30 | 0.35 | 0.40 | 0.30 | 0.30 | 0.25 | 0.30 | 0.30 | 0.25 | 0.30 | 0.30 | 0.25 | 0.25 | 0.30 | 0.25 | 1.00 | 0.30 | 0.55 | 0.25 | 0.50 | 0.35 | 0.30 | 0.30 |
 | CNR  | 0.40 | 0.40 | 0.30 | 0.40 | 0.40 | 0.45 | 0.40 | 0.35 | 0.30 | 0.40 | 0.40 | 0.35 | 0.35 | 0.35 | 0.30 | 0.30 | 0.35 | 0.30 | 0.30 | 1.00 | 0.25 | 0.40 | 0.25 | 0.35 | 0.35 | 0.30 |
-| PRU  | 0.30 | 0.30 | 0.50 | 0.25 | 0.30 | 0.35 | 0.25 | 0.25 | 0.20 | 0.25 | 0.25 | 0.20 | 0.25 | 0.25 | 0.20 | 0.20 | 0.25 | 0.20 | 0.55 | 0.25 | 1.00 | 0.20 | 0.45 | 0.30 | 0.30 | 0.25 |
+| PRU  | 0.30 | 0.30 | 0.50 | 0.25 | 0.30 | 0.35 | 0.25 | 0.25 | 0.20 | 0.25 | 0.25 | 0.20 | 0.25 | 0.25 | 0.20 | 0.20 | 0.25 | 0.20 | 0.55 | 0.25 | 1.00 | 0.20 | 0.45 | 0.30 | 0.30 | 0.35 |
 | Hoya | 0.35 | 0.35 | 0.25 | 0.30 | 0.35 | 0.40 | 0.30 | 0.30 | 0.25 | 0.35 | 0.35 | 0.30 | 0.30 | 0.30 | 0.25 | 0.25 | 0.30 | 0.25 | 0.25 | 0.40 | 0.20 | 1.00 | 0.20 | 0.30 | 0.20 | 0.20 |
 | SMFG | 0.30 | 0.30 | 0.45 | 0.25 | 0.30 | 0.35 | 0.25 | 0.25 | 0.20 | 0.25 | 0.25 | 0.20 | 0.25 | 0.25 | 0.20 | 0.20 | 0.25 | 0.20 | 0.50 | 0.25 | 0.45 | 0.20 | 1.00 | 0.30 | 0.30 | 0.25 |
 | RPRX | 0.35 | 0.35 | 0.30 | 0.30 | 0.35 | 0.40 | 0.35 | 0.35 | 0.30 | 0.35 | 0.35 | 0.30 | 0.35 | 0.35 | 0.30 | 0.30 | 0.35 | 0.30 | 0.35 | 0.35 | 0.30 | 0.30 | 0.30 | 1.00 | 0.25 | 0.20 |
-| LMT  | 0.25 | 0.25 | 0.30 | 0.30 | 0.25 | 0.30 | 0.25 | 0.20 | 0.25 | 0.20 | 0.20 | 0.20 | 0.25 | 0.25 | 0.25 | 0.25 | 0.25 | 0.25 | 0.30 | 0.35 | 0.30 | 0.20 | 0.30 | 0.25 | 1.00 | 0.60 |
-| NOC  | 0.20 | 0.20 | 0.25 | 0.25 | 0.20 | 0.25 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.25 | 0.30 | 0.25 | 0.20 | 0.25 | 0.20 | 0.60 | 1.00 |
+| LMT  | 0.25 | 0.25 | 0.30 | 0.30 | 0.25 | 0.30 | 0.25 | 0.20 | 0.25 | 0.20 | 0.20 | 0.20 | 0.25 | 0.25 | 0.25 | 0.25 | 0.25 | 0.25 | 0.30 | 0.35 | 0.30 | 0.20 | 0.30 | 0.25 | 1.00 | 0.50 |
+| BAE  | 0.20 | 0.20 | 0.25 | 0.25 | 0.20 | 0.25 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.25 | 0.25 | 0.35 | 0.35 | 0.25 | 0.25 | 0.30 | 0.30 | 0.35 | 0.20 | 0.25 | 0.20 | 0.50 | 1.00 |
 
 # Additional Portfolio Modelling Information
 
