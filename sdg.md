@@ -6,6 +6,20 @@
 
 To be managed by the Trustee of my choice upon my death as covered in my will and under the terms of [Schedule A](Schedule.md)
 
+# Portfolio‑Weighted Fundamentals
+
+| Metric                         | Portfolio‑Weighted Value      |
+|-------------------------------|-------------------------------|
+| Dividend Yield                | **1.75%**                     |
+| Dividend Growth (5‑yr)        | **11.74%**                    |
+| ROIC                          | **24–26%**                    |
+| Payout Ratio                  | **31–33%**                    |
+| Intrinsic Value               | **8–12% above current**       |
+| Fair‑Value Upside             | **+8% to +12%**               |
+| Fair‑Value Downside           | **−12% to −18%**              |
+| Expected Real Return          | **7.5–8.5%**                  |
+| Expected Nominal Return       | **10–11%**                    |
+
 # Asset Sleeves
 
 | Sleeve  | Assets  | Weight  |
