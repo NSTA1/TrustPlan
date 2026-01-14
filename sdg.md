@@ -1,6 +1,6 @@
-# SDG Design
+﻿# SDG Design
 - A high dividend growth portfolio which is not focused on early-stage yield, but rather on long term compounding of dividends and dividend growth.
-- Holdings must be high ROIC equities with global exposure and established dividend track records (with the exception of a few 'dividend initiators': companies that have high ROIC but have recently started paying a dividend or are likely to in future).
+- Holdings must be high ROIC equities with global exposure and established dividend track records.
 
 # Perpetual
 
@@ -24,43 +24,44 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 
 | Sleeve  | Assets  | Weight  |
 | ---- | ---- | ---- |
-| US Quality / Moat  | Microsoft, S&P Global, Chubb, Waste Management, ADP, Accenture, Stryker, Broadcom, Royalty Pharma  | 35%  |
-| US Payments & Platforms  | Mastercard, JP Morgan  | 13%  |
+| US Quality / Moat  | Microsoft, S&P Global, Chubb, Waste Management, ADP, Accenture, Stryker  | 28%  |
+| European Luxury & IP  | LVMH, EssilorLuxottica, RELX, London Stock Exchange Group, L'Oréal, Wolters Kluwer, Hermès International  | 23%  |
 | Global Semis & Healthcare  | ASML, Novo Nordisk, Coloplast, Hoya  | 18%  |
-| European Luxury & IP  | LVMH, EssilorLuxottica, RELX, London Stock Exchange Group, L’Oréal, Wolters Kluwer  | 22%  |
-| Global Financials  | Prudential plc, SMFG  | 8%  |
-| Transport & Infrastructure  | Canadian National Railway  | 3%  |
+| US Payments & Platforms  | Mastercard, JP Morgan  | 13%  |
+| Global Financials  | Prudential plc, SMFG  | 7%  |
 | Defence & Strategic Platforms | Lockheed Martin, BAE Systems | 5% |
+| Transport & Infrastructure  | Canadian National Railway  | 3%  |
+| US Real Estate | Essex Property Trust | 3% |
 
 # Asset Allocations
 
 | Asset  | Allocation  |
 | ---- | ---- |
 | Microsoft  | 7%  |
-| S&P Global  | 4%  |
-| Chubb  | 4%  |
-| Waste Management  | 5%  |
-| ADP  | 3%  |
-| Accenture  | 2%  |
-| Stryker  | 3%  |
-| Broadcom  | 2%  |
 | Mastercard  | 7%  |
-| ASML  | 4%  |
-| Novo Nordisk  | 4%  |
-| Coloplast  | 5%  |
-| LVMH  | 3%  |
-| EssilorLuxottica  | 3%  |
-| RELX  | 4%  |
-| London Stock Exchange Group  | 2%  |
-| L’Oréal  | 3%  |
-| Wolters Kluwer | 5% |
 | JP Morgan  | 6%  |
-| Canadian National Railway  | 3%  |
+| Waste Management  | 5%  |
+| Coloplast  | 5%  |
+| Wolters Kluwer | 5% |
 | Prudential plc  | 5%  |
 | Hoya  | 5%  |
-| SMFG  | 3%  |
-| Royalty Pharma | 3% |
+| S&P Global  | 4%  |
+| Chubb  | 4%  |
+| ASML  | 4%  |
+| Novo Nordisk  | 4%  |
+| RELX  | 4%  |
+| ADP  | 3%  |
+| Stryker  | 3%  |
+| LVMH  | 3%  |
+| EssilorLuxottica  | 3%  |
+| L'Oréal  | 3%  |
+| Hermès International | 3% |
+| Canadian National Railway  | 3%  |
 | Lockheed Martin | 3% |
+| Essex Property Trust | 3% |
+| Accenture  | 2%  |
+| London Stock Exchange Group  | 2%  |
+| SMFG  | 2%  |
 | BAE Systems | 2% |
 
 # Contribution Plan
@@ -95,7 +96,7 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 | EssilorLuxottica             | FR      | 25%              | 1.87%         | 1.403%                            |
 | RELX                         | UK      | 0%               | 2.08%         | 2.080%                            |
 | London Stock Exchange Group  | UK      | 0%               | 1.53%         | 1.530%                            |
-| L’Oréal                      | FR      | 25%              | 1.89%         | 1.418%                            |
+| L'Oréal                      | FR      | 25%              | 1.89%         | 1.418%                            |
 | Wolters Kluwer               | NL      | 15%              | 2.65%         | 2.252%                            |
 | JP Morgan                    | US      | 15%              | 1.90%         | 1.615%                            |
 | Canadian National Railway    | CA      | 25%              | 2.61%         | 1.958%                            |
@@ -128,7 +129,7 @@ January 2026 blended forward yield: **1.78%**
 | EssilorLuxottica  | 23.00%  |
 | RELX  | 6.80%  |
 | London Stock Exchange Group  | 14.50%  |
-| L’Oréal  | 12.80%  |
+| L'Oréal  | 12.80%  |
 | Wolters Kluwer | 10.96% |
 | JP Morgan  | 11.88%  |
 | Canadian National Railway  | 10.20%  |
@@ -143,7 +144,7 @@ January 2026 trailing 5-year blended dividend growth: **11.64%**
 
 # Dividend Growth Correlation Matrix (Updated with BAE)
 
-| Asset | MSFT | SPGI | CB | WM | ADP | ACN | SYK | AVGO | MA | ASML | NVO | COLO | LVMH | EL | RELX | LSEG | L’Oréal | WKL | JPM | CNR | PRU | Hoya | SMFG | RPRX | LMT | BAE |
+| Asset | MSFT | SPGI | CB | WM | ADP | ACN | SYK | AVGO | MA | ASML | NVO | COLO | LVMH | EL | RELX | LSEG | L'Oréal | WKL | JPM | CNR | PRU | Hoya | SMFG | RPRX | LMT | BAE |
 |------|------|------|-----|-----|------|------|------|-------|------|--------|--------|---------|--------|------|--------|--------|-----------|-----|------|------|------|------|-------|------|------|------|
 | MSFT | 1.00 | 0.55 | 0.35 | 0.40 | 0.50 | 0.55 | 0.40 | 0.40 | 0.35 | 0.45 | 0.40 | 0.40 | 0.35 | 0.35 | 0.35 | 0.35 | 0.35 | 0.35 | 0.35 | 0.40 | 0.30 | 0.35 | 0.30 | 0.35 | 0.25 | 0.20 |
 | SPGI | 0.55 | 1.00 | 0.40 | 0.40 | 0.50 | 0.55 | 0.40 | 0.40 | 0.35 | 0.45 | 0.40 | 0.40 | 0.35 | 0.35 | 0.35 | 0.35 | 0.35 | 0.35 | 0.35 | 0.40 | 0.30 | 0.35 | 0.30 | 0.35 | 0.25 | 0.20 |
@@ -161,7 +162,7 @@ January 2026 trailing 5-year blended dividend growth: **11.64%**
 | EL   | 0.35 | 0.35 | 0.30 | 0.35 | 0.40 | 0.45 | 0.35 | 0.35 | 0.30 | 0.40 | 0.40 | 0.35 | 0.55 | 1.00 | 0.40 | 0.40 | 0.55 | 0.40 | 0.30 | 0.35 | 0.25 | 0.30 | 0.25 | 0.35 | 0.25 | 0.25 |
 | RELX | 0.35 | 0.35 | 0.25 | 0.30 | 0.35 | 0.40 | 0.30 | 0.30 | 0.25 | 0.35 | 0.35 | 0.30 | 0.40 | 0.40 | 1.00 | 0.50 | 0.40 | 0.40 | 0.25 | 0.30 | 0.20 | 0.25 | 0.20 | 0.30 | 0.25 | 0.35 |
 | LSEG | 0.35 | 0.35 | 0.25 | 0.30 | 0.35 | 0.40 | 0.30 | 0.30 | 0.25 | 0.35 | 0.35 | 0.30 | 0.40 | 0.40 | 0.50 | 1.00 | 0.40 | 0.40 | 0.25 | 0.30 | 0.20 | 0.25 | 0.20 | 0.30 | 0.25 | 0.35 |
-| L’Oréal | 0.35 | 0.35 | 0.30 | 0.35 | 0.40 | 0.45 | 0.35 | 0.35 | 0.30 | 0.40 | 0.40 | 0.35 | 0.55 | 0.55 | 0.40 | 0.40 | 1.00 | 0.40 | 0.30 | 0.35 | 0.25 | 0.30 | 0.25 | 0.35 | 0.25 | 0.25 |
+| L'Oréal | 0.35 | 0.35 | 0.30 | 0.35 | 0.40 | 0.45 | 0.35 | 0.35 | 0.30 | 0.40 | 0.40 | 0.35 | 0.55 | 0.55 | 0.40 | 0.40 | 1.00 | 0.40 | 0.30 | 0.35 | 0.25 | 0.30 | 0.25 | 0.35 | 0.25 | 0.25 |
 | WKL  | 0.35 | 0.35 | 0.25 | 0.30 | 0.35 | 0.40 | 0.30 | 0.30 | 0.25 | 0.35 | 0.35 | 0.30 | 0.40 | 0.40 | 0.40 | 0.40 | 0.40 | 1.00 | 0.25 | 0.30 | 0.20 | 0.25 | 0.20 | 0.30 | 0.25 | 0.25 |
 | JPM  | 0.35 | 0.35 | 0.55 | 0.30 | 0.35 | 0.40 | 0.30 | 0.30 | 0.25 | 0.30 | 0.30 | 0.25 | 0.30 | 0.30 | 0.25 | 0.25 | 0.30 | 0.25 | 1.00 | 0.30 | 0.55 | 0.25 | 0.50 | 0.35 | 0.30 | 0.30 |
 | CNR  | 0.40 | 0.40 | 0.30 | 0.40 | 0.40 | 0.45 | 0.40 | 0.35 | 0.30 | 0.40 | 0.40 | 0.35 | 0.35 | 0.35 | 0.30 | 0.30 | 0.35 | 0.30 | 0.30 | 1.00 | 0.25 | 0.40 | 0.25 | 0.35 | 0.35 | 0.30 |
