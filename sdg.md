@@ -6,12 +6,12 @@
 
 To be managed by the Trustee of my choice upon my death as covered in my will and under the terms of [Schedule A](Schedule.md)
 
-# Portfolio‑Weighted Fundamentals (Updated for BAE)
+# Portfolio‑Weighted Fundamentals
 
 | Metric                         | Portfolio‑Weighted Value      |
 |-------------------------------|-------------------------------|
-| Dividend Yield                | **1.78%**                     |
-| Dividend Growth (5‑yr)        | **11.64%**                    |
+| Forward Yield (after withholding) | **1.36%**                     |
+| Dividend Growth (5‑yr)        | **11.48%**                    |
 | ROIC                          | **24–25.9%**                  |
 | Payout Ratio                  | **31.2–33.2%**                |
 | Intrinsic Value               | **9–13% above current**       |
@@ -107,7 +107,7 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 | Waste Management             | US      | 15%              | 1.44%         | 1.224%                            |
 | Wolters Kluwer               | NL      | 15%              | 1.40%         | 1.190%                            |
 
-January 2026 blended forward yield: **1.76%**
+January 2026 blended forward yield (gross): **1.76%**
 
 # Asset 5-Year Average Dividend Growth
 
