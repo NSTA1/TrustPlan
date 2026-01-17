@@ -12,13 +12,13 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 |-------------------------------|-------------------------------|
 | Forward Yield (after withholding) | **1.40%**                     |
 | Dividend Growth (5‑yr)        | **11.53%**                    |
-| ROIC                          | **24–25.9%**                  |
-| Payout Ratio                  | **31.2–33.2%**                |
-| Intrinsic Value               | **9–13% above current**       |
-| Fair‑Value Upside             | **+9% to +13%**               |
-| Fair‑Value Downside           | **−11% to −17%**              |
-| Expected Real Return          | **7.6–8.6%**                  |
-| Expected Nominal Return       | **10.1–11.1%**                |
+| ROIC                          | **22–24%**                    |
+| Payout Ratio                  | **30–32%**                    |
+| Intrinsic Value               | **5–10% above current**       |
+| Fair‑Value Upside             | **+5% to +10%**               |
+| Fair‑Value Downside           | **−15% to −20%**              |
+| Expected Real Return          | **6.4–8.4%**                  |
+| Expected Nominal Return       | **8.9–10.9%**                 |
 
 # Asset Sleeves
 
