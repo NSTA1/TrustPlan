@@ -107,7 +107,7 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 | Waste Management             | US      | 15%              | 1.44%         | 1.224%                            |
 | Wolters Kluwer               | NL      | 15%              | 1.40%         | 1.190%                            |
 
-January 2026 blended forward yield (gross): **1.76%**
+January 2026 blended forward yield (gross): **1.77%**
 
 # Asset 5-Year Average Dividend Growth
 
