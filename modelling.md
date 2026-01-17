@@ -20,13 +20,50 @@
 
 ## 2. Dividend Payment Mechanics
 
-### 2.1 Payment Frequency
-- All dividends are modelled as **annual payments** occurring at year‑end.
+### 2.1 Payment Schedule
+
+Each asset pays dividends according to its historical payment schedule. Dividends are reinvested immediately upon receipt.
+
+| Asset                        | Frequency   | Payment Months              |
+|------------------------------|-------------|------------------------------|
+| Accenture                    | Quarterly   | Feb, May, Aug, Nov           |
+| ADP                          | Quarterly   | Jan, Apr, Jul, Oct           |
+| ASML                         | Semi-Annual | May, Nov                     |
+| BAE Systems                  | Semi-Annual | Jun, Dec                     |
+| Canadian National Railway    | Quarterly   | Mar, Jun, Sep, Dec           |
+| Chubb                        | Quarterly   | Jan, Apr, Jul, Oct           |
+| Coloplast                    | Annual      | Dec                          |
+| Essex Property Trust         | Quarterly   | Jan, Apr, Jul, Oct           |
+| EssilorLuxottica             | Annual      | May                          |
+| Hermès International         | Annual      | May                          |
+| Hoya                         | Semi-Annual | Jun, Dec                     |
+| Japan Exchange               | Semi-Annual | Jun, Dec                     |
+| JP Morgan                    | Quarterly   | Jan, Apr, Jul, Oct           |
+| L'Oréal                      | Annual      | May                          |
+| Lockheed Martin              | Quarterly   | Mar, Jun, Sep, Dec           |
+| London Stock Exchange Group  | Semi-Annual | May, Sep                     |
+| LVMH                         | Semi-Annual | Apr, Dec                     |
+| Mastercard                   | Quarterly   | Feb, May, Aug, Nov           |
+| Microsoft                    | Quarterly   | Mar, Jun, Sep, Dec           |
+| Novo Nordisk                 | Annual      | Mar                          |
+| RELX                         | Semi-Annual | Jun, Sep                     |
+| S&P Global                   | Quarterly   | Mar, Jun, Sep, Dec           |
+| SMFG                         | Semi-Annual | Jun, Dec                     |
+| Stryker                      | Quarterly   | Jan, Apr, Jul, Oct           |
+| Waste Management             | Quarterly   | Mar, Jun, Sep, Dec           |
+| Wolters Kluwer               | Semi-Annual | May, Sep                     |
 
 ### 2.2 Reinvestment Timing
-- During the accumulation phase (until the end of Year 25), dividends are:
-  - Paid at year‑end.
-  - Reinvested immediately at year‑end using target weights.
+- Dividends are **reinvested immediately upon receipt** in the month they are paid.
+- Each dividend is allocated in a **self-balancing fashion** to bring the portfolio closer to target weights.
+- During the accumulation phase (Years 0–25), **100% of dividends** are reinvested.
+- During the post-accumulation phase (Years 26–30), **40% of dividends** are reinvested and **60%** are withdrawn as income.
+
+### 2.3 Modelling Simplification
+- For simulation purposes, monthly time steps are used to capture dividend timing accurately.
+- Annual dividend growth shocks are applied at the start of each calendar year.
+- Each payment is calculated as:
+  - **Annual dividend ÷ number of payments per year** (adjusted for growth)
 
 ## 3. NAV Return Modelling
 
@@ -35,6 +72,9 @@
 - Real NAV growth assumptions:
   - Mean: **7%** (midpoint of the 6–8% range).
   - Volatility: **20%**.
+- For monthly simulation, annual returns are converted to monthly returns:
+  - Monthly mean: **0.565%** (≈ 7% ÷ 12)
+  - Monthly volatility: **5.77%** (≈ 20% ÷ √12)
 
 ### 3.2 NAV Correlation Structure
 - All assets share a **uniform pairwise NAV return correlation of 0.7**.
@@ -62,17 +102,19 @@
 
 ### 6.1 Accumulation Phase (Years 0–25)
 - Annual rebalancing to target weights each January.
-- All contributions and dividends are invested using target weights.
+- All contributions and dividends are invested in a self-balancing fashion upon receipt.
 
 ### 6.2 Post‑Accumulation Phase (Years 26–30)
 - Annual rebalancing continues each January.
-- 40% of dividends are reinvested using target weights.
-- 60% of dividends are withdrawn as income.
+- 40% of dividends are reinvested in a self-balancing fashion upon receipt.
+- 60% of dividends are withdrawn as income in the month received.
 
 ## 7. Simulation Structure
 
 ### 7.1 Time Step
-- Annual time steps for both NAV and dividend modelling.
+- **Monthly time steps** for dividend receipt and reinvestment.
+- Annual dividend growth shocks applied each January.
+- NAV returns modelled monthly (derived from annual parameters).
 
 ### 7.2 Number of Trials
 - Recommended minimum: **10,000 Monte Carlo paths**.
@@ -82,14 +124,15 @@
   - Median income  
   - 5th, 25th, 75th, and 95th percentiles  
   - Worst‑case and best‑case paths  
-  - Expected CAGR of income over Years 20–30
+  - Expected CAGR of income over Years 20‑30
 
 ## 8. Sequence‑of‑Returns Rules
 
-### 8.1 Annual Order of Operations
-1. Apply NAV return.  
-2. Apply dividend growth to previous year's dividend.  
-3. Pay dividends at year‑end.  
-4. Reinvest dividends (100% until Year 25; 40% thereafter).  
-5. Apply contributions (until April 2026 weekly, then monthly until Year 25).  
-6. Rebalance annually in January.
+### 8.1 Monthly Order of Operations
+1. Apply monthly NAV return to all holdings.
+2. For each asset with a dividend payment in the current month:
+   - Calculate dividend (annual dividend ÷ payment frequency, adjusted for year's growth).
+   - Apply withholding tax.
+   - Reinvest net dividend immediately in a self-balancing fashion (100% during accumulation, 40% post-accumulation).
+3. Apply any contributions scheduled for the month in a self-balancing fashion.
+4. In January: apply annual dividend growth shock, perform annual rebalancing to target weights.
