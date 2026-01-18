@@ -34,7 +34,7 @@ This ramp‑up ensures meaningful convexity during the highest‑impact compound
 
 After Year 10, the Downturn Fund target is determined mechanically as:
 
-> **Downturn Fund Target = max( Real Floor , Percentage of NAV )**
+> **Downturn Fund Target = max( Previous Year's Target, Real Floor, Percentage of NAV )**
 
 Where:
 
