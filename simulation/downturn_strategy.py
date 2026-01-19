@@ -22,6 +22,7 @@ class DownturnStrategy:
     - Tranche C: 40% of fund at 30% drawdown
     - Rebuild at 3.5% of target per month after deployment
     - No new deployments during rebuild phase
+    - Tranche flags only reset when a new peak is reached (new drawdown cycle)
     """
     
     def __init__(self, config: SimulationConfig):
@@ -59,10 +60,10 @@ class DownturnStrategy:
         if self.current_benchmark > self.peak_benchmark:
             self.peak_benchmark = self.current_benchmark
             # Reset tranche flags when new peak is reached (new drawdown cycle)
-            if not self.is_rebuilding:
-                self.tranche_a_deployed = False
-                self.tranche_b_deployed = False
-                self.tranche_c_deployed = False
+            # This happens regardless of rebuild status - a new peak means a new cycle
+            self.tranche_a_deployed = False
+            self.tranche_b_deployed = False
+            self.tranche_c_deployed = False
     
     def get_drawdown(self) -> float:
         """
@@ -165,7 +166,7 @@ class DownturnStrategy:
         if self.fund_balance >= self.target_fund_size:
             self.fund_balance = self.target_fund_size
             self.is_rebuilding = False
-            # Reset deployment flags for next drawdown event
-            self.tranche_a_deployed = False
-            self.tranche_b_deployed = False
-            self.tranche_c_deployed = False
+            # Note: Tranche flags are NOT reset here. They are only reset when
+            # a new peak is reached in update_benchmark(), which indicates
+            # the start of a new drawdown cycle. This ensures:
+            # "One downturn → one sequence of tranches → full rebuild → next downturn"
