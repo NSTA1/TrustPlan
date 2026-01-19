@@ -1,4 +1,4 @@
-﻿# SDG Design
+# SDG Design
 - A high dividend growth portfolio which is not focused on early-stage yield, but rather on long term compounding of dividends and dividend growth.
 - Holdings must be high ROIC equities with global exposure and established dividend track records.
 
@@ -10,7 +10,7 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 
 | Metric                         | Portfolio‑Weighted Value      |
 |-------------------------------|-------------------------------|
-| Forward Yield (after withholding) | **1.40%**                     |
+| Forward Yield (after withholding) | **1.36%**                     |
 | Dividend Growth (5‑yr)        | **11.48%**                    |
 | ROIC                          | **22–24%**                    |
 | Payout Ratio                  | **30–32%**                    |
@@ -109,7 +109,7 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 | Waste Management             | US      | 15%              | 1.44%         | 1.224%                            |
 | Wolters Kluwer               | NL      | 15%              | 1.40%         | 1.190%                            |
 
-January 2026 blended forward yield (gross): **1.78%**
+January 2026 blended forward yield (gross): **1.63%**
 
 # Asset 5-Year Average Dividend Growth
 

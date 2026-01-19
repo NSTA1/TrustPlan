@@ -3,31 +3,31 @@
 ## Simulation Parameters
 
 - **Number of simulations**: 10,000
-- **Simulation period**: 30 years (December 2025 - December 2055)
+- **Simulation period**: 30 years (January 2026 - December 2055)
 - **Accumulation phase**: Years 0-25 (100% dividend reinvestment)
 - **Post-accumulation phase**: Years 26-30 (60% dividend withdrawal)
 - **NAV expected return**: 5.0% real annual
 - **NAV volatility**: 18.0% annual
 - **Dividend growth volatility**: 5.0%
 - **Excess growth decay factor**: 0.95
+- **Downturn fund**: GBP 15,000
 
 ## Total Contributions
 
-- **Lump sum**: GBP 55,500
-- **Weekly contributions**: GBP 46,000 (20 weeks)
-- **Monthly contributions**: GBP 499,800 (25 years)
-- **Total contributions**: GBP 601,300
+- **Lump sum**: GBP 86,000
+- **Monthly contributions**: GBP 750,000 (25 years)
+- **Total contributions**: GBP 836,000
 
 ## NAV Projections (GBP Real Terms)
 
 | Year | 5th %ile | 25th %ile | Median | 75th %ile | 95th %ile |
 |------|----------|-----------|--------|-----------|-----------|
-| 5 | GBP 159,611 | GBP 197,964 | GBP 230,729 | GBP 272,412 | GBP 344,814 |
-| 10 | GBP 268,811 | GBP 352,266 | GBP 430,727 | GBP 528,821 | GBP 721,427 |
-| 15 | GBP 417,346 | GBP 557,016 | GBP 700,862 | GBP 896,567 | GBP 1,275,040 |
-| 20 | GBP 618,902 | GBP 855,610 | GBP 1,096,873 | GBP 1,438,928 | GBP 2,167,713 |
-| 25 | GBP 902,201 | GBP 1,289,104 | GBP 1,674,897 | GBP 2,237,523 | GBP 3,556,374 |
-| 30 | GBP 1,029,282 | GBP 1,600,160 | GBP 2,213,797 | GBP 3,113,473 | GBP 5,243,892 |
+| 5 | GBP 211,329 | GBP 259,699 | GBP 298,616 | GBP 345,691 | GBP 432,289 |
+| 10 | GBP 386,096 | GBP 501,033 | GBP 604,259 | GBP 730,634 | GBP 989,256 |
+| 15 | GBP 620,139 | GBP 824,873 | GBP 1,028,373 | GBP 1,295,759 | GBP 1,829,122 |
+| 20 | GBP 949,547 | GBP 1,290,379 | GBP 1,644,792 | GBP 2,101,230 | GBP 3,121,416 |
+| 25 | GBP 1,383,085 | GBP 1,940,738 | GBP 2,540,719 | GBP 3,366,038 | GBP 5,132,294 |
+| 30 | GBP 1,576,972 | GBP 2,473,004 | GBP 3,398,281 | GBP 4,674,852 | GBP 7,797,298 |
 
 ## Annual Net Dividends (Years 20-25, Accumulation Phase)
 
@@ -35,12 +35,12 @@
 
 | Year | 5th %ile | 25th %ile | Median | 75th %ile | 95th %ile |
 |------|----------|-----------|--------|-----------|-----------|
-| 20 | GBP 13,952 | GBP 19,339 | GBP 24,908 | GBP 33,214 | GBP 55,008 |
-| 21 | GBP 14,991 | GBP 21,132 | GBP 27,487 | GBP 37,179 | GBP 63,753 |
-| 22 | GBP 16,154 | GBP 23,048 | GBP 30,251 | GBP 41,462 | GBP 72,941 |
-| 23 | GBP 17,468 | GBP 24,984 | GBP 33,324 | GBP 46,269 | GBP 84,093 |
-| 24 | GBP 18,835 | GBP 27,152 | GBP 36,634 | GBP 51,471 | GBP 96,892 |
-| 25 | GBP 20,051 | GBP 29,257 | GBP 39,672 | GBP 56,565 | GBP 109,177 |
+| 20 | GBP 20,134 | GBP 28,187 | GBP 37,011 | GBP 50,079 | GBP 84,065 |
+| 21 | GBP 21,796 | GBP 30,909 | GBP 40,749 | GBP 55,926 | GBP 96,128 |
+| 22 | GBP 23,435 | GBP 33,704 | GBP 44,990 | GBP 62,853 | GBP 110,913 |
+| 23 | GBP 25,354 | GBP 36,753 | GBP 49,432 | GBP 69,820 | GBP 127,879 |
+| 24 | GBP 27,216 | GBP 40,079 | GBP 54,511 | GBP 77,928 | GBP 148,528 |
+| 25 | GBP 29,109 | GBP 43,252 | GBP 59,497 | GBP 85,993 | GBP 168,991 |
 
 ## Annual Dividend Income Withdrawn (Years 26-30, Post-Accumulation)
 
@@ -48,11 +48,11 @@
 
 | Year | 5th %ile | 25th %ile | Median | 75th %ile | 95th %ile |
 |------|----------|-----------|--------|-----------|-----------|
-| 26 | GBP 12,772 | GBP 18,679 | GBP 25,416 | GBP 36,535 | GBP 71,444 |
-| 27 | GBP 13,515 | GBP 19,854 | GBP 27,152 | GBP 39,288 | GBP 78,386 |
-| 28 | GBP 14,252 | GBP 21,023 | GBP 28,957 | GBP 42,317 | GBP 86,087 |
-| 29 | GBP 15,112 | GBP 22,422 | GBP 30,971 | GBP 45,298 | GBP 93,898 |
-| 30 | GBP 15,894 | GBP 23,943 | GBP 32,948 | GBP 48,821 | GBP 103,381 |
+| 26 | GBP 18,514 | GBP 27,708 | GBP 38,053 | GBP 55,609 | GBP 110,581 |
+| 27 | GBP 19,528 | GBP 29,415 | GBP 40,669 | GBP 59,786 | GBP 120,682 |
+| 28 | GBP 20,646 | GBP 31,337 | GBP 43,555 | GBP 64,303 | GBP 130,611 |
+| 29 | GBP 21,800 | GBP 33,489 | GBP 46,491 | GBP 69,297 | GBP 142,337 |
+| 30 | GBP 23,160 | GBP 35,538 | GBP 49,756 | GBP 74,508 | GBP 155,373 |
 
 ## Total Annual Dividends (Years 26-30)
 
@@ -60,49 +60,47 @@
 
 | Year | 5th %ile | 25th %ile | Median | 75th %ile | 95th %ile |
 |------|----------|-----------|--------|-----------|-----------|
-| 26 | GBP 21,287 | GBP 31,132 | GBP 42,360 | GBP 60,892 | GBP 119,074 |
-| 27 | GBP 22,525 | GBP 33,091 | GBP 45,254 | GBP 65,480 | GBP 130,643 |
-| 28 | GBP 23,754 | GBP 35,039 | GBP 48,261 | GBP 70,529 | GBP 143,479 |
-| 29 | GBP 25,187 | GBP 37,371 | GBP 51,619 | GBP 75,496 | GBP 156,496 |
-| 30 | GBP 26,490 | GBP 39,905 | GBP 54,914 | GBP 81,368 | GBP 172,302 |
+| 26 | GBP 30,857 | GBP 46,180 | GBP 63,421 | GBP 92,681 | GBP 184,302 |
+| 27 | GBP 32,546 | GBP 49,025 | GBP 67,782 | GBP 99,643 | GBP 201,137 |
+| 28 | GBP 34,410 | GBP 52,229 | GBP 72,592 | GBP 107,172 | GBP 217,684 |
+| 29 | GBP 36,334 | GBP 55,815 | GBP 77,485 | GBP 115,495 | GBP 237,228 |
+| 30 | GBP 38,600 | GBP 59,231 | GBP 82,926 | GBP 124,179 | GBP 258,954 |
 
 ## Income Growth (Years 26-30)
 
-- **Median CAGR**: 6.9%
-- **5th percentile CAGR**: 3.4%
+- **Median CAGR**: 7.1%
+- **5th percentile CAGR**: 3.5%
 - **95th percentile CAGR**: 11.5%
 
 ## Scenario Analysis
 
 ### Best Case Path (95th percentile NAV)
-- **Final NAV (Year 30)**: GBP 71,862,725
-- **Year 30 Total Dividends**: GBP 73,218,603
-- **Year 30 Income Withdrawn**: GBP 43,931,162
+- **Final NAV (Year 30)**: GBP 86,407,585
+- **Year 30 Total Dividends**: GBP 25,803,324
+- **Year 30 Income Withdrawn**: GBP 15,481,994
 
 ### Median Case Path
-- **Final NAV (Year 30)**: GBP 2,327,381
-- **Year 30 Total Dividends**: GBP 221,058
-- **Year 30 Income Withdrawn**: GBP 132,635
+- **Final NAV (Year 30)**: GBP 3,590,845
+- **Year 30 Total Dividends**: GBP 126,201
+- **Year 30 Income Withdrawn**: GBP 75,721
 
 ### Worst Case Path (5th percentile NAV)
-- **Final NAV (Year 30)**: GBP 470,302
-- **Year 30 Total Dividends**: GBP 66,815
-- **Year 30 Income Withdrawn**: GBP 40,089
+- **Final NAV (Year 30)**: GBP 618,903
+- **Year 30 Total Dividends**: GBP 78,900
+- **Year 30 Income Withdrawn**: GBP 47,340
 
-## Model Notes (Revised)
+## Model Notes
 
 This simulation uses a **realistic dividend growth model**:
 
 1. **NAV Growth**: 5% real annual return (conservative)
 2. **Dividend Growth**: Modelled as excess growth above NAV growth
-   - Historical 5-year dividend growth already includes underlying earnings growth
-   - Only the 'excess' portion (dividend growth minus NAV growth) is applied additionally
-   - This prevents double-counting of growth
-3. **Growth Decay**: High excess growth rates decay toward sustainable levels over time
-4. **Dividend Calculation**: `dividend = units x base_dividend x excess_growth_factor`
-   - Base dividend fixed at start (initial_price x yield)
-   - Growth in units (via reinvestment) captures NAV appreciation
-   - Excess growth factor captures yield expansion
+   - Historical 5-year dividend growth includes underlying earnings growth
+   - Only 'excess' portion (dividend growth minus NAV growth) applied additionally
+   - Prevents double-counting of growth
+3. **Growth Decay**: High excess growth rates decay toward sustainable levels
+4. **Downturn Strategy**: Mechanical deployment at 10%/20%/30% drawdowns
+5. **Dividend Calculation**: `dividend = units × base_dividend × excess_growth_factor`
 
 ---
 
