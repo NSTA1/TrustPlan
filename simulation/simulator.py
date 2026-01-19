@@ -447,6 +447,9 @@ class PortfolioSimulator:
         all_income = np.zeros((n_sims, total_months))
         all_annual_income = np.zeros((n_sims, total_years + 1))
         all_annual_dividends = np.zeros((n_sims, total_years + 1))
+        all_dividend_cuts = np.zeros(n_sims)
+        all_downturn_events = np.zeros(n_sims)
+        all_downturn_deployed = np.zeros(n_sims)
         
         print(f"Running {n_sims:,} Monte Carlo simulations...")
         
@@ -457,6 +460,9 @@ class PortfolioSimulator:
             result = self.run_single_simulation(rng)
             all_nav[sim] = result['monthly_nav']
             all_income[sim] = result['monthly_income']
+            all_dividend_cuts[sim] = result['dividend_cuts']
+            all_downturn_events[sim] = result['downturn_events']
+            all_downturn_deployed[sim] = result['downturn_deployed']
             
             income_len = min(len(result['annual_income']), all_annual_income.shape[1])
             all_annual_income[sim, :income_len] = result['annual_income'][:income_len]
@@ -469,5 +475,8 @@ class PortfolioSimulator:
             'all_income': all_income,
             'all_annual_income': all_annual_income,
             'all_annual_dividends': all_annual_dividends,
+            'all_dividend_cuts': all_dividend_cuts,
+            'all_downturn_events': all_downturn_events,
+            'all_downturn_deployed': all_downturn_deployed,
             'config': self.config,
         }

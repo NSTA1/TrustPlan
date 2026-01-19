@@ -20,12 +20,15 @@ def analyze_results(results: Dict) -> Dict:
         
     Returns:
         Dictionary of statistics including percentiles for NAV,
-        dividends, income, and scenario analysis.
+        dividends, income, scenario analysis, and dividend stress metrics.
     """
     config = results['config']
     all_nav = results['all_nav']
     all_annual_income = results['all_annual_income']
     all_annual_dividends = results['all_annual_dividends']
+    all_dividend_cuts = results.get('all_dividend_cuts', np.zeros(all_nav.shape[0]))
+    all_downturn_events = results.get('all_downturn_events', np.zeros(all_nav.shape[0]))
+    all_downturn_deployed = results.get('all_downturn_deployed', np.zeros(all_nav.shape[0]))
     
     total_years = config.accumulation_years + config.post_accumulation_years + 1
     
@@ -92,6 +95,30 @@ def analyze_results(results: Dict) -> Dict:
                 'mean': np.mean(cagr),
             }
     
+    # Dividend stress statistics
+    stats['dividend_stress'] = {
+        'simulations_with_cuts': np.sum(all_dividend_cuts > 0),
+        'simulations_with_cuts_pct': np.mean(all_dividend_cuts > 0) * 100,
+        'total_cuts_mean': np.mean(all_dividend_cuts),
+        'total_cuts_median': np.median(all_dividend_cuts),
+        'total_cuts_max': np.max(all_dividend_cuts),
+        'total_cuts_p5': np.percentile(all_dividend_cuts, 5),
+        'total_cuts_p95': np.percentile(all_dividend_cuts, 95),
+        'cuts_per_sim_nonzero_mean': np.mean(all_dividend_cuts[all_dividend_cuts > 0]) if np.sum(all_dividend_cuts > 0) > 0 else 0,
+    }
+    
+    # Downturn strategy statistics
+    stats['downturn_strategy'] = {
+        'simulations_with_deployments': np.sum(all_downturn_events > 0),
+        'simulations_with_deployments_pct': np.mean(all_downturn_events > 0) * 100,
+        'events_mean': np.mean(all_downturn_events),
+        'events_median': np.median(all_downturn_events),
+        'events_max': np.max(all_downturn_events),
+        'total_deployed_mean': np.mean(all_downturn_deployed),
+        'total_deployed_median': np.median(all_downturn_deployed),
+        'total_deployed_p95': np.percentile(all_downturn_deployed, 95),
+    }
+    
     # Scenario analysis (best, worst, median paths)
     final_nav = all_nav[:, -1]
     best_idx = np.argmax(final_nav)
@@ -104,16 +131,19 @@ def analyze_results(results: Dict) -> Dict:
         'final_nav': final_nav[best_idx],
         'year_30_income': all_annual_income[best_idx, year_30_idx],
         'year_30_dividends': all_annual_dividends[best_idx, year_30_idx],
+        'dividend_cuts': all_dividend_cuts[best_idx],
     }
     stats['worst_case'] = {
         'final_nav': final_nav[worst_idx],
         'year_30_income': all_annual_income[worst_idx, year_30_idx],
         'year_30_dividends': all_annual_dividends[worst_idx, year_30_idx],
+        'dividend_cuts': all_dividend_cuts[worst_idx],
     }
     stats['median_case'] = {
         'final_nav': final_nav[median_idx],
         'year_30_income': all_annual_income[median_idx, year_30_idx],
         'year_30_dividends': all_annual_dividends[median_idx, year_30_idx],
+        'dividend_cuts': all_dividend_cuts[median_idx],
     }
     
     return stats
@@ -144,6 +174,15 @@ def generate_report(stats: Dict, config: SimulationConfig) -> str:
     report.append(f"- **Dividend growth volatility**: {config.dividend_growth_volatility:.1%}")
     report.append(f"- **Excess growth decay factor**: {config.excess_growth_decay}")
     report.append(f"- **Downturn fund**: GBP {config.downturn_fund_initial:,.0f}")
+    report.append("")
+    
+    # Dividend stress parameters
+    report.append("### Dividend Stress Modelling")
+    report.append("")
+    report.append(f"- **Cut trigger threshold**: {config.dividend_cut_drawdown_threshold:.0%} market drawdown")
+    report.append(f"- **Base cut probability**: {config.dividend_cut_base_probability:.0%} per asset per stress event")
+    report.append(f"- **Cut severity range**: {config.dividend_cut_severity_min:.0%} - {config.dividend_cut_severity_max:.0%}")
+    report.append(f"- **Recovery rate**: {config.dividend_recovery_rate:.0%} per year after stress ends")
     report.append("")
     
     # Contributions summary
@@ -228,6 +267,55 @@ def generate_report(stats: Dict, config: SimulationConfig) -> str:
         report.append(f"- **95th percentile CAGR**: {cagr['p95']:.1%}")
         report.append("")
     
+    # Dividend Stress Analysis (NEW SECTION)
+    if 'dividend_stress' in stats:
+        ds = stats['dividend_stress']
+        report.append("## Dividend Stress Analysis")
+        report.append("")
+        report.append("*Analysis of dividend cuts during market stress periods across all simulations*")
+        report.append("")
+        report.append("### Frequency of Dividend Cuts")
+        report.append("")
+        report.append(f"- **Simulations experiencing cuts**: {ds['simulations_with_cuts']:,.0f} ({ds['simulations_with_cuts_pct']:.1f}%)")
+        report.append(f"- **Simulations with no cuts**: {config.num_simulations - ds['simulations_with_cuts']:,.0f} ({100 - ds['simulations_with_cuts_pct']:.1f}%)")
+        report.append("")
+        report.append("### Dividend Cut Statistics")
+        report.append("")
+        report.append("| Metric | Value |")
+        report.append("|--------|-------|")
+        report.append(f"| Mean cuts per simulation | {ds['total_cuts_mean']:.2f} |")
+        report.append(f"| Median cuts per simulation | {ds['total_cuts_median']:.0f} |")
+        report.append(f"| 5th percentile | {ds['total_cuts_p5']:.0f} |")
+        report.append(f"| 95th percentile | {ds['total_cuts_p95']:.0f} |")
+        report.append(f"| Maximum cuts (worst path) | {ds['total_cuts_max']:.0f} |")
+        if ds['cuts_per_sim_nonzero_mean'] > 0:
+            report.append(f"| Mean cuts (paths with cuts) | {ds['cuts_per_sim_nonzero_mean']:.1f} |")
+        report.append("")
+        report.append("*Note: Cuts are applied probabilistically when market drawdowns exceed the threshold.*")
+        report.append("*High-resilience dividend aristocrats have significantly lower cut probability.*")
+        report.append("")
+    
+    # Downturn Strategy Analysis (NEW SECTION)
+    if 'downturn_strategy' in stats:
+        dt = stats['downturn_strategy']
+        report.append("## Downturn Strategy Analysis")
+        report.append("")
+        report.append("*Analysis of the mechanical downturn fund deployment strategy*")
+        report.append("")
+        report.append("### Deployment Frequency")
+        report.append("")
+        report.append(f"- **Simulations with deployments**: {dt['simulations_with_deployments']:,.0f} ({dt['simulations_with_deployments_pct']:.1f}%)")
+        report.append(f"- **Mean deployment events**: {dt['events_mean']:.1f}")
+        report.append(f"- **Median deployment events**: {dt['events_median']:.0f}")
+        report.append(f"- **Maximum deployment events**: {dt['events_max']:.0f}")
+        report.append("")
+        report.append("### Capital Deployed")
+        report.append("")
+        report.append(f"- **Mean total deployed**: GBP {dt['total_deployed_mean']:,.0f}")
+        report.append(f"- **Median total deployed**: GBP {dt['total_deployed_median']:,.0f}")
+        report.append(f"- **95th percentile deployed**: GBP {dt['total_deployed_p95']:,.0f}")
+        report.append("")
+    
     # Scenario analysis
     report.append("## Scenario Analysis")
     report.append("")
@@ -235,16 +323,19 @@ def generate_report(stats: Dict, config: SimulationConfig) -> str:
     report.append(f"- **Final NAV (Year 30)**: GBP {stats['best_case']['final_nav']:,.0f}")
     report.append(f"- **Year 30 Total Dividends**: GBP {stats['best_case']['year_30_dividends']:,.0f}")
     report.append(f"- **Year 30 Income Withdrawn**: GBP {stats['best_case']['year_30_income']:,.0f}")
+    report.append(f"- **Dividend cuts experienced**: {stats['best_case']['dividend_cuts']:.0f}")
     report.append("")
     report.append("### Median Case Path")
     report.append(f"- **Final NAV (Year 30)**: GBP {stats['median_case']['final_nav']:,.0f}")
     report.append(f"- **Year 30 Total Dividends**: GBP {stats['median_case']['year_30_dividends']:,.0f}")
     report.append(f"- **Year 30 Income Withdrawn**: GBP {stats['median_case']['year_30_income']:,.0f}")
+    report.append(f"- **Dividend cuts experienced**: {stats['median_case']['dividend_cuts']:.0f}")
     report.append("")
     report.append("### Worst Case Path (5th percentile NAV)")
     report.append(f"- **Final NAV (Year 30)**: GBP {stats['worst_case']['final_nav']:,.0f}")
     report.append(f"- **Year 30 Total Dividends**: GBP {stats['worst_case']['year_30_dividends']:,.0f}")
     report.append(f"- **Year 30 Income Withdrawn**: GBP {stats['worst_case']['year_30_income']:,.0f}")
+    report.append(f"- **Dividend cuts experienced**: {stats['worst_case']['dividend_cuts']:.0f}")
     report.append("")
     
     # Model notes
@@ -259,7 +350,11 @@ def generate_report(stats: Dict, config: SimulationConfig) -> str:
     report.append("   - Prevents double-counting of growth")
     report.append("3. **Growth Decay**: High excess growth rates decay toward sustainable levels")
     report.append("4. **Downturn Strategy**: Mechanical deployment at 10%/20%/30% drawdowns")
-    report.append("5. **Dividend Calculation**: `dividend = units × base_dividend × excess_growth_factor`")
+    report.append("5. **Dividend Cuts**: Probabilistic cuts during market stress (>20% drawdown)")
+    report.append("   - Cut probability scaled by asset resilience score (0-1)")
+    report.append("   - Higher resilience = lower cut probability")
+    report.append("   - Cuts recover gradually after market stabilization")
+    report.append("6. **Dividend Calculation**: `dividend = units × base_dividend × excess_growth_factor × cut_factor`")
     report.append("")
     
     report.append("---")
@@ -273,7 +368,7 @@ def generate_report(stats: Dict, config: SimulationConfig) -> str:
 def print_summary(stats: Dict, config: SimulationConfig) -> None:
     """Print a summary of simulation results to console."""
     print("=" * 60)
-    print("SUMMARY (Realistic Model)")
+    print("SUMMARY (Realistic Model with Dividend Stress)")
     print("=" * 60)
     print()
     
@@ -300,3 +395,23 @@ def print_summary(stats: Dict, config: SimulationConfig) -> None:
         key = f'year_{year}'
         if key in stats.get('annual_income', {}):
             print(f"  Year {year}: GBP {stats['annual_income'][key]['median']:,.0f}")
+    print()
+    
+    # Dividend stress summary
+    if 'dividend_stress' in stats:
+        ds = stats['dividend_stress']
+        print("Dividend Stress Analysis:")
+        print(f"  Simulations with cuts: {ds['simulations_with_cuts_pct']:.1f}%")
+        print(f"  Mean cuts per simulation: {ds['total_cuts_mean']:.2f}")
+        print(f"  Median cuts per simulation: {ds['total_cuts_median']:.0f}")
+        print(f"  95th percentile cuts: {ds['total_cuts_p95']:.0f}")
+        print()
+    
+    # Downturn strategy summary
+    if 'downturn_strategy' in stats:
+        dt = stats['downturn_strategy']
+        print("Downturn Strategy Analysis:")
+        print(f"  Simulations with deployments: {dt['simulations_with_deployments_pct']:.1f}%")
+        print(f"  Mean deployment events: {dt['events_mean']:.1f}")
+        print(f"  Mean capital deployed: GBP {dt['total_deployed_mean']:,.0f}")
+        print()
