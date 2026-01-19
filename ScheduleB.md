@@ -148,17 +148,68 @@ To minimise corporation tax on capital gains:
 
 The FIC shall rely primarily on **dividend reinvestment** for soft rebalancing.
 
-## 4.4 Replacement Policy
-Asset replacement shall occur only when the criteria in **[sdg.md](sdg.md)** are triggered, including:
+## 4.4 Asset Replacement Policy
 
-- Dividend growth failure  
-- ROIC deterioration  
-- Earnings deterioration  
-- Competitive advantage erosion  
-- Dividend policy weakening  
-- Strategic impairment  
+### 4.4.1 Purpose  
+The purpose of this Asset Replacement Policy is to preserve the long‑term dividend‑growth capacity, competitive strength, and structural integrity of the SDG Portfolio. The policy ensures that any asset exhibiting sustained fundamental deterioration is replaced in a timely, mechanical, and non‑discretionary manner. The policy exists to prevent structural decay, protect the income‑generation engine, and maintain alignment with the SDG Portfolio’s mandate.
 
-Replacements typically occur at a **loss or low gain**, minimising CGT.
+---
+
+### 4.4.2 Replacement Triggers (Mechanical Criteria)  
+An asset **must** be replaced if **any** of the following conditions are met. These triggers are objective, measurable, and binding.
+
+#### Dividend‑Based Triggers  
+a. The asset’s **dividend growth rate** is **below UK CPI inflation** for **three (3) consecutive calendar years**.  
+b. The asset experiences a **dividend cut**, suspension, or cancellation.  
+c. The asset’s **five‑year dividend CAGR** falls **below 3%**.
+
+#### Fundamental Quality Triggers  
+d. The asset’s **Return on Invested Capital (ROIC)** falls **below 10%** for **two (2) consecutive years**.  
+e. The asset’s **operating margin** declines by **more than 25%** from its five‑year average, excluding one‑off events.  
+f. The asset’s **earnings per share (EPS)** exhibit **zero or negative growth** over a rolling **five‑year** period.
+
+#### Competitive Position Triggers  
+g. Two independent, reputable sources (e.g., Morningstar, MSCI, S&P Global, sector‑specialist research) confirm **material erosion of competitive advantage**, such as loss of market share, regulatory impairment, or technological displacement.  
+h. The asset underperforms the **median total return of its sleeve** by **more than 30%** over a rolling **five‑year** period, excluding valuation‑driven drawdowns that do not coincide with fundamental deterioration.
+
+---
+
+### 4.4.3 Replacement Process (Mandatory and Non‑Discretionary)  
+Once any trigger in 4.4.2 is met:
+
+a. The Directors **must** initiate a Replacement Review within **30 days**.  
+b. The failing asset **must** be removed from the SDG Portfolio at the next scheduled rebalancing date, or immediately if deterioration is severe (e.g., dividend cut).  
+c. The replacement asset **must** be selected from the **same sleeve** to preserve the intended structural diversification.  
+d. The replacement asset **must** meet or exceed the sleeve’s median characteristics for:  
+   - ROIC  
+   - dividend growth  
+   - earnings stability  
+   - competitive advantage  
+e. The replacement asset must have a **long‑term dividend‑growth orientation** consistent with the SDG mandate.
+
+---
+
+### 4.4.4 Documentation Requirements  
+Every replacement decision must be recorded in a **Replacement Memorandum**, stored permanently in the FIC’s records. The memorandum must include:
+
+a. The specific trigger(s) breached.  
+b. The data sources used.  
+c. The analysis confirming deterioration.  
+d. The rationale for the chosen replacement asset.  
+e. The date of execution and transaction details.  
+f. A statement confirming compliance with this Section 4.4.
+
+This documentation ensures continuity, auditability, and clarity for future Directors and Trustees.
+
+---
+
+### 4.4.5 Prohibition on Discretionary Overrides  
+The Directors and Trustees **shall not** override, delay, reinterpret, or suspend a replacement once a trigger in 4.4.2 has been met. This rule is absolute and exists to prevent behavioural drift, subjective judgement, or deviation from the Founder’s intent.
+
+---
+
+### 4.4.6 Review Frequency  
+The Directors must conduct a **formal annual Replacement Review** every January, applying all criteria in 4.4.2 using the most recent full‑year financial data. Interim reviews may be conducted if material events occur.
 
 ---
 
