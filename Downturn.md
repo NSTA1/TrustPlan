@@ -1,4 +1,4 @@
-# Downturn Strategy
+﻿# Downturn Strategy
 
 ## 1. Purpose
 A mechanical, trustee‑ready downturn deployment protocol designed to enhance long‑term expected returns by allocating a small, convex pool of capital during major global equity drawdowns. This strategy applies to the SDG Portfolio and is intended to operate without discretion, emotion, or subjective judgement.
@@ -6,7 +6,7 @@ A mechanical, trustee‑ready downturn deployment protocol designed to enhance l
 ---
 
 ## 2. Downturn Fund
-- **Target Size:** £15,000  
+- **Target Size:** £15,000 initially - grows over time according to [these rules](DownturnFundAllocation.md).
 - **Cash Yield Assumption:** 3% real  
 - **Portfolio Real Return Assumption:** 10%  
 - **Location:** Held in cash or an instant‑access savings vehicle  
@@ -48,17 +48,17 @@ VWRP may be used for daily monitoring because:
 ## 5. Deployment Tranches
 
 ### **Tranche A**
-- **Size:** 20% of downturn fund (£3,000)  
+- **Size:** 20% of downturn fund
 - **Trigger:** Index down **10%** from peak  
 - **Deployment Timing:** Within 5 trading days  
 
 ### **Tranche B**
-- **Size:** 40% of downturn fund (£6,000)  
+- **Size:** 40% of downturn fund
 - **Trigger:** Index down **20%** from peak  
 - **Deployment Timing:** Within 5 trading days  
 
 ### **Tranche C**
-- **Size:** 40% of downturn fund (£6,000)  
+- **Size:** 40% of downturn fund
 - **Trigger:** Index down **30%** from peak  
 - **Deployment Timing:** Within 5 trading days  
 
@@ -87,8 +87,8 @@ Rebuilding begins **immediately after the final tranche deployed in that downtur
 There is **no requirement** for all three tranches to deploy before rebuilding starts.
 
 ### **7.2 Rebuilding Cashflow**
-- Rebuild at **£500 per month** until the downturn fund reaches **£15,000** again  
-- Rebuilding **does not reduce or replace** ISA contributions  
+- Rebuild at **3-4% of target per month** until the downturn fund reaches the target again  
+- Rebuilding **does not reduce or replace** ISA contributions during the contribution period
 - Rebuilding is a **separate, parallel cashflow**  
 - Cash yield during rebuild remains part of the fund
 

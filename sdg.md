@@ -176,3 +176,6 @@ January 2026 trailing 5-year blended dividend growth: **11.53%**
 # Portfolio Modelling
 
 For Monte Carlo simulation assumptions and methodology, see [Modelling Assumptions](modelling.md).
+
+# Marked Downturns
+A dedicated, rule-based Downturn Fund described [here](Downturn.md) is deployed during market downturns in order to capture additional value and smooth portfolio performance.
