@@ -77,10 +77,10 @@ Each asset pays dividends according to its historical payment schedule. Dividend
 - Annual NAV returns follow a **lognormal distribution**.
 - Real NAV growth assumptions:
   - Mean: **5%** (conservative estimate for real total return less dividends).
-  - Volatility: **18%** (slightly reduced from 20% to reflect quality portfolio).
+  - Volatility: **17%** (reduced from market average to reflect quality portfolio characteristics).
 - For monthly simulation, annual returns are converted to monthly returns:
   - Monthly mean: **0.417%** (≈ 5% ÷ 12)
-  - Monthly volatility: **5.20%** (≈ 18% ÷ √12)
+  - Monthly volatility: **4.91%** (≈ 17% ÷ √12)
 
 ### 3.2 NAV Correlation Structure
 - All assets share a **uniform pairwise NAV return correlation of 0.6**.

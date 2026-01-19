@@ -55,8 +55,12 @@ class SimulationConfig:
     
     # NAV assumptions (conservative)
     nav_mean_annual: float = 0.05  # 5% real
-    nav_volatility_annual: float = 0.18  # 18%
+    nav_volatility_annual: float = 0.17  # 17% (reduced for quality portfolio)
     nav_correlation: float = 0.60
+    
+    # Excess growth baseline - used for calculating excess dividend growth
+    # Keep at 0.05 for sensitivity analysis to isolate NAV parameter effects
+    excess_growth_nav_baseline: float = 0.05
     
     # Dividend modelling
     dividend_growth_volatility: float = 0.05

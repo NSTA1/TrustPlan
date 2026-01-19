@@ -58,12 +58,15 @@ class PortfolioSimulator:
         
     def _calculate_excess_growth_rates(self) -> np.ndarray:
         """
-        Calculate excess dividend growth = dividend_growth - nav_growth.
+        Calculate excess dividend growth = dividend_growth - nav_growth_baseline.
         
         This represents yield expansion, floored at 0.
+        Uses the excess_growth_nav_baseline (default 5%) to ensure consistent
+        dividend growth modelling across sensitivity scenarios.
         """
         rates = np.zeros(self.n_assets)
-        nav_growth = self.config.nav_mean_annual
+        # Use baseline (not actual nav_mean_annual) for consistent dividend modelling
+        nav_growth = self.config.excess_growth_nav_baseline
         
         for i, ticker in enumerate(self.asset_list):
             asset = self.assets[ticker]
