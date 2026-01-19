@@ -25,6 +25,7 @@ class PortfolioSimulator:
     - Self-balancing investment of contributions and dividends
     - Annual rebalancing to target weights
     - Downturn strategy integration
+    - Dividend cuts during market stress with recovery
     """
     
     def __init__(self, config: SimulationConfig, assets: Dict[str, Asset]):
@@ -49,6 +50,11 @@ class PortfolioSimulator:
         
         # Calculate excess dividend growth rates (above NAV growth)
         self.excess_growth_rates = self._calculate_excess_growth_rates()
+        
+        # Dividend resilience for cut probability
+        self.dividend_resilience = np.array([
+            self.assets[ticker].dividend_resilience for ticker in self.asset_list
+        ])
         
     def _calculate_excess_growth_rates(self) -> np.ndarray:
         """
@@ -199,7 +205,82 @@ class PortfolioSimulator:
         
         new_units = target_values / prices
         
+
         return new_units
+    
+    def _check_dividend_cuts(self, rng: np.random.Generator, drawdown: float,
+                             dividend_cut_factors: np.ndarray, 
+                             in_stress: bool) -> Tuple[np.ndarray, bool]:
+        """
+        Check and apply dividend cuts during market stress.
+        
+        Args:
+            rng: Random number generator
+            drawdown: Current benchmark drawdown (0-1)
+            dividend_cut_factors: Current cut factors per asset (1.0 = no cut)
+            in_stress: Whether we're currently in a stress period
+            
+        Returns:
+            Tuple of (updated cut factors, updated stress state)
+        """
+        threshold = self.config.dividend_cut_drawdown_threshold
+        
+        # Check if entering stress period
+        if drawdown >= threshold and not in_stress:
+            # Entering stress - evaluate cuts for each asset
+            in_stress = True
+            base_prob = self.config.dividend_cut_base_probability
+            
+            # Scale probability by drawdown severity (deeper = more cuts)
+            severity_scale = min(2.0, drawdown / threshold)
+            
+            for i, ticker in enumerate(self.asset_list):
+                asset = self.assets[ticker]
+                # Probability adjusted by asset resilience
+                cut_prob = base_prob * asset.cut_probability_modifier * severity_scale
+                
+                if rng.random() < cut_prob:
+                    # Apply a cut - severity is random within range
+                    cut_severity = rng.uniform(
+                        self.config.dividend_cut_severity_min,
+                        self.config.dividend_cut_severity_max
+                    )
+                    # Factor is the remaining portion (e.g., 0.7 means 30% cut)
+                    dividend_cut_factors[i] *= (1.0 - cut_severity)
+        
+        # Check if exiting stress period
+        elif drawdown < threshold * 0.5 and in_stress:
+            # Market recovered significantly - exit stress
+            in_stress = False
+        
+        return dividend_cut_factors, in_stress
+    
+    def _apply_dividend_recovery(self, dividend_cut_factors: np.ndarray, 
+                                  in_stress: bool) -> np.ndarray:
+        """
+        Apply gradual dividend recovery when not in stress.
+        
+        Args:
+            dividend_cut_factors: Current cut factors per asset
+            in_stress: Whether we're in a stress period
+            
+        Returns:
+            Updated cut factors (moving toward 1.0)
+        """
+        if in_stress:
+            return dividend_cut_factors
+        
+        # Annual recovery rate applied monthly
+        monthly_recovery = self.config.dividend_recovery_rate / 12
+        
+        for i in range(self.n_assets):
+            if dividend_cut_factors[i] < 1.0:
+                # Recover toward 1.0
+                gap = 1.0 - dividend_cut_factors[i]
+                dividend_cut_factors[i] += gap * monthly_recovery
+                dividend_cut_factors[i] = min(1.0, dividend_cut_factors[i])
+        
+        return dividend_cut_factors
     
     def run_single_simulation(self, rng: np.random.Generator) -> Dict:
         """
@@ -230,6 +311,13 @@ class PortfolioSimulator:
         excess_growth_factors = np.ones(self.n_assets)
         current_excess_rates = self.excess_growth_rates.copy()
         
+        # Dividend cut tracking
+        dividend_cut_factors = np.ones(self.n_assets)  # 1.0 = no cut
+        in_dividend_stress = False
+        benchmark_value = 100.0
+        benchmark_peak = 100.0
+        total_dividend_cuts = 0
+        
         # Output arrays
         monthly_nav = []
         monthly_income = []
@@ -250,7 +338,24 @@ class PortfolioSimulator:
             for i in range(self.n_assets):
                 prices[i] *= (1 + nav_returns[month_idx, i])
             
-            # 2. Process dividends
+            # Update benchmark tracking for dividend cuts
+            benchmark_value *= (1 + benchmark_returns[month_idx])
+            if benchmark_value > benchmark_peak:
+                benchmark_peak = benchmark_value
+            benchmark_drawdown = (benchmark_peak - benchmark_value) / benchmark_peak if benchmark_peak > 0 else 0
+            
+            # Check for dividend cuts
+            prev_cut_factors = dividend_cut_factors.copy()
+            dividend_cut_factors, in_dividend_stress = self._check_dividend_cuts(
+                rng, benchmark_drawdown, dividend_cut_factors, in_dividend_stress
+            )
+            # Count new cuts
+            total_dividend_cuts += np.sum(dividend_cut_factors < prev_cut_factors)
+            
+            # Apply dividend recovery when not in stress
+            dividend_cut_factors = self._apply_dividend_recovery(dividend_cut_factors, in_dividend_stress)
+            
+            # 2. Process dividends (now including cut factors)
             monthly_div_income = 0
             monthly_div_reinvest = 0
             
@@ -259,7 +364,8 @@ class PortfolioSimulator:
                 
                 if self._is_dividend_month(asset, month) and units[i] > 0:
                     div = self._calculate_dividend(
-                        asset, units[i], base_div_per_unit[i], excess_growth_factors[i]
+                        asset, units[i], base_div_per_unit[i], 
+                        excess_growth_factors[i] * dividend_cut_factors[i]  # Apply cut factor
                     )
                     
                     annual_dividends_total[year] += div
@@ -322,6 +428,7 @@ class PortfolioSimulator:
             'final_nav': monthly_nav[-1] if monthly_nav else 0,
             'downturn_deployed': total_downturn_deployed,
             'downturn_events': len(downturn_strategy.deployment_events),
+            'dividend_cuts': total_dividend_cuts,
         }
     
     def run_simulation(self) -> Dict:

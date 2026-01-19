@@ -23,6 +23,7 @@ class Asset:
     payment_frequency: str
     payment_months: List[int]
     is_adr: bool = False
+    dividend_resilience: float = 0.7  # 0-1 scale, higher = more resistant to cuts
     
     @property
     def effective_yield(self) -> float:
@@ -33,6 +34,16 @@ class Asset:
     def payments_per_year(self) -> int:
         """Number of dividend payments per year."""
         return len(self.payment_months)
+    
+    @property
+    def cut_probability_modifier(self) -> float:
+        """
+        Modifier for dividend cut probability based on resilience.
+        
+        High resilience (0.9) -> 0.1x base probability (very unlikely to cut)
+        Low resilience (0.3) -> 1.7x base probability (more likely to cut)
+        """
+        return 2.0 - (2.0 * self.dividend_resilience)
 
 
 @dataclass
@@ -50,6 +61,13 @@ class SimulationConfig:
     # Dividend modelling
     dividend_growth_volatility: float = 0.05
     excess_growth_decay: float = 0.95  # High-growth assets decay toward mean
+    
+    # Dividend cut parameters (stress realism)
+    dividend_cut_drawdown_threshold: float = 0.20  # 20% drawdown triggers cut risk
+    dividend_cut_base_probability: float = 0.15  # Base probability of cut per asset per stress period
+    dividend_cut_severity_min: float = 0.10  # Minimum cut: 10% reduction
+    dividend_cut_severity_max: float = 0.50  # Maximum cut: 50% reduction
+    dividend_recovery_rate: float = 0.25  # 25% recovery per year after stress ends
     
     num_simulations: int = 10000
     random_seed: int = 42

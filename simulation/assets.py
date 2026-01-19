@@ -25,57 +25,64 @@ def create_assets() -> Dict[str, Asset]:
     Note:
         Forward yields are from the SDG Forward Yield (2026) table.
         Portfolio-weighted yield after withholding should be ~1.36%.
+        
+        Dividend resilience scores (0-1):
+        - 0.9+: Dividend aristocrats, 25+ years of increases
+        - 0.8-0.9: Strong dividend growers, consistent history
+        - 0.7-0.8: Good dividend history, some variability
+        - 0.6-0.7: Moderate dividend stability
+        - 0.5-0.6: Higher risk of cuts during stress
     """
     # Format: (name, ticker, allocation, forward_yield, withholding_tax, 
-    #          dividend_growth_5yr, payment_frequency, payment_months, is_adr)
+    #          dividend_growth_5yr, payment_frequency, payment_months, is_adr, resilience)
     assets_data = [
         # US Quality / Moat (28%)
-        ("Microsoft", "MSFT", 0.07, 0.0075, 0.15, 0.102, "Quarterly", [3, 6, 9, 12], False),
-        ("S&P Global", "SPGI", 0.04, 0.0078, 0.15, 0.099, "Quarterly", [3, 6, 9, 12], False),
-        ("Chubb", "CB", 0.04, 0.0131, 0.15, 0.0447, "Quarterly", [1, 4, 7, 10], False),
-        ("Waste Management", "WM", 0.05, 0.0144, 0.15, 0.083, "Quarterly", [3, 6, 9, 12], False),
-        ("ADP", "ADP", 0.03, 0.0201, 0.15, 0.128, "Quarterly", [1, 4, 7, 10], False),
-        ("Accenture", "ACN", 0.02, 0.0216, 0.15, 0.12, "Quarterly", [2, 5, 8, 11], False),
-        ("Stryker", "SYK", 0.03, 0.0092, 0.15, 0.088, "Quarterly", [1, 4, 7, 10], False),
+        ("Microsoft", "MSFT", 0.07, 0.0075, 0.15, 0.102, "Quarterly", [3, 6, 9, 12], False, 0.95),  # 20+ years of increases
+        ("S&P Global", "SPGI", 0.04, 0.0078, 0.15, 0.099, "Quarterly", [3, 6, 9, 12], False, 0.90),  # 50+ years
+        ("Chubb", "CB", 0.04, 0.0131, 0.15, 0.0447, "Quarterly", [1, 4, 7, 10], False, 0.85),  # 30+ years
+        ("Waste Management", "WM", 0.05, 0.0144, 0.15, 0.083, "Quarterly", [3, 6, 9, 12], False, 0.90),  # 20+ years
+        ("ADP", "ADP", 0.03, 0.0201, 0.15, 0.128, "Quarterly", [1, 4, 7, 10], False, 0.95),  # 49+ years
+        ("Accenture", "ACN", 0.02, 0.0216, 0.15, 0.12, "Quarterly", [2, 5, 8, 11], False, 0.85),  # Strong growth
+        ("Stryker", "SYK", 0.03, 0.0092, 0.15, 0.088, "Quarterly", [1, 4, 7, 10], False, 0.85),  # 30+ years
         
         # US Payments & Platforms (12%)
-        ("Mastercard", "MA", 0.07, 0.0052, 0.15, 0.142, "Quarterly", [2, 5, 8, 11], False),
-        ("JP Morgan", "JPM", 0.05, 0.019, 0.15, 0.1188, "Quarterly", [1, 4, 7, 10], False),
+        ("Mastercard", "MA", 0.07, 0.0052, 0.15, 0.142, "Quarterly", [2, 5, 8, 11], False, 0.85),  # Strong but newer
+        ("JP Morgan", "JPM", 0.05, 0.019, 0.15, 0.1188, "Quarterly", [1, 4, 7, 10], False, 0.70),  # Banks cut in 2008-09
         
         # European Luxury & IP (23%)
-        ("LVMH", "MC", 0.03, 0.02, 0.25, 0.23, "Semi-Annual", [4, 12], False),
-        ("EssilorLuxottica", "EL", 0.03, 0.0187, 0.25, 0.23, "Annual", [5], False),
-        ("RELX", "REL", 0.04, 0.0208, 0.0, 0.068, "Semi-Annual", [6, 9], False),
-        ("London Stock Exchange Group", "LSEG", 0.02, 0.0153, 0.0, 0.145, "Semi-Annual", [5, 9], False),
-        ("L'Oreal", "OR", 0.03, 0.0189, 0.25, 0.128, "Annual", [5], False),
-        ("Wolters Kluwer", "WKL", 0.05, 0.014, 0.15, 0.1096, "Semi-Annual", [5, 9], False),
-        ("Hermes International", "RMS", 0.03, 0.008, 0.25, 0.16, "Annual", [5], False),
+        ("LVMH", "MC", 0.03, 0.02, 0.25, 0.23, "Semi-Annual", [4, 12], False, 0.75),  # Strong but cyclical
+        ("EssilorLuxottica", "EL", 0.03, 0.0187, 0.25, 0.23, "Annual", [5], False, 0.80),
+        ("RELX", "REL", 0.04, 0.0208, 0.0, 0.068, "Semi-Annual", [6, 9], False, 0.90),  # Very consistent
+        ("London Stock Exchange Group", "LSEG", 0.02, 0.0153, 0.0, 0.145, "Semi-Annual", [5, 9], False, 0.85),
+        ("L'Oreal", "OR", 0.03, 0.0189, 0.25, 0.128, "Annual", [5], False, 0.90),  # 40+ years
+        ("Wolters Kluwer", "WKL", 0.05, 0.014, 0.15, 0.1096, "Semi-Annual", [5, 9], False, 0.90),  # Very consistent
+        ("Hermes International", "RMS", 0.03, 0.008, 0.25, 0.16, "Annual", [5], False, 0.85),  # Luxury resilience
         
         # Global Semis & Healthcare (18%)
-        ("ASML", "ASML", 0.04, 0.01, 0.15, 0.208, "Semi-Annual", [5, 11], False),
-        ("Novo Nordisk", "NVO", 0.04, 0.0164, 0.27, 0.191, "Annual", [3], False),
-        ("Coloplast", "CLPBY", 0.05, 0.033, 0.27, 0.056, "Annual", [12], True),
-        ("Hoya", "HOCPY", 0.05, 0.0043, 0.15, 0.053, "Semi-Annual", [6, 12], True),
+        ("ASML", "ASML", 0.04, 0.01, 0.15, 0.208, "Semi-Annual", [5, 11], False, 0.80),  # Cyclical but strong
+        ("Novo Nordisk", "NVO", 0.04, 0.0164, 0.27, 0.191, "Annual", [3], False, 0.90),  # Healthcare stability
+        ("Coloplast", "CLPBY", 0.05, 0.033, 0.27, 0.056, "Annual", [12], True, 0.85),  # Healthcare
+        ("Hoya", "HOCPY", 0.05, 0.0043, 0.15, 0.053, "Semi-Annual", [6, 12], True, 0.80),
         
         # Global Financials (7%)
-        ("Japan Exchange", "JPXGY", 0.05, 0.018, 0.15, 0.125, "Semi-Annual", [6, 12], True),
-        ("SMFG", "SMFG", 0.02, 0.0271, 0.15, 0.136, "Semi-Annual", [6, 12], True),
+        ("Japan Exchange", "JPXGY", 0.05, 0.018, 0.15, 0.125, "Semi-Annual", [6, 12], True, 0.75),
+        ("SMFG", "SMFG", 0.02, 0.0271, 0.15, 0.136, "Semi-Annual", [6, 12], True, 0.65),  # Banks more volatile
         
         # Defence & Strategic Platforms (6%)
-        ("Lockheed Martin", "LMT", 0.03, 0.027, 0.15, 0.0722, "Quarterly", [3, 6, 9, 12], False),
-        ("BAE Systems", "BA", 0.02, 0.029, 0.0, 0.065, "Semi-Annual", [6, 12], False),
-        ("General Dynamics", "GD", 0.01, 0.021, 0.15, 0.068, "Quarterly", [2, 5, 8, 11], False),
+        ("Lockheed Martin", "LMT", 0.03, 0.027, 0.15, 0.0722, "Quarterly", [3, 6, 9, 12], False, 0.90),  # 20+ years
+        ("BAE Systems", "BA", 0.02, 0.029, 0.0, 0.065, "Semi-Annual", [6, 12], False, 0.85),  # Consistent
+        ("General Dynamics", "GD", 0.01, 0.021, 0.15, 0.068, "Quarterly", [2, 5, 8, 11], False, 0.90),  # 30+ years
         
         # Transport & Infrastructure (3%)
-        ("Canadian National Railway", "CNR", 0.03, 0.0261, 0.25, 0.102, "Quarterly", [3, 6, 9, 12], False),
+        ("Canadian National Railway", "CNR", 0.03, 0.0261, 0.25, 0.102, "Quarterly", [3, 6, 9, 12], False, 0.85),  # 28+ years
         
         # US Real Estate (3%)
-        ("Essex Property Trust", "ESS", 0.03, 0.035, 0.15, 0.055, "Quarterly", [1, 4, 7, 10], False),
+        ("Essex Property Trust", "ESS", 0.03, 0.035, 0.15, 0.055, "Quarterly", [1, 4, 7, 10], False, 0.75),  # REITs can cut
     ]
     
     assets = {}
     for data in assets_data:
-        name, ticker, alloc, fwd_yield, wht, div_growth, freq, months, is_adr = data
+        name, ticker, alloc, fwd_yield, wht, div_growth, freq, months, is_adr, resilience = data
         assets[ticker] = Asset(
             name=name, 
             ticker=ticker, 
@@ -85,7 +92,8 @@ def create_assets() -> Dict[str, Asset]:
             dividend_growth_5yr=div_growth, 
             payment_frequency=freq,
             payment_months=months, 
-            is_adr=is_adr
+            is_adr=is_adr,
+            dividend_resilience=resilience
         )
     
     return assets
