@@ -1,4 +1,4 @@
-# SDG Design
+﻿# SDG Design
 - A high dividend growth portfolio which is not focused on early-stage yield, but rather on long term compounding of dividends and dividend growth.
 - Holdings must be high ROIC equities with global exposure and established dividend track records.
 
@@ -66,12 +66,12 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 | General Dynamics | 1% |
 
 # Contribution Plan
-- £55,500 lump sum invested 9th December 2025
-- After that lump sum, £2,300 contributed weekly until April 31st 2026
-- £1,666 contributed monthly from the beginning of May 2026 for the next 25 years
+- £86,000 lump sum invested January 2026
+- £2,500 contributed monthly from the beginning of May 2026 for the next 25 years
 - All dividends reinvested until the end of year 25 (invested immediately upon receipt)
 - All contributions and dividends are invested in a self-balancing fashion to maintain the target asset allocations
-- Until the end of year 25 (while in an ISA wrapper), the portfolio is re-balanced to target weights annually (each January)
+- Until the end of year 25, the portfolio is re-balanced to target weights annually (each January)
+- [Downturn Fund](Downturn.md) deployed independently of contributions as opportunity arises
 
 # Withdrawals and Income
 - After the investment period ends (25 years from May 2026), 60% of dividends are taken as income and the remaining 40% of dividend income is reinvested in the same self-balancing manner as during the investment period.
