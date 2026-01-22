@@ -119,31 +119,39 @@ def analyze_results(results: Dict) -> Dict:
         'total_deployed_p95': np.percentile(all_downturn_deployed, 95),
     }
     
-    # Scenario analysis (best, worst, median paths)
-    final_nav = all_nav[:, -1]
-    best_idx = np.argmax(final_nav)
-    worst_idx = np.argmin(final_nav)
-    median_idx = np.argsort(final_nav)[len(final_nav)//2]
+    # Scenario analysis (percentile-based path selection)
+    # Select paths at actual percentile ranks for NAV at YEAR 30 specifically
+    # Use month 359 (end of year 30) to be consistent with the NAV projections table
+    year_30_month_idx = min(30 * 12 - 1, all_nav.shape[1] - 1)  # Month 359
+    nav_at_year_30 = all_nav[:, year_30_month_idx]
     
-    year_30_idx = min(30, all_annual_income.shape[1] - 1)
+    sorted_indices = np.argsort(nav_at_year_30)
+    n_sims = len(nav_at_year_30)
+    
+    # Get indices for 5th, 50th, and 95th percentile paths
+    p5_idx = sorted_indices[int(n_sims * 0.05)]
+    p50_idx = sorted_indices[int(n_sims * 0.50)]
+    p95_idx = sorted_indices[int(n_sims * 0.95)]
+    
+    year_30_idx = 30  # Index into annual arrays
     
     stats['best_case'] = {
-        'final_nav': final_nav[best_idx],
-        'year_30_income': all_annual_income[best_idx, year_30_idx],
-        'year_30_dividends': all_annual_dividends[best_idx, year_30_idx],
-        'dividend_cuts': all_dividend_cuts[best_idx],
+        'final_nav': nav_at_year_30[p95_idx],
+        'year_30_income': all_annual_income[p95_idx, year_30_idx],
+        'year_30_dividends': all_annual_dividends[p95_idx, year_30_idx],
+        'dividend_cuts': all_dividend_cuts[p95_idx],
     }
     stats['worst_case'] = {
-        'final_nav': final_nav[worst_idx],
-        'year_30_income': all_annual_income[worst_idx, year_30_idx],
-        'year_30_dividends': all_annual_dividends[worst_idx, year_30_idx],
-        'dividend_cuts': all_dividend_cuts[worst_idx],
+        'final_nav': nav_at_year_30[p5_idx],
+        'year_30_income': all_annual_income[p5_idx, year_30_idx],
+        'year_30_dividends': all_annual_dividends[p5_idx, year_30_idx],
+        'dividend_cuts': all_dividend_cuts[p5_idx],
     }
     stats['median_case'] = {
-        'final_nav': final_nav[median_idx],
-        'year_30_income': all_annual_income[median_idx, year_30_idx],
-        'year_30_dividends': all_annual_dividends[median_idx, year_30_idx],
-        'dividend_cuts': all_dividend_cuts[median_idx],
+        'final_nav': nav_at_year_30[p50_idx],
+        'year_30_income': all_annual_income[p50_idx, year_30_idx],
+        'year_30_dividends': all_annual_dividends[p50_idx, year_30_idx],
+        'dividend_cuts': all_dividend_cuts[p50_idx],
     }
     
     return stats
@@ -319,13 +327,16 @@ def generate_report(stats: Dict, config: SimulationConfig) -> str:
     # Scenario analysis
     report.append("## Scenario Analysis")
     report.append("")
+    report.append("*Each scenario shows a specific simulation path selected by final NAV percentile.*")
+    report.append("*Dividend and income figures are from that specific path, not percentiles of dividends.*")
+    report.append("")
     report.append("### Best Case Path (95th percentile NAV)")
     report.append(f"- **Final NAV (Year 30)**: GBP {stats['best_case']['final_nav']:,.0f}")
     report.append(f"- **Year 30 Total Dividends**: GBP {stats['best_case']['year_30_dividends']:,.0f}")
     report.append(f"- **Year 30 Income Withdrawn**: GBP {stats['best_case']['year_30_income']:,.0f}")
     report.append(f"- **Dividend cuts experienced**: {stats['best_case']['dividend_cuts']:.0f}")
     report.append("")
-    report.append("### Median Case Path")
+    report.append("### Median Case Path (50th percentile NAV)")
     report.append(f"- **Final NAV (Year 30)**: GBP {stats['median_case']['final_nav']:,.0f}")
     report.append(f"- **Year 30 Total Dividends**: GBP {stats['median_case']['year_30_dividends']:,.0f}")
     report.append(f"- **Year 30 Income Withdrawn**: GBP {stats['median_case']['year_30_income']:,.0f}")

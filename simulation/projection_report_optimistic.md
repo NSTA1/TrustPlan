@@ -29,12 +29,12 @@
 
 | Year | 5th %ile | 25th %ile | Median | 75th %ile | 95th %ile |
 |------|----------|-----------|--------|-----------|-----------|
-| 5 | GBP 226,832 | GBP 270,758 | GBP 305,394 | GBP 346,982 | GBP 414,727 |
-| 10 | GBP 435,944 | GBP 547,945 | GBP 648,865 | GBP 766,278 | GBP 986,509 |
-| 15 | GBP 710,380 | GBP 934,527 | GBP 1,148,333 | GBP 1,407,933 | GBP 1,905,537 |
-| 20 | GBP 1,091,566 | GBP 1,497,090 | GBP 1,881,273 | GBP 2,375,997 | GBP 3,385,013 |
-| 25 | GBP 1,646,939 | GBP 2,309,127 | GBP 2,985,077 | GBP 3,862,620 | GBP 5,747,272 |
-| 30 | GBP 2,072,884 | GBP 3,135,791 | GBP 4,249,490 | GBP 5,739,972 | GBP 9,143,462 |
+| 5 | GBP 228,597 | GBP 271,652 | GBP 306,599 | GBP 347,622 | GBP 418,124 |
+| 10 | GBP 440,196 | GBP 550,813 | GBP 647,422 | GBP 763,506 | GBP 981,482 |
+| 15 | GBP 727,518 | GBP 950,123 | GBP 1,154,017 | GBP 1,418,133 | GBP 1,919,905 |
+| 20 | GBP 1,125,283 | GBP 1,527,105 | GBP 1,911,637 | GBP 2,403,199 | GBP 3,385,403 |
+| 25 | GBP 1,698,782 | GBP 2,365,053 | GBP 3,043,765 | GBP 3,950,882 | GBP 5,872,960 |
+| 30 | GBP 2,134,129 | GBP 3,227,152 | GBP 4,337,558 | GBP 5,877,696 | GBP 9,297,683 |
 
 ## Annual Net Dividends (Years 20-25, Accumulation Phase)
 
@@ -42,12 +42,12 @@
 
 | Year | 5th %ile | 25th %ile | Median | 75th %ile | 95th %ile |
 |------|----------|-----------|--------|-----------|-----------|
-| 20 | GBP 15,482 | GBP 20,172 | GBP 24,695 | GBP 30,820 | GBP 43,961 |
-| 21 | GBP 16,583 | GBP 21,789 | GBP 26,796 | GBP 33,709 | GBP 48,453 |
-| 22 | GBP 17,656 | GBP 23,442 | GBP 29,054 | GBP 36,693 | GBP 53,765 |
-| 23 | GBP 18,851 | GBP 25,149 | GBP 31,396 | GBP 39,823 | GBP 59,537 |
-| 24 | GBP 20,009 | GBP 27,028 | GBP 33,887 | GBP 43,220 | GBP 65,610 |
-| 25 | GBP 21,227 | GBP 28,801 | GBP 36,320 | GBP 46,628 | GBP 71,382 |
+| 20 | GBP 16,780 | GBP 21,902 | GBP 26,918 | GBP 33,555 | GBP 48,467 |
+| 21 | GBP 17,959 | GBP 23,633 | GBP 29,167 | GBP 36,806 | GBP 53,685 |
+| 22 | GBP 19,118 | GBP 25,460 | GBP 31,686 | GBP 40,235 | GBP 60,003 |
+| 23 | GBP 20,447 | GBP 27,320 | GBP 34,300 | GBP 43,774 | GBP 66,183 |
+| 24 | GBP 21,903 | GBP 29,428 | GBP 37,024 | GBP 47,665 | GBP 72,605 |
+| 25 | GBP 23,148 | GBP 31,436 | GBP 39,859 | GBP 51,206 | GBP 79,239 |
 
 ## Annual Dividend Income Withdrawn (Years 26-30, Post-Accumulation)
 
@@ -55,11 +55,11 @@
 
 | Year | 5th %ile | 25th %ile | Median | 75th %ile | 95th %ile |
 |------|----------|-----------|--------|-----------|-----------|
-| 26 | GBP 13,409 | GBP 18,231 | GBP 23,019 | GBP 29,702 | GBP 45,811 |
-| 27 | GBP 14,078 | GBP 19,273 | GBP 24,387 | GBP 31,478 | GBP 48,789 |
-| 28 | GBP 14,784 | GBP 20,416 | GBP 25,831 | GBP 33,497 | GBP 51,972 |
-| 29 | GBP 15,582 | GBP 21,461 | GBP 27,260 | GBP 35,672 | GBP 55,309 |
-| 30 | GBP 16,441 | GBP 22,679 | GBP 28,816 | GBP 37,737 | GBP 59,069 |
+| 26 | GBP 14,605 | GBP 19,917 | GBP 25,269 | GBP 32,683 | GBP 50,818 |
+| 27 | GBP 15,362 | GBP 21,007 | GBP 26,736 | GBP 34,718 | GBP 54,114 |
+| 28 | GBP 16,189 | GBP 22,184 | GBP 28,304 | GBP 36,884 | GBP 57,931 |
+| 29 | GBP 17,033 | GBP 23,454 | GBP 30,012 | GBP 39,286 | GBP 62,230 |
+| 30 | GBP 17,882 | GBP 24,751 | GBP 31,694 | GBP 41,794 | GBP 66,512 |
 
 ## Total Annual Dividends (Years 26-30)
 
@@ -67,17 +67,17 @@
 
 | Year | 5th %ile | 25th %ile | Median | 75th %ile | 95th %ile |
 |------|----------|-----------|--------|-----------|-----------|
-| 26 | GBP 22,349 | GBP 30,385 | GBP 38,365 | GBP 49,503 | GBP 76,352 |
-| 27 | GBP 23,463 | GBP 32,121 | GBP 40,644 | GBP 52,464 | GBP 81,314 |
-| 28 | GBP 24,639 | GBP 34,026 | GBP 43,052 | GBP 55,829 | GBP 86,620 |
-| 29 | GBP 25,970 | GBP 35,769 | GBP 45,433 | GBP 59,453 | GBP 92,182 |
-| 30 | GBP 27,401 | GBP 37,798 | GBP 48,027 | GBP 62,895 | GBP 98,449 |
+| 26 | GBP 24,342 | GBP 33,195 | GBP 42,115 | GBP 54,471 | GBP 84,697 |
+| 27 | GBP 25,603 | GBP 35,011 | GBP 44,560 | GBP 57,863 | GBP 90,190 |
+| 28 | GBP 26,981 | GBP 36,974 | GBP 47,174 | GBP 61,474 | GBP 96,552 |
+| 29 | GBP 28,389 | GBP 39,090 | GBP 50,020 | GBP 65,476 | GBP 103,717 |
+| 30 | GBP 29,803 | GBP 41,251 | GBP 52,823 | GBP 69,657 | GBP 110,853 |
 
 ## Income Growth (Years 26-30)
 
 - **Median CAGR**: 5.9%
-- **5th percentile CAGR**: 2.8%
-- **95th percentile CAGR**: 9.1%
+- **5th percentile CAGR**: 2.9%
+- **95th percentile CAGR**: 9.3%
 
 ## Dividend Stress Analysis
 
@@ -85,19 +85,19 @@
 
 ### Frequency of Dividend Cuts
 
-- **Simulations experiencing cuts**: 9,665 (96.7%)
-- **Simulations with no cuts**: 335 (3.3%)
+- **Simulations experiencing cuts**: 9,651 (96.5%)
+- **Simulations with no cuts**: 349 (3.5%)
 
 ### Dividend Cut Statistics
 
 | Metric | Value |
 |--------|-------|
-| Mean cuts per simulation | 5.04 |
+| Mean cuts per simulation | 5.09 |
 | Median cuts per simulation | 5 |
 | 5th percentile | 1 |
-| 95th percentile | 10 |
+| 95th percentile | 11 |
 | Maximum cuts (worst path) | 19 |
-| Mean cuts (paths with cuts) | 5.2 |
+| Mean cuts (paths with cuts) | 5.3 |
 
 *Note: Cuts are applied probabilistically when market drawdowns exceed the threshold.*
 *High-resilience dividend aristocrats have significantly lower cut probability.*
@@ -109,35 +109,38 @@
 ### Deployment Frequency
 
 - **Simulations with deployments**: 10,000 (100.0%)
-- **Mean deployment events**: 11.6
+- **Mean deployment events**: 11.7
 - **Median deployment events**: 12
 - **Maximum deployment events**: 21
 
 ### Capital Deployed
 
-- **Mean total deployed**: GBP 45,754
+- **Mean total deployed**: GBP 45,855
 - **Median total deployed**: GBP 45,000
 - **95th percentile deployed**: GBP 63,000
 
 ## Scenario Analysis
 
-### Best Case Path (95th percentile NAV)
-- **Final NAV (Year 30)**: GBP 32,820,725
-- **Year 30 Total Dividends**: GBP 45,747
-- **Year 30 Income Withdrawn**: GBP 27,448
-- **Dividend cuts experienced**: 5
+*Each scenario shows a specific simulation path selected by final NAV percentile.*
+*Dividend and income figures are from that specific path, not percentiles of dividends.*
 
-### Median Case Path
-- **Final NAV (Year 30)**: GBP 4,534,287
-- **Year 30 Total Dividends**: GBP 18,954
-- **Year 30 Income Withdrawn**: GBP 11,373
-- **Dividend cuts experienced**: 8
+### Best Case Path (95th percentile NAV)
+- **Final NAV (Year 30)**: GBP 9,299,076
+- **Year 30 Total Dividends**: GBP 44,350
+- **Year 30 Income Withdrawn**: GBP 26,610
+- **Dividend cuts experienced**: 7
+
+### Median Case Path (50th percentile NAV)
+- **Final NAV (Year 30)**: GBP 4,337,743
+- **Year 30 Total Dividends**: GBP 39,842
+- **Year 30 Income Withdrawn**: GBP 23,905
+- **Dividend cuts experienced**: 3
 
 ### Worst Case Path (5th percentile NAV)
-- **Final NAV (Year 30)**: GBP 823,394
-- **Year 30 Total Dividends**: GBP 48,209
-- **Year 30 Income Withdrawn**: GBP 28,925
-- **Dividend cuts experienced**: 3
+- **Final NAV (Year 30)**: GBP 2,134,130
+- **Year 30 Total Dividends**: GBP 71,725
+- **Year 30 Income Withdrawn**: GBP 43,035
+- **Dividend cuts experienced**: 11
 
 ## Model Notes
 
