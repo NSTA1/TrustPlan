@@ -177,6 +177,10 @@ January 2026 trailing 5-year blended dividend growth: **11.91%**
 | ESS  | 0.25 | 0.25 | 0.30 | 0.25 | 0.30 | 0.25 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.20 | 0.15 | 0.20 | 0.20 | 0.20 | 0.20 | 0.10 | 0.40 | 0.25 | 0.20 | 0.25 | 0.30 | 0.25 | 0.25 | 1.00 | 0.25 |
 | GD   | 0.25 | 0.25 | 0.30 | 0.25 | 0.30 | 0.25 | 0.25 | 0.20 | 0.20 | 0.20 | 0.25 | 0.25 | 0.20 | 0.25 | 0.25 | 0.25 | 0.25 | 0.15 | 0.30 | 0.35 | 0.20 | 0.25 | 0.30 | 0.55 | 0.50 | 0.25 | 1.00 |
 
+# Projected Monthly Income
+
+For detailed monthly income projections based on dividend payment schedules and Monte Carlo simulations, see [Monthly Income Projections](monthly_income_projection.md).
+
 # Portfolio Modelling
 
 For Monte Carlo simulation assumptions and methodology, see [Modelling Assumptions](modelling.md).
