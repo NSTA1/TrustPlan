@@ -24,7 +24,7 @@ def create_assets() -> Dict[str, Asset]:
         
     Note:
         Forward yields are from the SDG Forward Yield (2026) table.
-        Portfolio-weighted yield after withholding should be ~1.40%.
+        Portfolio-weighted yield after withholding should be ~1.35%.
         
         Dividend resilience scores (0-1):
         - 0.9+: Dividend aristocrats, 25+ years of increases
@@ -68,16 +68,16 @@ def create_assets() -> Dict[str, Asset]:
         ("Japan Exchange", "JPXGY", 0.05, 0.018, 0.15, 0.125, "Semi-Annual", [6, 12], True, 0.75),
         ("SMFG", "SMFG", 0.02, 0.0271, 0.15, 0.136, "Semi-Annual", [6, 12], True, 0.65),  # Banks more volatile
         
-        # Defence & Strategic Platforms (6%)
+        # Defence & Strategic Platforms (5%)
         ("Lockheed Martin", "LMT", 0.03, 0.027, 0.15, 0.0722, "Quarterly", [3, 6, 9, 12], False, 0.90),  # 20+ years
         ("BAE Systems", "BA", 0.02, 0.029, 0.0, 0.065, "Semi-Annual", [6, 12], False, 0.85),  # Consistent
-        ("General Dynamics", "GD", 0.01, 0.021, 0.15, 0.068, "Quarterly", [2, 5, 8, 11], False, 0.90),  # 30+ years
         
-        # Transport & Infrastructure (3%)
+        # Transport & Infrastructure (5%)
         ("Canadian National Railway", "CNR", 0.03, 0.0261, 0.25, 0.102, "Quarterly", [3, 6, 9, 12], False, 0.85),  # 28+ years
+        ("Badger Meter", "BMI", 0.02, 0.008, 0.15, 0.14, "Quarterly", [3, 6, 9, 12], False, 0.85),  # 30+ years, water infrastructure
         
-        # US Real Estate (3%)
-        ("Essex Property Trust", "ESS", 0.03, 0.035, 0.15, 0.055, "Quarterly", [1, 4, 7, 10], False, 0.75),  # REITs can cut
+        # European Industrial Technology (2%)
+        ("Schneider Electric", "SU", 0.02, 0.018, 0.25, 0.115, "Annual", [5], False, 0.85),  # Energy management leader
     ]
     
     assets = {}
@@ -139,13 +139,16 @@ def verify_portfolio_metrics(assets: Dict[str, Asset]) -> None:
     print(f"Portfolio weighted yield (after withholding): {metrics['weighted_yield_net']:.2%}")
     print(f"Portfolio weighted dividend growth: {metrics['weighted_dividend_growth']:.2%}")
     
-    # Expected values from SDG document
-    expected_yield_net = 0.0140  # 1.40%
-    expected_yield_gross = 0.0166  # 1.66%
-    expected_growth = 0.1191  # 11.91%
+    # Expected values from SDG document (January 2026)
+    expected_yield_net = 0.0135  # 1.35%
+    expected_yield_gross = 0.0160  # 1.60%
+    expected_growth = 0.1216  # 12.16%
     
     if abs(metrics['weighted_yield_net'] - expected_yield_net) > 0.002:
         print(f"WARNING: Net yield {metrics['weighted_yield_net']:.2%} differs from expected {expected_yield_net:.2%}")
     
     if abs(metrics['weighted_yield_gross'] - expected_yield_gross) > 0.002:
         print(f"WARNING: Gross yield {metrics['weighted_yield_gross']:.2%} differs from expected {expected_yield_gross:.2%}")
+    
+    if abs(metrics['weighted_dividend_growth'] - expected_growth) > 0.005:
+        print(f"WARNING: Dividend growth {metrics['weighted_dividend_growth']:.2%} differs from expected {expected_growth:.2%}")

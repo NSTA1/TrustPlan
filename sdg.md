@@ -11,7 +11,7 @@ To be managed by the Trustee of my choice upon my death as covered in my will an
 | Metric                         | Portfolio‑Weighted Value      |
 |-------------------------------|-------------------------------|
 | Forward Yield (after withholding) | **1.35%**                     |
-| Dividend Growth (5‑yr)        | **12.08%**                    |
+| Dividend Growth (5‑yr)        | **12.16%**                    |
 | ROIC                          | **24–26%**                    |
 | Payout Ratio                  | **28–30%**                    |
 | Intrinsic Value               | **5–10% above current**       |
@@ -143,7 +143,7 @@ January 2026 blended forward yield (gross): **1.60%**
 | Waste Management  | 8.30%  |
 | Wolters Kluwer | 10.96% |
 
-January 2026 trailing 5-year blended dividend growth: **12.08%**
+January 2026 trailing 5-year blended dividend growth: **12.16%**
 
 # Dividend Growth Correlation Matrix
 

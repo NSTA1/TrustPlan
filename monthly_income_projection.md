@@ -8,18 +8,18 @@ Based on dividend payment schedules and Monte Carlo projections, the following t
 
 | Payment Month | Assets Paying |
 |---------------|---------------|
-| January | ADP, Stryker, JP Morgan, Essex Property Trust |
-| February | Accenture, Mastercard, General Dynamics |
-| March | Microsoft, S&P Global, Lockheed Martin, Canadian National Railway, Novo Nordisk |
-| April | ADP, Stryker, JP Morgan, Essex Property Trust, LVMH |
-| May | Accenture, Mastercard, General Dynamics, EssilorLuxottica, LSEG, L'Oréal, Wolters Kluwer, Hermès, ASML |
-| June | Microsoft, S&P Global, Waste Management, Lockheed Martin, Canadian National Railway, RELX, Judges Scientific, Hoya, Japan Exchange, SMFG, BAE Systems |
-| July | ADP, Stryker, JP Morgan, Essex Property Trust |
-| August | Accenture, Mastercard, General Dynamics |
-| September | Microsoft, S&P Global, Waste Management, Lockheed Martin, Canadian National Railway, RELX, LSEG, Wolters Kluwer |
-| October | ADP, Stryker, JP Morgan, Essex Property Trust, Judges Scientific |
-| November | Accenture, Mastercard, General Dynamics, ASML |
-| December | Microsoft, S&P Global, Waste Management, Lockheed Martin, Canadian National Railway, LVMH, Hoya, Japan Exchange, SMFG, BAE Systems, Coloplast |
+| January | ADP, Stryker, JP Morgan |
+| February | Accenture, Mastercard |
+| March | Microsoft, S&P Global, Lockheed Martin, Canadian National Railway, Badger Meter, Novo Nordisk |
+| April | ADP, Stryker, JP Morgan, LVMH |
+| May | Accenture, Mastercard, EssilorLuxottica, LSEG, L'Oréal, Wolters Kluwer, Hermès, ASML, Schneider Electric |
+| June | Microsoft, S&P Global, Waste Management, Lockheed Martin, Canadian National Railway, Badger Meter, RELX, Judges Scientific, Hoya, Japan Exchange, SMFG, BAE Systems |
+| July | ADP, Stryker, JP Morgan |
+| August | Accenture, Mastercard |
+| September | Microsoft, S&P Global, Waste Management, Lockheed Martin, Canadian National Railway, Badger Meter, RELX, LSEG, Wolters Kluwer |
+| October | ADP, Stryker, JP Morgan, Judges Scientific |
+| November | Accenture, Mastercard, ASML |
+| December | Microsoft, S&P Global, Waste Management, Lockheed Martin, Canadian National Railway, Badger Meter, LVMH, Hoya, Japan Exchange, SMFG, BAE Systems, Coloplast |
 
 ## Monthly Income Weight Distribution
 
@@ -27,18 +27,18 @@ Based on asset allocations and payment frequencies:
 
 | Month | % of Annual Income | Key Contributors |
 |-------|-------------------|------------------|
-| January | 5.3% | ADP, JP Morgan, Stryker, Essex |
-| February | 3.3% | Mastercard, Accenture, General Dynamics |
-| March | 8.3% | Microsoft, SPGI, CNR, LMT, Novo Nordisk |
-| April | 6.8% | ADP, JP Morgan, Stryker, Essex, LVMH |
-| May | 10.5% | MA, ACN, GD, EL, LSEG, L'Oréal, WKL, RMS, ASML |
-| June | 15.8% | MSFT, SPGI, WM, LMT, CNR, RELX, JDG, Hoya, JPX, SMFG, BAE |
-| July | 5.3% | ADP, JP Morgan, Stryker, Essex |
-| August | 3.3% | Mastercard, Accenture, General Dynamics |
-| September | 11.0% | MSFT, SPGI, WM, LMT, CNR, RELX, LSEG, WKL |
-| October | 6.8% | ADP, JP Morgan, Stryker, Essex, Judges Scientific |
-| November | 4.8% | Mastercard, Accenture, General Dynamics, ASML |
-| December | 18.8% | MSFT, SPGI, WM, LMT, CNR, LVMH, Hoya, JPX, SMFG, BAE, Coloplast |
+| January | 4.5% | ADP, JP Morgan, Stryker |
+| February | 3.0% | Mastercard, Accenture |
+| March | 8.8% | Microsoft, SPGI, CNR, LMT, BMI, Novo Nordisk |
+| April | 6.0% | ADP, JP Morgan, Stryker, LVMH |
+| May | 11.8% | MA, ACN, EL, LSEG, L'Oréal, WKL, RMS, ASML, SU |
+| June | 16.2% | MSFT, SPGI, WM, LMT, CNR, BMI, RELX, JDG, Hoya, JPX, SMFG, BAE |
+| July | 4.5% | ADP, JP Morgan, Stryker |
+| August | 3.0% | Mastercard, Accenture |
+| September | 11.3% | MSFT, SPGI, WM, LMT, CNR, BMI, RELX, LSEG, WKL |
+| October | 6.5% | ADP, JP Morgan, Stryker, Judges Scientific |
+| November | 4.2% | Mastercard, Accenture, ASML |
+| December | 20.2% | MSFT, SPGI, WM, LMT, CNR, BMI, LVMH, Hoya, JPX, SMFG, BAE, Coloplast |
 
 ## Year 26 Monthly Income Projections (Real GBP)
 
@@ -46,55 +46,55 @@ Based on asset allocations and payment frequencies:
 
 | Month | 5th %ile | 25th %ile | Median | 75th %ile | 95th %ile |
 |-------|----------|-----------|--------|-----------|-----------|
-| January | £949 | £1,394 | £1,884 | £2,685 | £5,079 |
-| February | £591 | £868 | £1,173 | £1,672 | £3,162 |
-| March | £1,486 | £2,183 | £2,951 | £4,205 | £7,954 |
-| April | £1,218 | £1,788 | £2,418 | £3,445 | £6,517 |
-| May | £1,880 | £2,761 | £3,733 | £5,320 | £10,063 |
-| June | £2,831 | £4,159 | £5,623 | £8,012 | £15,152 |
-| July | £949 | £1,394 | £1,884 | £2,685 | £5,079 |
-| August | £591 | £868 | £1,173 | £1,672 | £3,162 |
-| September | £1,970 | £2,893 | £3,911 | £5,573 | £10,542 |
-| October | £1,218 | £1,788 | £2,418 | £3,445 | £6,517 |
-| November | £860 | £1,262 | £1,707 | £2,432 | £4,600 |
-| December | £3,366 | £4,944 | £6,685 | £9,526 | £18,015 |
-| **Annual** | **£17,905** | **£26,299** | **£35,554** | **£50,662** | **£95,833** |
+| January | £815 | £1,187 | £1,616 | £2,274 | £4,247 |
+| February | £543 | £791 | £1,077 | £1,516 | £2,831 |
+| March | £1,594 | £2,322 | £3,160 | £4,447 | £8,305 |
+| April | £1,086 | £1,583 | £2,154 | £3,032 | £5,663 |
+| May | £2,136 | £3,112 | £4,235 | £5,962 | £11,135 |
+| June | £2,933 | £4,273 | £5,815 | £8,187 | £15,290 |
+| July | £815 | £1,187 | £1,616 | £2,274 | £4,247 |
+| August | £543 | £791 | £1,077 | £1,516 | £2,831 |
+| September | £2,045 | £2,979 | £4,054 | £5,707 | £10,658 |
+| October | £1,177 | £1,715 | £2,334 | £3,285 | £6,135 |
+| November | £760 | £1,108 | £1,508 | £2,122 | £3,963 |
+| December | £3,656 | £5,327 | £7,249 | £10,205 | £19,058 |
+| **Annual** | **£18,103** | **£26,383** | **£35,902** | **£50,539** | **£94,379** |
 
-### Optimistic Case (Good for NAV, bad for income: 7% Real Return, 15% Volatility)
-
-| Month | 5th %ile | 25th %ile | Median | 75th %ile | 95th %ile |
-|-------|----------|-----------|--------|-----------|-----------|
-| January | £774 | £1,056 | £1,339 | £1,732 | £2,693 |
-| February | £482 | £657 | £834 | £1,079 | £1,677 |
-| March | £1,212 | £1,653 | £2,097 | £2,713 | £4,218 |
-| April | £993 | £1,354 | £1,718 | £2,222 | £3,456 |
-| May | £1,534 | £2,091 | £2,653 | £3,432 | £5,336 |
-| June | £2,310 | £3,151 | £3,998 | £5,172 | £8,040 |
-| July | £774 | £1,056 | £1,339 | £1,732 | £2,693 |
-| August | £482 | £657 | £834 | £1,079 | £1,677 |
-| September | £1,607 | £2,191 | £2,780 | £3,595 | £5,590 |
-| October | £993 | £1,354 | £1,718 | £2,222 | £3,456 |
-| November | £701 | £956 | £1,213 | £1,569 | £2,439 |
-| December | £2,746 | £3,745 | £4,751 | £6,146 | £9,554 |
-| **Annual** | **£14,605** | **£19,917** | **£25,269** | **£32,683** | **£50,818** |
-
-### Pessimistic Case (Bad for NAV, good for income: 3% Real Return, 22% Volatility)
+### Optimistic Case (7% Real Return, 15% Volatility)
 
 | Month | 5th %ile | 25th %ile | Median | 75th %ile | 95th %ile |
 |-------|----------|-----------|--------|-----------|-----------|
-| January | £1,314 | £2,295 | £3,739 | £7,004 | £26,388 |
-| February | £818 | £1,429 | £2,328 | £4,361 | £16,430 |
-| March | £2,058 | £3,594 | £5,856 | £10,968 | £41,325 |
-| April | £1,686 | £2,944 | £4,797 | £8,986 | £33,857 |
-| May | £2,603 | £4,546 | £7,408 | £13,875 | £52,279 |
-| June | £3,921 | £6,848 | £11,158 | £20,899 | £78,739 |
-| July | £1,314 | £2,295 | £3,739 | £7,004 | £26,388 |
-| August | £818 | £1,429 | £2,328 | £4,361 | £16,430 |
-| September | £2,727 | £4,763 | £7,761 | £14,536 | £54,768 |
-| October | £1,686 | £2,944 | £4,797 | £8,986 | £33,857 |
-| November | £1,190 | £2,078 | £3,386 | £6,343 | £23,899 |
-| December | £4,661 | £8,140 | £13,263 | £24,840 | £93,585 |
-| **Annual** | **£24,793** | **£43,298** | **£70,551** | **£132,142** | **£497,892** |
+| January | £665 | £907 | £1,150 | £1,488 | £2,314 |
+| February | £443 | £605 | £767 | £992 | £1,543 |
+| March | £1,302 | £1,775 | £2,252 | £2,913 | £4,530 |
+| April | £887 | £1,210 | £1,534 | £1,984 | £3,086 |
+| May | £1,745 | £2,379 | £3,018 | £3,903 | £6,069 |
+| June | £2,396 | £3,267 | £4,143 | £5,358 | £8,331 |
+| July | £665 | £907 | £1,150 | £1,488 | £2,314 |
+| August | £443 | £605 | £767 | £992 | £1,543 |
+| September | £1,671 | £2,279 | £2,890 | £3,738 | £5,813 |
+| October | £961 | £1,311 | £1,662 | £2,150 | £3,343 |
+| November | £621 | £847 | £1,074 | £1,389 | £2,160 |
+| December | £2,986 | £4,072 | £5,164 | £6,679 | £10,386 |
+| **Annual** | **£14,785** | **£20,163** | **£25,570** | **£33,074** | **£51,430** |
+
+### Pessimistic Case (3% Real Return, 22% Volatility)
+
+| Month | 5th %ile | 25th %ile | Median | 75th %ile | 95th %ile |
+|-------|----------|-----------|--------|-----------|-----------|
+| January | £1,129 | £1,971 | £3,212 | £6,017 | £22,670 |
+| February | £752 | £1,314 | £2,141 | £4,011 | £15,113 |
+| March | £2,206 | £3,852 | £6,278 | £11,758 | £44,307 |
+| April | £1,504 | £2,625 | £4,279 | £8,014 | £30,194 |
+| May | £2,959 | £5,167 | £8,421 | £15,776 | £59,442 |
+| June | £4,061 | £7,090 | £11,556 | £21,647 | £81,571 |
+| July | £1,129 | £1,971 | £3,212 | £6,017 | £22,670 |
+| August | £752 | £1,314 | £2,141 | £4,011 | £15,113 |
+| September | £2,833 | £4,946 | £8,062 | £15,102 | £56,895 |
+| October | £1,629 | £2,844 | £4,635 | £8,681 | £32,709 |
+| November | £1,052 | £1,838 | £2,995 | £5,610 | £21,139 |
+| December | £5,059 | £8,833 | £14,397 | £26,966 | £101,582 |
+| **Annual** | **£25,067** | **£43,764** | **£71,328** | **£133,597** | **£503,344** |
 
 ## Year 30 Monthly Income Projections (Real GBP)
 
@@ -102,65 +102,76 @@ Based on asset allocations and payment frequencies:
 
 | Month | 5th %ile | 25th %ile | Median | 75th %ile | 95th %ile |
 |-------|----------|-----------|--------|-----------|-----------|
-| January | £1,189 | £1,777 | £2,454 | £3,600 | £7,178 |
-| February | £740 | £1,107 | £1,528 | £2,241 | £4,469 |
-| March | £1,862 | £2,784 | £3,843 | £5,638 | £11,242 |
-| April | £1,526 | £2,281 | £3,149 | £4,619 | £9,211 |
-| May | £2,356 | £3,521 | £4,862 | £7,132 | £14,221 |
-| June | £3,549 | £5,305 | £7,324 | £10,741 | £21,420 |
-| July | £1,189 | £1,777 | £2,454 | £3,600 | £7,178 |
-| August | £740 | £1,107 | £1,528 | £2,241 | £4,469 |
-| September | £2,468 | £3,689 | £5,093 | £7,471 | £14,898 |
-| October | £1,526 | £2,281 | £3,149 | £4,619 | £9,211 |
-| November | £1,077 | £1,610 | £2,222 | £3,260 | £6,501 |
-| December | £4,218 | £6,306 | £8,706 | £12,770 | £25,463 |
-| **Annual** | **£22,435** | **£33,537** | **£46,302** | **£67,923** | **£135,439** |
+| January | £1,024 | £1,518 | £2,110 | £3,049 | £5,973 |
+| February | £683 | £1,012 | £1,407 | £2,032 | £3,982 |
+| March | £2,003 | £2,969 | £4,126 | £5,962 | £11,681 |
+| April | £1,366 | £2,024 | £2,813 | £4,065 | £7,965 |
+| May | £2,686 | £3,981 | £5,533 | £7,995 | £15,665 |
+| June | £3,687 | £5,465 | £7,595 | £10,975 | £21,503 |
+| July | £1,024 | £1,518 | £2,110 | £3,049 | £5,973 |
+| August | £683 | £1,012 | £1,407 | £2,032 | £3,982 |
+| September | £2,572 | £3,811 | £5,297 | £7,654 | £14,998 |
+| October | £1,479 | £2,193 | £3,048 | £4,404 | £8,629 |
+| November | £956 | £1,416 | £1,968 | £2,844 | £5,572 |
+| December | £4,597 | £6,813 | £9,468 | £13,682 | £26,804 |
+| **Annual** | **£22,761** | **£33,734** | **£46,885** | **£67,747** | **£132,744** |
 
-### Optimistic Case (Good for NAV, bad for income: 7% Real Return, 15% Volatility)
-
-| Month | 5th %ile | 25th %ile | Median | 75th %ile | 95th %ile |
-|-------|----------|-----------|--------|-----------|-----------|
-| January | £948 | £1,312 | £1,680 | £2,215 | £3,525 |
-| February | £590 | £817 | £1,046 | £1,379 | £2,195 |
-| March | £1,484 | £2,054 | £2,631 | £3,469 | £5,520 |
-| April | £1,216 | £1,683 | £2,155 | £2,842 | £4,523 |
-| May | £1,878 | £2,599 | £3,328 | £4,388 | £6,984 |
-| June | £2,828 | £3,914 | £5,013 | £6,610 | £10,519 |
-| July | £948 | £1,312 | £1,680 | £2,215 | £3,525 |
-| August | £590 | £817 | £1,046 | £1,379 | £2,195 |
-| September | £1,967 | £2,723 | £3,486 | £4,598 | £7,316 |
-| October | £1,216 | £1,683 | £2,155 | £2,842 | £4,523 |
-| November | £858 | £1,188 | £1,521 | £2,006 | £3,193 |
-| December | £3,362 | £4,653 | £5,960 | £7,860 | £12,508 |
-| **Annual** | **£17,882** | **£24,751** | **£31,694** | **£41,794** | **£66,512** |
-
-### Pessimistic Case (Bad for NAV, good for income: 3% Real Return, 22% Volatility)
+### Optimistic Case (7% Real Return, 15% Volatility)
 
 | Month | 5th %ile | 25th %ile | Median | 75th %ile | 95th %ile |
 |-------|----------|-----------|--------|-----------|-----------|
-| January | £1,718 | £3,101 | £5,292 | £10,772 | £51,897 |
-| February | £1,070 | £1,931 | £3,295 | £6,707 | £32,309 |
-| March | £2,691 | £4,857 | £8,287 | £16,869 | £81,252 |
-| April | £2,205 | £3,979 | £6,789 | £13,820 | £66,585 |
-| May | £3,404 | £6,144 | £10,483 | £21,340 | £102,814 |
-| June | £5,127 | £9,252 | £15,791 | £32,141 | £154,855 |
-| July | £1,718 | £3,101 | £5,292 | £10,772 | £51,897 |
-| August | £1,070 | £1,931 | £3,295 | £6,707 | £32,309 |
-| September | £3,566 | £6,437 | £10,983 | £22,356 | £107,710 |
-| October | £2,205 | £3,979 | £6,789 | £13,820 | £66,585 |
-| November | £1,556 | £2,809 | £4,792 | £9,755 | £46,001 |
-| December | £6,094 | £10,997 | £18,768 | £38,201 | £184,048 |
-| **Annual** | **£32,423** | **£58,513** | **£99,841** | **£203,238** | **£979,183** |
+| January | £815 | £1,128 | £1,444 | £1,904 | £3,030 |
+| February | £543 | £752 | £963 | £1,270 | £2,020 |
+| March | £1,594 | £2,206 | £2,825 | £3,725 | £5,928 |
+| April | £1,086 | £1,504 | £1,926 | £2,540 | £4,041 |
+| May | £2,136 | £2,956 | £3,786 | £4,993 | £7,944 |
+| June | £2,933 | £4,059 | £5,199 | £6,857 | £10,910 |
+| July | £815 | £1,128 | £1,444 | £1,904 | £3,030 |
+| August | £543 | £752 | £963 | £1,270 | £2,020 |
+| September | £2,045 | £2,830 | £3,624 | £4,780 | £7,605 |
+| October | £1,177 | £1,629 | £2,086 | £2,751 | £4,377 |
+| November | £760 | £1,052 | £1,348 | £1,778 | £2,829 |
+| December | £3,656 | £5,060 | £6,480 | £8,546 | £13,599 |
+| **Annual** | **£18,103** | **£25,057** | **£32,089** | **£42,317** | **£67,335** |
+
+### Pessimistic Case (3% Real Return, 22% Volatility)
+
+| Month | 5th %ile | 25th %ile | Median | 75th %ile | 95th %ile |
+|-------|----------|-----------|--------|-----------|-----------|
+| January | £1,477 | £2,666 | £4,551 | £9,263 | £44,622 |
+| February | £985 | £1,777 | £3,034 | £6,175 | £29,748 |
+| March | £2,888 | £5,213 | £8,899 | £18,115 | £87,265 |
+| April | £1,969 | £3,555 | £6,068 | £12,351 | £59,494 |
+| May | £3,873 | £6,991 | £11,934 | £24,293 | £117,022 |
+| June | £5,317 | £9,597 | £16,382 | £33,347 | £160,633 |
+| July | £1,477 | £2,666 | £4,551 | £9,263 | £44,622 |
+| August | £985 | £1,777 | £3,034 | £6,175 | £29,748 |
+| September | £3,709 | £6,697 | £11,432 | £23,271 | £112,098 |
+| October | £2,133 | £3,851 | £6,574 | £13,381 | £64,455 |
+| November | £1,378 | £2,488 | £4,247 | £8,645 | £41,648 |
+| December | £6,628 | £11,967 | £20,428 | £41,579 | £200,302 |
+| **Annual** | **£32,817** | **£59,244** | **£101,136** | **£205,855** | **£991,597** |
 
 ## Monthly Income Observations
 
-1. **Seasonal Concentration**: December (18.8%) and June (15.8%) are the largest income months due to European and Japanese semi-annual payouts aligning with US quarterly payments.
+1. **Seasonal Concentration**: December (20.2%) and June (16.2%) are the largest income months due to European and Japanese semi-annual payouts aligning with US quarterly payments.
 
-2. **Lean Months**: February and August are the lowest income months (3.3% each), with only Mastercard, Accenture, and General Dynamics paying.
+2. **Lean Months**: February and August are the lowest income months (3.0% each), with only Mastercard and Accenture paying.
 
-3. **Income Smoothing**: The quarterly US holdings (42% of portfolio) provide baseline income every month, while European/Japanese holdings create peaks.
+3. **Income Smoothing**: The quarterly US holdings (40% of portfolio) provide baseline income every month, while European/Japanese holdings create peaks.
 
-4. **Median Year 30 Monthly Range**:
-   - Base Case: £1,528 (August) to £8,706 (December)
-   - Optimistic Case: £1,046 (August) to £5,960 (December)
-   - Pessimistic Case: £3,295 (August) to £18,768 (December)
+4. **May Concentration**: May (11.8%) is the third-largest income month due to annual European payouts (EssilorLuxottica, L'Oréal, Hermès, Schneider Electric) plus semi-annual ASML and LSEG.
+
+5. **Median Year 30 Monthly Range**:
+   - Base Case: £1,407 (August) to £9,468 (December)
+   - Optimistic Case: £963 (August) to £6,480 (December)
+   - Pessimistic Case: £3,034 (August) to £20,428 (December)
+
+6. **New Holdings Impact**:
+   - Badger Meter (BMI) pays quarterly in March, June, September, December - adding to infrastructure income
+   - Schneider Electric (SU) pays annually in May - adding to the European annual payout concentration
+
+---
+
+*Report generated using Monte Carlo simulation based on SDG portfolio specifications.*
+*All values in GBP real terms (inflation-adjusted).*

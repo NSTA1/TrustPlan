@@ -12,25 +12,25 @@
 
 | Scenario | 5th %ile | Median | 95th %ile |
 |----------|----------|--------|-----------|
-| Pessimistic | GBP 1,092,668 | GBP 2,192,210 | GBP 5,149,443 |
-| Base | GBP 1,347,022 | GBP 2,398,501 | GBP 4,709,715 |
-| Optimistic | GBP 1,698,782 | GBP 3,043,765 | GBP 5,872,960 |
+| Pessimistic | GBP 1,097,539 | GBP 2,181,898 | GBP 5,205,055 |
+| Base | GBP 1,325,371 | GBP 2,373,563 | GBP 4,662,631 |
+| Optimistic | GBP 1,697,519 | GBP 3,053,378 | GBP 5,953,029 |
 
 ## Year 30 NAV Comparison (Final)
 
 | Scenario | 5th %ile | Median | 95th %ile |
 |----------|----------|--------|-----------|
-| Pessimistic | GBP 1,155,274 | GBP 2,825,489 | GBP 8,580,838 |
-| Base | GBP 1,556,154 | GBP 3,169,055 | GBP 7,047,295 |
-| Optimistic | GBP 2,134,129 | GBP 4,337,558 | GBP 9,297,683 |
+| Pessimistic | GBP 1,179,897 | GBP 2,843,299 | GBP 8,457,417 |
+| Base | GBP 1,535,279 | GBP 3,139,583 | GBP 6,980,963 |
+| Optimistic | GBP 2,162,187 | GBP 4,366,032 | GBP 9,438,260 |
 
 ## Year 30 Dividend Income Comparison (60% Withdrawal)
 
 | Scenario | 5th %ile | Median | 95th %ile |
 |----------|----------|--------|-----------|
-| Pessimistic | GBP 32,423 | GBP 99,841 | GBP 979,183 |
-| Base | GBP 22,435 | GBP 46,302 | GBP 135,439 |
-| Optimistic | GBP 17,882 | GBP 31,694 | GBP 66,512 |
+| Pessimistic | GBP 32,551 | GBP 101,348 | GBP 957,521 |
+| Base | GBP 22,761 | GBP 46,885 | GBP 132,744 |
+| Optimistic | GBP 17,865 | GBP 31,863 | GBP 66,020 |
 
 ## Key Observations
 
