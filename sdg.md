@@ -187,3 +187,7 @@ For Monte Carlo simulation assumptions and methodology, see [Modelling Assumptio
 
 # Market Downturns
 A dedicated, rule-based Downturn Fund described [here](Downturn.md) is deployed during market downturns in order to capture additional value and smooth portfolio performance.
+
+# Quality Check / Replacement Rule 
+
+See [AnnualReplacementCheck.md](AnnualReplacementCheck.md)
