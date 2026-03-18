@@ -1,4 +1,4 @@
-﻿"""
+"""
 Simulation Results Analysis and Reporting.
 
 Contains functions to analyze simulation results and generate
@@ -194,12 +194,12 @@ def generate_report(stats: Dict, config: SimulationConfig) -> str:
     report.append("")
     
     # Contributions summary
-    total_monthly = config.monthly_contribution * config.monthly_contribution_months
-    total_contributions = config.lump_sum + total_monthly
+    total_weekly = config.weekly_contribution * 52 * config.weekly_contribution_years
+    total_contributions = config.lump_sum + total_weekly
     report.append("## Total Contributions")
     report.append("")
     report.append(f"- **Lump sum**: GBP {config.lump_sum:,.0f}")
-    report.append(f"- **Monthly contributions**: GBP {total_monthly:,.0f} (25 years)")
+    report.append(f"- **Weekly contributions**: GBP {config.weekly_contribution:,.0f}/week for {config.weekly_contribution_years} years (GBP {total_weekly:,.0f} total)")
     report.append(f"- **Total contributions**: GBP {total_contributions:,.0f}")
     report.append("")
     
@@ -383,7 +383,7 @@ def print_summary(stats: Dict, config: SimulationConfig) -> None:
     print("=" * 60)
     print()
     
-    total_contributions = config.lump_sum + config.monthly_contribution * config.monthly_contribution_months
+    total_contributions = config.lump_sum + config.weekly_contribution * 52 * config.weekly_contribution_years
     print(f"Total contributions: GBP {total_contributions:,.0f}")
     print()
     

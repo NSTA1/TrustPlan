@@ -1,4 +1,4 @@
-﻿"""
+"""
 Portfolio Simulation Engine.
 
 Contains the PortfolioSimulator class that runs Monte Carlo simulations
@@ -127,21 +127,44 @@ class PortfolioSimulator:
         return shocks
     
     def _get_contribution_schedule(self) -> Dict[Tuple[int, int], float]:
-        """Build the contribution schedule from config."""
+        """
+        Build the contribution schedule from config.
+
+        Weekly contributions are converted to monthly amounts for the
+        monthly time-step simulation. Each full month receives
+        weekly_contribution × (52/12) ≈ £2,661. The first partial
+        month (starting 17th March) receives ~2 weeks of contributions.
+        """
         contributions = {}
-        
+
         # Lump sum in January 2026 (Year 0, Month 1)
         contributions[(0, 1)] = self.config.lump_sum
-        
-        # Monthly contributions from May 2026 (Year 0, Month 5) for 25 years
+
+        # Weekly contributions starting March 2026 for 25 years
+        weekly = self.config.weekly_contribution
+        monthly_equivalent = weekly * 52.0 / 12.0  # £2,660.67/month
+        start_month = self.config.weekly_contribution_start_month  # 3 = March
+
+        # Total contribution months: from March of year 0 through Feb of year 25
+        # (25 years of weekly contributions)
+        total_contribution_months = self.config.weekly_contribution_years * 12
         month_counter = 0
-        for year in range(26):
-            start_month = 5 if year == 0 else 1
-            for month in range(start_month, 13):
-                if month_counter < self.config.monthly_contribution_months:
-                    contributions[(year, month)] = contributions.get((year, month), 0) + self.config.monthly_contribution
-                    month_counter += 1
-        
+
+        for year in range(self.config.weekly_contribution_years + 1):
+            m_start = start_month if year == 0 else 1
+            for month in range(m_start, 13):
+                if month_counter >= total_contribution_months:
+                    break
+
+                if month_counter == 0:
+                    # First partial month (~2 weeks from 17th March)
+                    amount = weekly * 2
+                else:
+                    amount = monthly_equivalent
+
+                contributions[(year, month)] = contributions.get((year, month), 0) + amount
+                month_counter += 1
+
         return contributions
     
     def _is_dividend_month(self, asset: Asset, month: int) -> bool:

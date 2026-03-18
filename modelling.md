@@ -1,4 +1,4 @@
-﻿# Additional Portfolio Modelling Information
+# Additional Portfolio Modelling Information
 
 *This section provides the additional assumptions required to run approximate long‑horizon Monte Carlo simulations of portfolio‑level dividend income. These assumptions are intended solely for modelling convenience and internal scenario analysis. They do not alter the investment mandate, portfolio construction rules, or operational instructions defined elsewhere in the SDG documentation.*
 
@@ -36,25 +36,27 @@ Each asset pays dividends according to its historical payment schedule. Dividend
 | ADP                          | Quarterly   | Jan, Apr, Jul, Oct           |
 | ASML                         | Semi-Annual | May, Nov                     |
 | BAE Systems                  | Semi-Annual | Jun, Dec                     |
+| Badger Meter                 | Quarterly   | Mar, Jun, Sep, Dec           |
 | Canadian National Railway    | Quarterly   | Mar, Jun, Sep, Dec           |
-| Chubb                        | Quarterly   | Jan, Apr, Jul, Oct           |
 | Coloplast                    | Annual      | Dec                          |
-| Essex Property Trust         | Quarterly   | Jan, Apr, Jul, Oct           |
+| Dassault Systèmes            | Annual      | May                          |
 | EssilorLuxottica             | Annual      | May                          |
 | Hermès International         | Annual      | May                          |
 | Hoya                         | Semi-Annual | Jun, Dec                     |
-| Japan Exchange               | Semi-Annual | Jun, Dec                     |
 | JP Morgan                    | Quarterly   | Jan, Apr, Jul, Oct           |
+| Judges Scientific            | Semi-Annual | Jun, Oct                     |
 | L'Oréal                      | Annual      | May                          |
 | Lockheed Martin              | Quarterly   | Mar, Jun, Sep, Dec           |
 | London Stock Exchange Group  | Semi-Annual | May, Sep                     |
 | LVMH                         | Semi-Annual | Apr, Dec                     |
 | Mastercard                   | Quarterly   | Feb, May, Aug, Nov           |
 | Microsoft                    | Quarterly   | Mar, Jun, Sep, Dec           |
+| Muenchener                   | Annual      | May                          |
 | Novo Nordisk                 | Annual      | Mar                          |
 | RELX                         | Semi-Annual | Jun, Sep                     |
+| Roper Technologies           | Quarterly   | Jan, Apr, Jul, Oct           |
 | S&P Global                   | Quarterly   | Mar, Jun, Sep, Dec           |
-| SMFG                         | Semi-Annual | Jun, Dec                     |
+| Schneider Electric           | Annual      | May                          |
 | Stryker                      | Quarterly   | Jan, Apr, Jul, Oct           |
 | Waste Management             | Quarterly   | Mar, Jun, Sep, Dec           |
 | Wolters Kluwer               | Semi-Annual | May, Sep                     |
@@ -161,18 +163,17 @@ This section provides the additional parameters required to implement the simula
 ### 9.2 Initial Portfolio Value
 
 - **Initial portfolio value**: £0 (no existing holdings)
-- The portfolio is funded entirely through the contribution schedule
-- First investment: £55,500 lump sum on 9th December 2025
+- The portfolio is funded entirely through the contribution schedule defined in [sdg.md](sdg.md)
+- First investment: £86,000 lump sum in January 2026
 
 ### 9.3 Contribution Schedule
 
 | Phase | Amount | Frequency | Start Date | End Date |
 |-------|--------|-----------|------------|----------|
-| Lump Sum | £55,500 | One-time | 9th December 2025 | 9th December 2025 |
-| Weekly Contributions | £2,300 | Weekly | 16th December 2025 | 30th April 2026 |
-| Monthly Contributions | £1,666 | Monthly (1st of month) | 1st May 2026 | 1st April 2051 |
+| Lump Sum | £86,000 | One-time | January 2026 | January 2026 |
+| Weekly Contributions | £614 | Weekly | 17th March 2026 | Ongoing (25 years) |
 
-**Note**: Weekly contributions span approximately 20 weeks (£46,000 total). Monthly contributions span 25 years (300 payments, £499,800 total).
+**Note**: Weekly contributions run for 25 years (approximately 1,300 weeks, £798,800 total). Combined with the lump sum, total contributions are approximately £884,800.
 
 ### 9.4 Asset Pricing Model
 
@@ -202,32 +203,34 @@ The following identifiers should be used to fetch current prices from market dat
 | ADP                          | ADP       | NASDAQ    | USD      | |
 | ASML                         | ASML      | AEX       | EUR      | |
 | BAE Systems                  | BA.       | LSE       | GBP      | |
+| Badger Meter                 | BMI       | NYSE      | USD      | |
 | Canadian National Railway    | CNR       | TSX       | CAD      | |
-| Chubb                        | CB        | NYSE      | USD      | |
 | Coloplast                    | CLPBY     | OTC       | USD      | ADR |
-| Essex Property Trust         | ESS       | NYSE      | USD      | |
+| Dassault Systèmes            | DSY       | PAR       | EUR      | |
 | EssilorLuxottica             | EL        | PAR       | EUR      | |
 | Hermès International         | RMS       | PAR       | EUR      | |
 | Hoya                         | HOCPY     | OTC       | USD      | ADR |
-| Japan Exchange               | JPXGY     | OTC       | USD      | ADR |
 | JP Morgan                    | JPM       | NYSE      | USD      | |
+| Judges Scientific            | JDG       | LSE       | GBP      | |
 | L'Oréal                      | OR        | PAR       | EUR      | |
 | Lockheed Martin              | LMT       | NYSE      | USD      | |
 | London Stock Exchange Group  | LSEG      | LSE       | GBP      | |
 | LVMH                         | MC        | PAR       | EUR      | |
 | Mastercard                   | MA        | NYSE      | USD      | |
 | Microsoft                    | MSFT      | NASDAQ    | USD      | |
+| Muenchener                   | MUV2      | XETR      | EUR      | |
 | Novo Nordisk                 | NOVC      | XETR      | EUR      | |
 | RELX                         | REL       | LSE       | GBP      | |
+| Roper Technologies           | ROP       | NASDAQ    | USD      | |
 | S&P Global                   | SPGI      | NYSE      | USD      | |
-| SMFG                         | SMFG      | NYSE      | USD      | ADR |
+| Schneider Electric           | SU        | PAR       | EUR      | |
 | Stryker                      | SYK       | NYSE      | USD      | |
 | Waste Management             | WM        | NYSE      | USD      | |
 | Wolters Kluwer               | WKL       | AEX       | EUR      | |
 
 **ADR Notes**:
 - ADRs trade in USD regardless of the underlying company's home currency.
-- ADR ratios (how many underlying shares each ADR represents) should be verified from the depositary bank (typically BNY Mellon or JPMorgan) before simulation.
+- ADR ratios (how many underlying shares each ADR represents) should be verified from the depositary bank (typically BNY Mellon) before simulation.
 - Dividends are paid in USD after conversion from local currency by the depositary bank.
 - ADR fees (typically $0.01–0.05 per share per dividend) are deducted from dividend payments.
 - Withholding tax is still applied based on the company's country of domicile (as listed in the Forward Yield table).
@@ -236,21 +239,16 @@ The following identifiers should be used to fetch current prices from market dat
 Before running the simulation, verify the ADR ratios for:
 - Coloplast (CLPBY) - depositary: BNY Mellon
 - Hoya (HOCPY) - depositary: BNY Mellon
-- Japan Exchange (JPXGY) - depositary: BNY Mellon
-- SMFG (SMFG) - depositary: JPMorgan
 
 ADR ratios and pricing can be verified at:
-- [Morningstar](https://global.morningstar.com) - search by ticker (e.g., CLPBY, HOCPY, JPXGY, SMFG)
+- [Morningstar](https://global.morningstar.com) - search by ticker (e.g., CLPBY, HOCPY)
 - [adr.com](https://www.adr.com) - BNY Mellon's official ADR portal
-- [JPMorgan ADR](https://www.adr.com/DRSearch) - for JPMorgan-sponsored ADRs
 
 #### 9.4.3 ADR Fee Assumption
 
 For simulation purposes, apply an **ADR fee of $0.02 per share per dividend payment** for all ADR holdings:
 - Coloplast (CLPBY)
 - Hoya (HOCPY)
-- Japan Exchange (JPXGY)
-- SMFG (SMFG)
 
 This fee is deducted after withholding tax but before reinvestment.
 
@@ -266,19 +264,19 @@ At simulation initialisation:
 
 #### 9.4.5 Initial Unit Calculation
 
-For the initial £55,500 lump sum investment on 9th December 2025:
+For the initial £86,000 lump sum investment in January 2026:
 
-1. **Calculate target allocation**: For each asset, target_value = £55,500 × target_weight
+1. **Calculate target allocation**: For each asset, target_value = £86,000 × target_weight
 2. **Calculate units**: units = target_value ÷ GBP_price
 3. **Store fractional units**: The simulation permits fractional unit holdings
 
 **Example** (using hypothetical prices):
-- Microsoft closes at $450.00 on 9th December 2025
+- Microsoft closes at $450.00 in January 2026
 - GBP price = $450.00 ÷ 1.3381 = £336.30
-- Microsoft target: £55,500 × 7% = £3,885
-- Microsoft units: £3,885 ÷ £336.30 = 11.55 units
+- Microsoft target: £86,000 × 7% = £6,020
+- Microsoft units: £6,020 ÷ £336.30 = 17.90 units
 - Annual dividend (gross): £336.30 × 0.75% = £2.52 per unit
-- Total annual dividend: 11.55 × £2.52 = £29.11 gross
+- Total annual dividend: 17.90 × £2.52 = £45.11 gross
 
 #### 9.4.6 NAV Growth Application
 
@@ -310,7 +308,7 @@ Where:
 - cumulative_excess_growth_factor compounds the excess growth each year
 
 **Rationale**: 
-- Historical dividend growth rates (e.g., 11.5% for portfolio) typically include underlying earnings growth
+- Historical dividend growth rates (e.g., 12.34% for portfolio) typically include underlying earnings growth
 - NAV already captures earnings growth via the 5% real return assumption
 - Only the "excess" portion (dividend growth above NAV growth) should be applied additionally
 - This prevents the unrealistic scenario of 18%+ annual dividend growth

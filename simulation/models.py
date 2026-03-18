@@ -1,4 +1,4 @@
-﻿"""
+"""
 Data models for the portfolio simulation.
 
 Contains the Asset and SimulationConfig dataclasses that define
@@ -78,8 +78,9 @@ class SimulationConfig:
     
     # Contribution schedule (January 2026)
     lump_sum: float = 86000.0
-    monthly_contribution: float = 2500.0
-    monthly_contribution_months: int = 300  # 25 years from May 2026
+    weekly_contribution: float = 614.0
+    weekly_contribution_start_month: int = 3  # March 2026 (month 3 of Year 0)
+    weekly_contribution_years: int = 25  # 25 years of weekly contributions
     
     dividend_reinvestment_rate_post: float = 0.40
     dividend_withdrawal_rate_post: float = 0.60

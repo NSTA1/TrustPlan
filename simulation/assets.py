@@ -1,11 +1,11 @@
-﻿"""
+"""
 Portfolio Asset Definitions.
 
 Creates the portfolio assets with all required parameters including
 yields, dividend growth rates, payment schedules, and tax treatment.
 
 Asset data is based on the SDG portfolio specification with:
-- 27 holdings across 8 asset sleeves
+- 28 holdings across 8 asset sleeves
 - Forward yields and withholding taxes from Forward Yield (2026) table
 - 5-year dividend growth rates from Asset 5-Year Average Dividend Growth table
 """
@@ -21,10 +21,10 @@ def create_assets() -> Dict[str, Asset]:
     
     Returns:
         Dictionary of Asset objects keyed by ticker symbol
-        
+
     Note:
         Forward yields are from the SDG Forward Yield (2026) table.
-        Portfolio-weighted yield after withholding should be ~1.35%.
+        Portfolio-weighted yield after withholding should be ~1.33%.
         
         Dividend resilience scores (0-1):
         - 0.9+: Dividend aristocrats, 25+ years of increases
@@ -36,10 +36,11 @@ def create_assets() -> Dict[str, Asset]:
     # Format: (name, ticker, allocation, forward_yield, withholding_tax, 
     #          dividend_growth_5yr, payment_frequency, payment_months, is_adr, resilience)
     assets_data = [
-        # US Quality / Moat (24%)
+        # US Quality / Moat (28%)
         ("Microsoft", "MSFT", 0.07, 0.0075, 0.15, 0.102, "Quarterly", [3, 6, 9, 12], False, 0.95),  # 20+ years of increases
         ("S&P Global", "SPGI", 0.04, 0.0078, 0.15, 0.099, "Quarterly", [3, 6, 9, 12], False, 0.90),  # 50+ years
         ("Waste Management", "WM", 0.05, 0.0144, 0.15, 0.083, "Quarterly", [3, 6, 9, 12], False, 0.90),  # 20+ years
+        ("Roper Technologies", "ROP", 0.04, 0.0104, 0.15, 0.101, "Quarterly", [1, 4, 7, 10], False, 0.85),  # Diversified industrial, consistent grower
         ("ADP", "ADP", 0.03, 0.0201, 0.15, 0.128, "Quarterly", [1, 4, 7, 10], False, 0.95),  # 49+ years
         ("Accenture", "ACN", 0.02, 0.0216, 0.15, 0.12, "Quarterly", [2, 5, 8, 11], False, 0.85),  # Strong growth
         ("Stryker", "SYK", 0.03, 0.0092, 0.15, 0.088, "Quarterly", [1, 4, 7, 10], False, 0.85),  # 30+ years
@@ -48,25 +49,21 @@ def create_assets() -> Dict[str, Asset]:
         ("Mastercard", "MA", 0.07, 0.0052, 0.15, 0.142, "Quarterly", [2, 5, 8, 11], False, 0.85),  # Strong but newer
         ("JP Morgan", "JPM", 0.05, 0.019, 0.15, 0.1188, "Quarterly", [1, 4, 7, 10], False, 0.70),  # Banks cut in 2008-09
         
-        # European Luxury & IP (27%)
+        # European Luxury & IP (28%)
         ("LVMH", "MC", 0.03, 0.02, 0.25, 0.23, "Semi-Annual", [4, 12], False, 0.75),  # Strong but cyclical
         ("EssilorLuxottica", "EL", 0.03, 0.0187, 0.25, 0.23, "Annual", [5], False, 0.80),
-        ("RELX", "REL", 0.04, 0.0208, 0.0, 0.068, "Semi-Annual", [6, 9], False, 0.90),  # Very consistent
+        ("RELX", "REL", 0.05, 0.0208, 0.0, 0.068, "Semi-Annual", [6, 9], False, 0.90),  # Very consistent
         ("London Stock Exchange Group", "LSEG", 0.02, 0.0153, 0.0, 0.145, "Semi-Annual", [5, 9], False, 0.85),
         ("L'Oreal", "OR", 0.03, 0.0189, 0.25, 0.128, "Annual", [5], False, 0.90),  # 40+ years
         ("Wolters Kluwer", "WKL", 0.05, 0.014, 0.15, 0.1096, "Semi-Annual", [5, 9], False, 0.90),  # Very consistent
         ("Hermes International", "RMS", 0.03, 0.008, 0.25, 0.16, "Annual", [5], False, 0.85),  # Luxury resilience
         ("Judges Scientific", "JDG", 0.04, 0.0215, 0.0, 0.1515, "Semi-Annual", [6, 10], False, 0.80),  # 20 years paying, scientific instruments
         
-        # Global Semis & Healthcare (18%)
+        # Global Semis & Healthcare (16%)
         ("ASML", "ASML", 0.04, 0.01, 0.15, 0.208, "Semi-Annual", [5, 11], False, 0.80),  # Cyclical but strong
-        ("Novo Nordisk", "NVO", 0.04, 0.0164, 0.27, 0.191, "Annual", [3], False, 0.90),  # Healthcare stability
-        ("Coloplast", "CLPBY", 0.05, 0.033, 0.27, 0.056, "Annual", [12], True, 0.85),  # Healthcare
-        ("Hoya", "HOCPY", 0.05, 0.0043, 0.15, 0.053, "Semi-Annual", [6, 12], True, 0.80),
-        
-        # Global Financials (7%)
-        ("Japan Exchange", "JPXGY", 0.05, 0.018, 0.15, 0.125, "Semi-Annual", [6, 12], True, 0.75),
-        ("SMFG", "SMFG", 0.02, 0.0271, 0.15, 0.136, "Semi-Annual", [6, 12], True, 0.65),  # Banks more volatile
+        ("Novo Nordisk", "NVO", 0.05, 0.0164, 0.27, 0.191, "Annual", [3], False, 0.90),  # Healthcare stability
+        ("Coloplast", "CLPBY", 0.04, 0.033, 0.27, 0.056, "Annual", [12], True, 0.70),  # Healthcare, high payout ratio
+        ("Hoya", "HOCPY", 0.03, 0.0043, 0.15, 0.053, "Semi-Annual", [6, 12], True, 0.80),
         
         # Defence & Strategic Platforms (5%)
         ("Lockheed Martin", "LMT", 0.03, 0.027, 0.15, 0.0722, "Quarterly", [3, 6, 9, 12], False, 0.90),  # 20+ years
@@ -76,8 +73,12 @@ def create_assets() -> Dict[str, Asset]:
         ("Canadian National Railway", "CNR", 0.03, 0.0261, 0.25, 0.102, "Quarterly", [3, 6, 9, 12], False, 0.85),  # 28+ years
         ("Badger Meter", "BMI", 0.02, 0.008, 0.15, 0.14, "Quarterly", [3, 6, 9, 12], False, 0.85),  # 30+ years, water infrastructure
         
-        # European Industrial Technology (2%)
+        # European Industrial Technology (4%)
         ("Schneider Electric", "SU", 0.02, 0.018, 0.25, 0.115, "Annual", [5], False, 0.85),  # Energy management leader
+        ("Dassault Systemes", "DSY", 0.02, 0.0145, 0.25, 0.132, "Annual", [5], False, 0.85),  # Industrial software, consistent grower
+
+        # European Financials (2%)
+        ("Muenchener", "MUV2", 0.02, 0.0443, 0.26, 0.1535, "Annual", [5], False, 0.80),  # Reinsurance, strong capital return
     ]
     
     assets = {}
@@ -140,9 +141,9 @@ def verify_portfolio_metrics(assets: Dict[str, Asset]) -> None:
     print(f"Portfolio weighted dividend growth: {metrics['weighted_dividend_growth']:.2%}")
     
     # Expected values from SDG document (January 2026)
-    expected_yield_net = 0.0135  # 1.35%
+    expected_yield_net = 0.0133  # 1.33%
     expected_yield_gross = 0.0160  # 1.60%
-    expected_growth = 0.1216  # 12.16%
+    expected_growth = 0.1234  # 12.34%
     
     if abs(metrics['weighted_yield_net'] - expected_yield_net) > 0.002:
         print(f"WARNING: Net yield {metrics['weighted_yield_net']:.2%} differs from expected {expected_yield_net:.2%}")
