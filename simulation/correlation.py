@@ -28,7 +28,7 @@ def create_dividend_correlation_matrix(assets: Dict[str, Asset]) -> Tuple[np.nda
     # Tickers in matrix order (matches SDG document)
     tickers = [
         'MSFT', 'SPGI', 'WM', 'ROP', 'ADP', 'ACN', 'SYK', 'MA', 'ASML', 'NVO',
-        'CLPBY', 'MC', 'EL', 'RMS', 'REL', 'LSEG', 'OR', 'WKL', 'JDG', 'JPM', 'CNR',
+        'CLPBY', 'MC', 'EL', 'RMS', 'REL', 'LSEG', 'OR', 'WKL', 'JDG', 'MSCI', 'CNR',
         'HOCPY', 'LMT', 'BA', 'BMI', 'DSY', 'SU', 'MUV2'
     ]
 
@@ -52,7 +52,7 @@ def create_dividend_correlation_matrix(assets: Dict[str, Asset]) -> Tuple[np.nda
         ('ROP', 'DSY'): 0.40, ('ROP', 'SU'): 0.40, ('ROP', 'BMI'): 0.35,
         ('ROP', 'ASML'): 0.40, ('ROP', 'NVO'): 0.35, ('ROP', 'CLPBY'): 0.30,
         ('ROP', 'REL'): 0.35, ('ROP', 'LSEG'): 0.35, ('ROP', 'WKL'): 0.35,
-        ('ROP', 'MA'): 0.30, ('ROP', 'JPM'): 0.30, ('ROP', 'CNR'): 0.35,
+        ('ROP', 'MA'): 0.30, ('ROP', 'MSCI'): 0.45, ('ROP', 'CNR'): 0.35,
         ('ROP', 'HOCPY'): 0.30, ('ROP', 'MC'): 0.30, ('ROP', 'EL'): 0.30,
         ('ROP', 'OR'): 0.30, ('ROP', 'RMS'): 0.25, ('ROP', 'LMT'): 0.25,
         ('ROP', 'BA'): 0.20, ('ROP', 'JDG'): 0.20, ('ROP', 'MUV2'): 0.25,
@@ -63,9 +63,18 @@ def create_dividend_correlation_matrix(assets: Dict[str, Asset]) -> Tuple[np.nda
         ('SYK', 'BMI'): 0.30, ('SYK', 'SU'): 0.35,
         ('SYK', 'DSY'): 0.30, ('SYK', 'MUV2'): 0.20,
 
-        # Payments correlations
-        ('MA', 'JPM'): 0.25, ('MA', 'BMI'): 0.20, ('MA', 'SU'): 0.25,
+        # Payments & Platforms correlations
+        ('MA', 'MSCI'): 0.40, ('MA', 'BMI'): 0.20, ('MA', 'SU'): 0.25,
         ('MA', 'DSY'): 0.25, ('MA', 'MUV2'): 0.25,
+        ('MSCI', 'SPGI'): 0.55, ('MSCI', 'MSFT'): 0.45, ('MSCI', 'ACN'): 0.45,
+        ('MSCI', 'ADP'): 0.40, ('MSCI', 'WM'): 0.35, ('MSCI', 'ROP'): 0.45,
+        ('MSCI', 'SYK'): 0.35, ('MSCI', 'ASML'): 0.35, ('MSCI', 'NVO'): 0.30,
+        ('MSCI', 'CLPBY'): 0.25, ('MSCI', 'REL'): 0.40, ('MSCI', 'LSEG'): 0.45,
+        ('MSCI', 'WKL'): 0.40, ('MSCI', 'MC'): 0.30, ('MSCI', 'EL'): 0.30,
+        ('MSCI', 'RMS'): 0.25, ('MSCI', 'OR'): 0.30, ('MSCI', 'JDG'): 0.15,
+        ('MSCI', 'CNR'): 0.30, ('MSCI', 'HOCPY'): 0.25, ('MSCI', 'LMT'): 0.20,
+        ('MSCI', 'BA'): 0.20, ('MSCI', 'BMI'): 0.25, ('MSCI', 'DSY'): 0.40,
+        ('MSCI', 'SU'): 0.35, ('MSCI', 'MUV2'): 0.30,
 
         # Global Semis & Healthcare correlations
         ('ASML', 'NVO'): 0.50, ('ASML', 'CLPBY'): 0.45, ('ASML', 'HOCPY'): 0.35,
@@ -100,9 +109,7 @@ def create_dividend_correlation_matrix(assets: Dict[str, Asset]) -> Tuple[np.nda
         ('JDG', 'BMI'): 0.35,
         ('JDG', 'SU'): 0.20, ('JDG', 'DSY'): 0.20, ('JDG', 'MUV2'): 0.15,
 
-        # Financial correlations
-        ('JPM', 'MUV2'): 0.40,
-        ('JPM', 'BMI'): 0.20, ('JPM', 'SU'): 0.25, ('JPM', 'DSY'): 0.25,
+        # MSCI additional correlations covered above in Payments & Platforms section
 
         # Defence correlations
         ('LMT', 'BA'): 0.50,

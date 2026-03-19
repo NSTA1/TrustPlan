@@ -43,7 +43,6 @@ Each asset pays dividends according to its historical payment schedule. Dividend
 | EssilorLuxottica             | Annual      | May                          |
 | Hermès International         | Annual      | May                          |
 | Hoya                         | Semi-Annual | Jun, Dec                     |
-| JP Morgan                    | Quarterly   | Jan, Apr, Jul, Oct           |
 | Judges Scientific            | Semi-Annual | Jun, Oct                     |
 | L'Oréal                      | Annual      | May                          |
 | Lockheed Martin              | Quarterly   | Mar, Jun, Sep, Dec           |
@@ -51,6 +50,7 @@ Each asset pays dividends according to its historical payment schedule. Dividend
 | LVMH                         | Semi-Annual | Apr, Dec                     |
 | Mastercard                   | Quarterly   | Feb, May, Aug, Nov           |
 | Microsoft                    | Quarterly   | Mar, Jun, Sep, Dec           |
+| MSCI                         | Quarterly   | Feb, May, Aug, Nov           |
 | Muenchener                   | Annual      | May                          |
 | Novo Nordisk                 | Annual      | Mar                          |
 | RELX                         | Semi-Annual | Jun, Sep                     |
@@ -210,7 +210,6 @@ The following identifiers should be used to fetch current prices from market dat
 | EssilorLuxottica             | EL        | PAR       | EUR      | |
 | Hermès International         | RMS       | PAR       | EUR      | |
 | Hoya                         | HOCPY     | OTC       | USD      | ADR |
-| JP Morgan                    | JPM       | NYSE      | USD      | |
 | Judges Scientific            | JDG       | LSE       | GBP      | |
 | L'Oréal                      | OR        | PAR       | EUR      | |
 | Lockheed Martin              | LMT       | NYSE      | USD      | |
@@ -218,6 +217,7 @@ The following identifiers should be used to fetch current prices from market dat
 | LVMH                         | MC        | PAR       | EUR      | |
 | Mastercard                   | MA        | NYSE      | USD      | |
 | Microsoft                    | MSFT      | NASDAQ    | USD      | |
+| MSCI                         | MSCI      | NYSE      | USD      | |
 | Muenchener                   | MUV2      | XETR      | EUR      | |
 | Novo Nordisk                 | NOVC      | XETR      | EUR      | |
 | RELX                         | REL       | LSE       | GBP      | |
@@ -308,7 +308,7 @@ Where:
 - cumulative_excess_growth_factor compounds the excess growth each year
 
 **Rationale**: 
-- Historical dividend growth rates (e.g., 12.34% for portfolio) typically include underlying earnings growth
+- Historical dividend growth rates (e.g., 12.47% for portfolio) typically include underlying earnings growth
 - NAV already captures earnings growth via the 5% real return assumption
 - Only the "excess" portion (dividend growth above NAV growth) should be applied additionally
 - This prevents the unrealistic scenario of 18%+ annual dividend growth

@@ -24,7 +24,7 @@ def create_assets() -> Dict[str, Asset]:
 
     Note:
         Forward yields are from the SDG Forward Yield (2026) table.
-        Portfolio-weighted yield after withholding should be ~1.33%.
+        Portfolio-weighted yield after withholding should be ~1.31%.
         
         Dividend resilience scores (0-1):
         - 0.9+: Dividend aristocrats, 25+ years of increases
@@ -36,18 +36,18 @@ def create_assets() -> Dict[str, Asset]:
     # Format: (name, ticker, allocation, forward_yield, withholding_tax, 
     #          dividend_growth_5yr, payment_frequency, payment_months, is_adr, resilience)
     assets_data = [
-        # US Quality / Moat (28%)
+        # US Quality / Moat (29%)
         ("Microsoft", "MSFT", 0.07, 0.0075, 0.15, 0.102, "Quarterly", [3, 6, 9, 12], False, 0.95),  # 20+ years of increases
         ("S&P Global", "SPGI", 0.04, 0.0078, 0.15, 0.099, "Quarterly", [3, 6, 9, 12], False, 0.90),  # 50+ years
         ("Waste Management", "WM", 0.05, 0.0144, 0.15, 0.083, "Quarterly", [3, 6, 9, 12], False, 0.90),  # 20+ years
         ("Roper Technologies", "ROP", 0.04, 0.0104, 0.15, 0.101, "Quarterly", [1, 4, 7, 10], False, 0.85),  # Diversified industrial, consistent grower
         ("ADP", "ADP", 0.03, 0.0201, 0.15, 0.128, "Quarterly", [1, 4, 7, 10], False, 0.95),  # 49+ years
         ("Accenture", "ACN", 0.02, 0.0216, 0.15, 0.12, "Quarterly", [2, 5, 8, 11], False, 0.85),  # Strong growth
-        ("Stryker", "SYK", 0.03, 0.0092, 0.15, 0.088, "Quarterly", [1, 4, 7, 10], False, 0.85),  # 30+ years
+        ("Stryker", "SYK", 0.04, 0.0092, 0.15, 0.088, "Quarterly", [1, 4, 7, 10], False, 0.85),  # 30+ years
         
-        # US Payments & Platforms (12%)
+        # US Payments & Platforms (11%)
         ("Mastercard", "MA", 0.07, 0.0052, 0.15, 0.142, "Quarterly", [2, 5, 8, 11], False, 0.85),  # Strong but newer
-        ("JP Morgan", "JPM", 0.05, 0.019, 0.15, 0.1188, "Quarterly", [1, 4, 7, 10], False, 0.70),  # Banks cut in 2008-09
+        ("MSCI", "MSCI", 0.04, 0.0147, 0.15, 0.1602, "Quarterly", [2, 5, 8, 11], False, 0.85),  # Strong dividend growth, index/analytics
         
         # European Luxury & IP (28%)
         ("LVMH", "MC", 0.03, 0.02, 0.25, 0.23, "Semi-Annual", [4, 12], False, 0.75),  # Strong but cyclical
@@ -141,9 +141,9 @@ def verify_portfolio_metrics(assets: Dict[str, Asset]) -> None:
     print(f"Portfolio weighted dividend growth: {metrics['weighted_dividend_growth']:.2%}")
     
     # Expected values from SDG document (January 2026)
-    expected_yield_net = 0.0133  # 1.33%
-    expected_yield_gross = 0.0160  # 1.60%
-    expected_growth = 0.1234  # 12.34%
+    expected_yield_net = 0.0131  # 1.31%
+    expected_yield_gross = 0.0157  # 1.57%
+    expected_growth = 0.1247  # 12.47%
     
     if abs(metrics['weighted_yield_net'] - expected_yield_net) > 0.002:
         print(f"WARNING: Net yield {metrics['weighted_yield_net']:.2%} differs from expected {expected_yield_net:.2%}")
